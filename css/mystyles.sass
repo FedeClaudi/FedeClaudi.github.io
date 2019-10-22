@@ -1,0 +1,29 @@
+@charset "UTF-8"
+@import "colours.sass"
+
+
+
+@import "base.sass"
+
+
+
+%font
+    font-family: Nunito, sans-serif
+
+%link
+    @extend %font
+    color: $main-3
+    font-weight: 600
+    
+//main body and NAVBAR
+.body
+    background-color: $modern-grey-2
+    padding: 0px
+    margin: 0px
+
+section
+    background-color: $modern-grey-1
+    padding: 2rem !important
+
+@import "../bulma/bulma.sass"
+

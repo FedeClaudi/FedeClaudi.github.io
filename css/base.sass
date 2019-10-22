@@ -1,0 +1,37 @@
+.leftcol
+    background-color: #a5d6a7
+    min-height: 100vh
+    overflow: fixed
+
+    @media screen and (max-width:1090px)
+        min-height: auto
+
+    .bio
+        background-color: #d7ffd9
+        border-radius: 7px
+        box-shadow: 1px 2px 5px $medium-shadow-grey inset
+        margin: 42px 20px
+        min-height: 250px
+
+        @media screen and (max-width:1090px)
+            height: 90%
+
+.rightcol
+    background-color: hsl(120, 10, 90)
+    min-height: 100vh
+    overflow: scroll
+
+    @media screen and (max-width:1090px)
+        min-height: auto
+
+    .project
+        background-color: hsl(120, 10, 95)
+        border-radius: 7px
+        box-shadow: 1px 2px 5px $light-shadow-grey
+        margin: 42px auto
+        max-width: 1000px
+
+
+        @media screen and (max-width:1090px)
+            margin: 12px auto
+            width: 95%
