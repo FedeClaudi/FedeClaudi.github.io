@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .leftcol {
-  background-color: #a5d6a7;
+  background-color: #a4d5a6;
   min-height: 100vh;
   overflow: fixed;
 }
@@ -10,16 +10,45 @@
   }
 }
 .leftcol .bio {
-  background-color: #d7ffd9;
+  background-color: #fcfcfc;
   border-radius: 7px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4) inset;
   margin: 42px 20px;
   min-height: 250px;
+  text-align: center;
 }
 @media screen and (max-width: 1090px) {
   .leftcol .bio {
     height: 90%;
   }
+}
+.leftcol .bio .personal-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 24px;
+}
+.leftcol .bio .name {
+  font-weight: 800;
+  font-size: 36px;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #306932;
+}
+.leftcol .bio .contacts {
+  text-align: left;
+  color: #666666;
+  font-weight: 300;
+  font-size: 24px;
+  padding-left: 12px;
+}
+.leftcol .bio .contacts .contact {
+  margin-top: 6px;
+}
+.leftcol .bio .contacts .bio-icon {
+  margin-right: 6px;
 }
 
 .rightcol {
@@ -32,18 +61,87 @@
     min-height: auto;
   }
 }
+.rightcol .divider-title {
+  margin: 48px auto -30px auto;
+  width: 80%;
+  max-width: 1200px;
+  border-bottom: 4px solid #466d47;
+}
+.rightcol .divider-title .title {
+  font-size: 45px;
+  font-weight: 900;
+  color: #466d47;
+}
 .rightcol .project {
   background-color: #f1f4f1;
   border-radius: 7px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   margin: 42px auto;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 @media screen and (max-width: 1090px) {
   .rightcol .project {
     margin: 12px auto;
     width: 95%;
   }
+}
+.rightcol .project .proj-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.rightcol .project .proj-image-alt {
+  border-radius: 10%;
+  width: 150px;
+  height: 150px;
+}
+.rightcol .project .level {
+  font-size: 18px;
+  color: #666666;
+}
+.rightcol .project .level .proj-link {
+  margin-top: 4px;
+}
+.rightcol .project .publication {
+  margin-top: 24px;
+}
+.rightcol .project .pub-link {
+  font-weight: bold;
+  color: #333333;
+  font-size: 18px;
+}
+.rightcol .project .pub-link:hover {
+  color: #267329;
+}
+.rightcol .project .pub-authors {
+  font-weight: 300;
+  color: #666666;
+}
+.rightcol .project .pub-authors .me {
+  font-weight: 600;
+}
+.rightcol .project .pub-details {
+  font-weight: 300;
+  color: #666666;
+}
+.rightcol .project .DOI {
+  font-weight: 400;
+  color: #4d4d4d;
+}
+.rightcol .project .DOI:hover {
+  color: #262626;
+}
+
+.rightcol .project .link, .rightcol .project .level .proj-link, .leftcol .bio .name, .leftcol .bio .contacts, .rightcol .divider-title, .rightcol .project .level, .rightcol .project .pub-link, .rightcol .project .pub-authors, .rightcol .project .pub-details, .rightcol .project .DOI {
+  font-family: Nunito, sans-serif;
+}
+
+.rightcol .project .link, .rightcol .project .level .proj-link {
+  color: #306932;
+  font-weight: 600;
+}
+.rightcol .project .link:hover, .rightcol .project .level .proj-link:hover {
+  color: #1a1a1a;
 }
 
 .body {
