@@ -2,6 +2,8 @@ body
     overflow: scroll
     background-color: $medium
     
+
+/* ------------------------------- index html ------------------------------- */
 .container
     height: 105vh
     width: 100% !important
@@ -69,7 +71,29 @@ body
                     box-shadow: 2px 2px -2px $dark-shadow-grey inset
                     border: 1px solid $light-shadow-grey
             
+        .show-cv
+            .show-cv-button
+                font-size: 24px
+                margin: 48px auto 6px auto
+                color: $modern-grey-4
+                font-weight: bold
+                cursor: pointer
+                
+                &:hover
+                    color: $accent-medium
 
+        .CV
+            display: none
+            background-color: white
+
+            iframe
+                width: 100%
+                min-height: 800px
+
+                #controls
+                    display: none
+
+/* -------------------------------- projects -------------------------------- */
 .projects
     margin: 48px !important
 
@@ -106,6 +130,9 @@ body
                 margin: none
                 padding: 24px 0px  
 
+
+
+/* --------------------------------- papers --------------------------------- */
 
 .papers
     margin: 48px 128px 

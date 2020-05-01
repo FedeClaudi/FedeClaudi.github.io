@@ -4,6 +4,7 @@ body {
   background-color: #ECECEC;
 }
 
+/* ------------------------------- index html ------------------------------- */
 .container {
   height: 105vh;
   width: 100% !important;
@@ -70,7 +71,29 @@ body {
   box-shadow: 2px 2px -2px rgba(0, 0, 0, 0.9) inset;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.container .content .show-cv .show-cv-button {
+  font-size: 24px;
+  margin: 48px auto 6px auto;
+  color: #555855;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .content .show-cv .show-cv-button:hover {
+  color: #61892f;
+}
+.container .content .CV {
+  display: none;
+  background-color: white;
+}
+.container .content .CV iframe {
+  width: 100%;
+  min-height: 800px;
+}
+.container .content .CV iframe #controls {
+  display: none;
+}
 
+/* -------------------------------- projects -------------------------------- */
 .projects {
   margin: 48px !important;
 }
@@ -108,6 +131,7 @@ body {
   padding: 24px 0px;
 }
 
+/* --------------------------------- papers --------------------------------- */
 .papers {
   margin: 48px 128px;
 }
@@ -141,6 +165,24 @@ body {
   font-size: 24px;
   margin: 48px auto 6px auto;
   color: #828782;
+}
+
+.br-example {
+  margin: 48px 128px;
+}
+.br-example a {
+  color: #222a35;
+  cursor: pointer;
+}
+.br-example a:hover {
+  font-weight: bold;
+}
+.br-example .app {
+  width: 100%;
+}
+.br-example .app x3d {
+  width: 100%;
+  height: 600px;
 }
 
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
