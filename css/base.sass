@@ -26,17 +26,79 @@ body
         width: 80%
         margin: auto
         padding: 24px
+        cursor: default
 
         @media (max-width: 960px)
             width: 95%
             padding: 12px
 
+        .tag
+            display: inline
+            height: 20px
+            font-size: 18px
+            font-weight: 500
+            cursor: default
+
+        .one
+            background-color: pink
+
+        .two
+            background-color: $yellow
+
+        .three
+            background-color: $light-blue
+
+        .four
+            background-color: $grey-8
+
+        .five
+            background-color: $accent-light
+
         .bio
             background-color: white
             color: $grey-2
 
+            .bio-title
+                color: $modern-grey-3
+                font-size: 26px
+                font-weight: 700
+                margin-bottom: 0px
+
+            .bio-subtitle
+                color: $cold-grey-3
+                font-size: 18px
+                margin: 0 auto 24px 0
+
+            .divider
+                height: 24px
+                margin: 12px
+            
+            .when
+                font-size: 22px
+                font-weight: 900
+                color: $modern-grey-6
+                text-align: center
+                border-right: 4px solid $pink
+
+
+            .what
+                font-size: 18px
+                font-weight: 700
+                color: $modern-grey-4
+
+                .where
+                    font-size: 16px
+                    font-weight:500
+                    color: $modern-grey-5
+
+
+
+
         .me-box
             background-color: white
+            background-image: url(../../data/trees.jpg)
+            background-repeat: repeat-x
+            background-size: 90% auto
             color: white
 
             li
@@ -60,7 +122,7 @@ body
 
             .my-links
                 box-shadow: none
-                background-color: white
+                background-color: hsla(0, 0, 0, 0)
 
                 .media-content
                     color: $grey-1
@@ -68,19 +130,18 @@ body
 
                 img
                     border-radius: 50%
-                    box-shadow: 2px 2px -2px $dark-shadow-grey inset
+                    box-shadow: 0.5px .5px .5px $medium-shadow-grey
                     border: 1px solid $light-shadow-grey
             
-        .show-cv
-            .show-cv-button
-                font-size: 24px
-                margin: 48px auto 6px auto
-                color: $modern-grey-4
-                font-weight: bold
-                cursor: pointer
-                
-                &:hover
-                    color: $accent-medium
+        .show-cv-button
+            font-size: 24px
+            margin: 48px auto 6px auto
+            color: $modern-grey-5
+            font-weight: bold
+            cursor: pointer
+            
+            &:hover
+                color: $accent-medium
 
         .CV
             display: none
@@ -96,6 +157,7 @@ body
 /* -------------------------------- projects -------------------------------- */
 .projects
     margin: 48px !important
+    cursor: default
 
     @media (max-width: 960px)
         width: 80%
@@ -111,11 +173,15 @@ body
     .project
         margin: auto
 
+        @media (max-width: 960px)
+            width: 100%
 
 
         .project-card
             border-radius: 12px
-            min-height: 600px
+            // min-height: 700px
+            // max-height: 1000px
+            overflow: scroll
 
             @media (max-width: 960px)
                 min-height: auto
@@ -136,6 +202,7 @@ body
 
 .papers
     margin: 48px 128px 
+    cursor: default
 
     @media (max-width: 960px)
         margin: 32px 24px
