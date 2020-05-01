@@ -132,7 +132,7 @@ body {
 }
 .container .content .info-tile .my-links img {
   border-radius: 50%;
-  box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .container .content .show-cv-button {
@@ -241,33 +241,44 @@ body {
   color: #828782;
 }
 
-.br-example {
-  margin: 48px 128px;
+.canvas {
+  margin: 24px auto 0px 120px;
+  width: 50%;
 }
-@media (max-width: 960px) {
-  .br-example {
-    width: 90%;
-    margin: 48px auto;
-  }
+.canvas .info {
+  color: #828782;
 }
-.br-example a {
+.canvas a {
   color: #222a35;
   cursor: pointer;
-}
-.br-example a:hover {
   font-weight: bold;
 }
-.br-example .app {
-  width: 100%;
+.canvas a:hover {
+  color: black;
 }
-.br-example .app x3d {
+.canvas #canvasTarget {
+  height: 60%;
   width: 100%;
-  height: 600px;
 }
 @media (max-width: 960px) {
-  .br-example .app x3d {
-    height: 200px;
+  .canvas #canvasTarget {
+    width: 80%;
   }
+}
+.canvas #canvasTarget canvas {
+  width: 800px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25) inset, -2px -2px 4px rgba(0, 0, 0, 0.1) inset;
+}
+.canvas #canvasTarget .dg {
+  background-color: red;
+  top: 128px !important;
+  right: 200px !important;
+  width: 300px !important;
+}
+.canvas #canvasTarget .dg .title {
+  font-size: 12px;
 }
 
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
