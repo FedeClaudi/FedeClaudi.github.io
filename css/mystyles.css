@@ -83,6 +83,11 @@ body {
   text-align: center;
   border-right: 4px solid #ff8a65;
 }
+@media (max-width: 960px) {
+  .container .content .bio .when {
+    border-right: none;
+  }
+}
 .container .content .bio .what {
   font-size: 18px;
   font-weight: 700;
@@ -235,6 +240,12 @@ body {
 .br-example {
   margin: 48px 128px;
 }
+@media (max-width: 960px) {
+  .br-example {
+    width: 90%;
+    margin: 48px auto;
+  }
+}
 .br-example a {
   color: #222a35;
   cursor: pointer;
@@ -248,6 +259,11 @@ body {
 .br-example .app x3d {
   width: 100%;
   height: 600px;
+}
+@media (max-width: 960px) {
+  .br-example .app x3d {
+    height: 200px;
+  }
 }
 
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
