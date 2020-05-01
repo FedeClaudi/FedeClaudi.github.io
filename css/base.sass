@@ -1,134 +1,140 @@
-.leftcol
-    background-color: hsl(122 37 74)
-    min-height: 100vh
-    overflow: fixed
-
-    @media screen and (max-width:1090px)
-        min-height: auto
-
-    .bio
-        background-color: hsl(0, 0, 99)
-        border-radius: 7px
-        box-shadow: 1px 2px 5px $medium-shadow-grey inset
-        margin: 42px 20px
-        min-height: 250px
-        text-align: center
-
-        @media screen and (max-width:1090px)
-            height: 90%
-
-        .personal-photo
-            width: 250px
-            height: 250px
-            border-radius: 50%
-            margin: auto
-            border: 1px solid hsla(0, 0, 0, .3)
-            margin-bottom: 24px
-
-        .name
-            @extend  %font
-            font-weight: 800
-            font-size: 36px
-            padding-bottom: 12px
-            margin-bottom: 10px
-            border-bottom: 3px solid hsl(122 37 30)
-
-        .contacts
-            text-align: left
-            @extend  %font
-            color: hsl(0, 0, 40)
-            font-weight: 300
-            font-size: 24px
-            padding-left: 12px
-
-            .contact
-                margin-top: 6px
-            
-            .bio-icon
-                margin-right: 6px
-
-.rightcol
-    background-color: hsl(120, 10, 90)
-    min-height: 100vh
+body
     overflow: scroll
+    background-color: $medium
+    
+.container
+    height: 105vh
+    width: 100% !important
+    max-width: none !important
+    margin: 0px !important
 
-    @media screen and (max-width:1090px)
-        min-height: auto
 
-    .divider-title
-        @extend %font
-        margin: 48px auto -30px auto
+    .menu-col
+        padding: 32px 24px 0px 24px
+        height:  105vh
+        background-color: $medium
+
+        @media (max-width: 960px)
+            height: auto
+            text-align: center
+            padding: 24px 24px 0px 24px
+
+
+    .content
         width: 80%
-        max-width: 1200px
-        border-bottom: 4px solid hsl(122 22 35)
+        margin: auto
+        padding: 24px
 
-        .title
-            font-size: 45px
-            font-weight: 900
-            color: hsl(122 22 35)
+        @media (max-width: 960px)
+            width: 95%
+            padding: 12px
+
+        .bio
+            background-color: white
+            color: $grey-2
+
+        .me-box
+            background-color: white
+            color: white
+
+            li
+                margin-bottom: 12px
+
+
+        .info-tile
+            box-shadow: 2px 2px 6px $light-shadow-grey
+            // box-shadow: none
+            
+            a
+                color: $grey-1
+                cursor: pointer
+
+                &:hover
+                    font-weight: bold
+
+
+            .title
+                color: $modern-grey-2
+
+            .my-links
+                box-shadow: none
+                background-color: white
+
+                .media-content
+                    color: $grey-1
+                    font-size: 18px
+
+                img
+                    border-radius: 50%
+                    box-shadow: 2px 2px -2px $dark-shadow-grey inset
+                    border: 1px solid $light-shadow-grey
+            
+
+.projects
+    margin: 48px !important
+
+    @media (max-width: 960px)
+        width: 80%
+
+    a
+        color: $grey-1
+        cursor: pointer
+
+        &:hover
+            font-weight: bold
+
 
     .project
-        background-color: hsl(120, 10, 95)
-        border-radius: 7px
-        box-shadow: 1px 2px 5px $light-shadow-grey
-        margin: 42px auto
-        max-width: 1200px
+        margin: auto
 
-        @media screen and (max-width:1090px)
-            margin: 12px auto
-            width: 95%
 
-        .link
-            @extend %link
 
-        .proj-image
-            border-radius: 50%
-            width: 150px
-            height: 150px
+        .project-card
+            border-radius: 12px
+            min-height: 600px
 
-        .proj-image-alt
-            border-radius: 10%
-            width: 150px
-            height: 150px
+            @media (max-width: 960px)
+                min-height: auto
+                width: 100%
+                
 
-        .level
-            @extend  %font
-            font-size: 18px
-            color: hsl(0, 0, 40)
+            img
+                border-radius: 12px 12px 0 0
 
-            .proj-link
-                @extend %link
-                margin-top: 4px
+            .content
+                width: 95%
+                margin: none
+                padding: 24px 0px  
 
-        .publication
-            margin-top: 24px
 
-        .pub-link
-            @extend %font
+.papers
+    margin: 48px 128px 
+
+    @media (max-width: 960px)
+        margin: 32px 24px
+
+    a
+        color: $grey-1
+        cursor: pointer
+
+        &:hover
             font-weight: bold
-            color: hsl(0, 0, 20)
-            font-size: 18px
 
-            &:hover
-                color: hsl(122 50 30)
+    .pub-title
+        font-size: 20px
+        margin-bottom: 8px
 
-        .pub-authors
-            @extend %font
-            font-weight: 300
-            color: hsl(0, 0, 40)
+    .pub-authors
+        font-size: 16px
 
-            .me
-                font-weight: 600
+    .pub-details
+        margin-top: 8px
+        color: $modern-grey-3
 
-        .pub-details
-            @extend %font
-            font-weight: 300
-            color: hsl(0, 0, 40)
-
-        .DOI
-            @extend %font
-            font-weight: 400
-            color: hsl(0, 0, 30)
-
-            &:hover
-                color: hsl(0, 0, 15)
+        a
+            color: $modern-grey-5
+    
+    .year
+        font-size: 24px
+        margin: 48px auto 6px auto
+        color: $modern-grey-5
