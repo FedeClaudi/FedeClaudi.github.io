@@ -100,7 +100,7 @@ body {
 }
 .container .content .me-box {
   background-color: white;
-  background-image: url(../../data/trees.jpg);
+  background-image: url(../../data/images/trees.jpg);
   background-repeat: repeat-x;
   background-size: 90% auto;
   color: white;
@@ -114,9 +114,10 @@ body {
 .container .content .info-tile a {
   color: #222a35;
   cursor: pointer;
+  font-weight: bold;
 }
 .container .content .info-tile a:hover {
-  font-weight: bold;
+  color: black;
 }
 .container .content .info-tile .title {
   color: #474747;
@@ -158,7 +159,7 @@ body {
 
 /* -------------------------------- projects -------------------------------- */
 .projects {
-  margin: 48px !important;
+  margin: auto !important;
   cursor: default;
 }
 @media (max-width: 960px) {
@@ -169,12 +170,13 @@ body {
 .projects a {
   color: #222a35;
   cursor: pointer;
-}
-.projects a:hover {
   font-weight: bold;
 }
+.projects a:hover {
+  color: black;
+}
 .projects .project {
-  margin: auto;
+  margin: 0px auto;
 }
 @media (max-width: 960px) {
   .projects .project {
@@ -182,6 +184,7 @@ body {
   }
 }
 .projects .project .project-card {
+  margin-top: 64px;
   border-radius: 12px;
   overflow: scroll;
 }
@@ -213,9 +216,10 @@ body {
 .papers a {
   color: #222a35;
   cursor: pointer;
+  font-weight: bold;
 }
 .papers a:hover {
-  font-weight: bold;
+  color: black;
 }
 .papers .pub-title {
   font-size: 20px;
