@@ -251,6 +251,8 @@ body {
 @media (max-width: 960px) {
   .canvas {
     width: 90%;
+    min-height: 400px;
+    height: 400px;
     margin: 32px auto;
   }
 }
