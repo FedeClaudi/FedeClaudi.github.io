@@ -335,6 +335,11 @@ body {
 .br-info .txt-col {
   margin-left: 64px;
 }
+.br-info .br-button {
+  background-color: #ff8a65;
+  width: 100%;
+  fontgit-weight: 400;
+}
 
 .scene-header {
   margin-bottom: 32px;
