@@ -108,6 +108,9 @@ body {
   background-size: 90% auto;
   color: white;
 }
+.container .content .me-box img {
+  width: 300px;
+}
 .container .content .me-box li {
   margin-bottom: 12px;
 }
