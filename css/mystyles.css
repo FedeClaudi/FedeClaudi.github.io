@@ -248,6 +248,12 @@ body {
   margin: 24px auto 0px 120px;
   width: 50%;
 }
+@media (max-width: 960px) {
+  .canvas {
+    width: 90%;
+    margin: 32px auto;
+  }
+}
 .canvas .info {
   color: #828782;
 }
@@ -262,11 +268,6 @@ body {
 .canvas #canvasTarget {
   height: 60%;
   width: 100%;
-}
-@media (max-width: 960px) {
-  .canvas #canvasTarget {
-    width: 80%;
-  }
 }
 .canvas #canvasTarget canvas {
   width: 800px;
@@ -304,6 +305,11 @@ body {
   margin: 24px;
   display: flex;
 }
+@media (max-width: 960px) {
+  .br-tile {
+    min-width: 0;
+  }
+}
 
 .br-info a {
   color: #222a35;
@@ -328,7 +334,7 @@ body {
   margin-left: 64px;
 }
 
-.br-header {
+.scene-header {
   margin-bottom: 32px;
 }
 

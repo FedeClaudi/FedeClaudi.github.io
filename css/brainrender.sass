@@ -3,6 +3,10 @@
     margin: 24px auto 0px 120px
     width: 50%
 
+    @media (max-width: 960px)
+        width: 90%
+        margin: 32px auto
+
     .info
         color: $modern-grey-5
 
@@ -18,10 +22,10 @@
         height: 60%
         width: 100%
 
-        // max-width: 800px
+        // // max-width: 800px
 
-        @media (max-width: 960px)
-            width: 80%
+        // @media (max-width: 960px)
+        //     width: 80%
 
         canvas
             width: 800px
@@ -57,6 +61,9 @@
     margin: 24px
     display: flex
 
+    @media (max-width: 960px)
+        min-width: 0
+
 .br-info
     a
         color: $grey-1
@@ -78,5 +85,6 @@
     .txt-col
         margin-left: 64px
 
-.br-header
+.scene-header
     margin-bottom: 32px
+

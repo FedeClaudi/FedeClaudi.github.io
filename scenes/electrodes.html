@@ -2166,68 +2166,66 @@ var requirejs, require, define;
 </script>
 </head>
 <body>
-  
-        <div class="container">
-                <div class="columns">
-                        <div class="column is-2 menu-col">
-                                <aside class="menu is tablet">
-                                        <p class="menu-label">
-                                            Federico Claudi
-                                        </p>
-                                        <ul class="menu-list">
-                                                <li>
-                                                        <ul>
-                                                            <li><a href="index.html">info</a></li>
-                                                            <li><a href="projects.html">projects</a></li>
-                                                            <li><a href="pubb.html">publications</a></li>
-                                                            <li><a href="teaching.html">teaching</a></li>
-                                                        </ul>
-                                                    </li>
-                                            <hr>
-                                            <p class="menu-label">
-                                                    brainrender
-                                            </p>
-                                            <li>
-                                                <ul>
-                                                        <li><a href="../br-info.html">info</a></li>
-                                                        <li><a href="../br-mouse.html">mouse scenes</a></li>
-                                                        <li><a href="../br-other.html">other scenes</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                    
-                                    </aside>
-                            </div>
-    
-                    <div class="column is-8 canvas">
-                            <div class="box">
-                                <p class="title is-5">
-                                    Example brainrender scene
-                                </p>
-                                <p>
-                                This is an example interactive scene created with
-                                <a href="https://github.com/BrancoLab/BrainRender" target="_blank">brainrender</a>.
-           
-                                It shows how brainrender can be used to visualise the 
-                                location of objects implanted in the brain.
-                                </p>
-                                <hr>
-                                <p class="info">
-                                    You can use your mouse to move the scene around and zoom
-                                    in/out.
-                                </p>
-    
-                            </div>
-                            <div id="canvasTarget">
-    
-    
-                            </div>
-    
-                    </div>
-    
+    <div class="container">
+        <div class="columns">
+            <div class="column is-2 menu-col">
+                <aside class="menu is tablet">
+                    <p class="menu-label">
+                        Federico Claudi
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <ul>
+                                <li><a href="index.html">info</a></li>
+                                <li><a href="projects.html">projects</a></li>
+                                <li><a href="pubb.html">publications</a></li>
+                                <li><a href="teaching.html">teaching</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <p class="menu-label">
+                            brainrender
+                        </p>
+                        <li>
+                            <ul>
+                                <li><a href="../br-info.html">info</a></li>
+                                <li><a href="../br-mouse.html">mouse scenes</a></li>
+                                <li><a href="../br-other.html">other scenes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </aside>
+            </div>
+
+            <div class="column is-8 canvas">
+                <div class='scene-header'>
+                    <p class="title is-5">
+                        Example brainrender scene
+                    </p>
+                    <p>
+                        This is an example interactive scene created with
+                        <a href="https://github.com/BrancoLab/BrainRender" target="_blank">brainrender</a>.
+
+                        It shows how brainrender can be used to visualise the
+                        location of objects implanted in the brain.
+                    </p>
+                    <hr>
+                    <p class="info">
+                        You can use your mouse to move the scene around and zoom
+                        in/out.
+                    </p>
                 </div>
-        </div>
-    
+
+
+
+                    <div id="canvasTarget">
+
+                    </div>
+
+                </div>
+            </div>
+
 <script>
     var K3DInstance,
         k3dParams = {"viewMode":"view","voxelPaintColor":0,"menuVisibility":false,"cameraAutoFit":false,"gridAutoFit":true,"gridVisible":false,"grid":[-16.829700469970703,-366.0700378417969,485.72900390625,13192.5,7564.240234375,10890.599609375],"antialias":3,"screenshotScale":2,"renderingSteps":1,"clearColor":16777215,"clippingPlanes":[],"fpsMeter":false,"lighting":1.2,"time":0,"colorbarObjectId":-1,"fps":25,"axes":["x","y","z"],"cameraNoRotate":false,"cameraNoZoom":false,"cameraNoPan":false,"name":null,"camera_fov":60,"axesHelper":0,"guiVersion":"2.7.0","backendVersion":"2.7.0"},
