@@ -35,6 +35,9 @@ body {
     padding: 12px;
   }
 }
+.container .content .me {
+  margin-top: 42px;
+}
 .container .content .tag {
   display: inline;
   height: 20px;
@@ -300,6 +303,33 @@ body {
   min-height: 200px;
   margin: 24px;
   display: flex;
+}
+
+.br-info a {
+  color: #222a35;
+  cursor: pointer;
+  font-weight: bold;
+}
+.br-info a:hover {
+  color: black;
+}
+.br-info .ver {
+  width: 200px;
+}
+@media (max-width: 960px) {
+  .br-info .ver {
+    display: none;
+  }
+}
+.br-info .hor {
+  width: auto;
+}
+.br-info .txt-col {
+  margin-left: 64px;
+}
+
+.br-header {
+  margin-bottom: 32px;
 }
 
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
