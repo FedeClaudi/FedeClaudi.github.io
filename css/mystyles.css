@@ -247,7 +247,6 @@ body {
 .canvas {
   margin: 24px auto 0px 120px;
   width: 50%;
-  background-color: white;
 }
 @media (max-width: 960px) {
   .canvas {
@@ -256,9 +255,6 @@ body {
     height: 400px;
     margin: 32px auto;
   }
-}
-.canvas div {
-  background-color: white;
 }
 .canvas .info {
   color: #828782;
