@@ -314,6 +314,17 @@ body {
   }
 }
 
+.gallery-tiles {
+  overflow: scroll;
+  height: 100vh;
+}
+.gallery-tiles img {
+  background-color: #f0f0f0;
+}
+.gallery-tiles .is-dark-bg {
+  background-color: #646464;
+}
+
 .br-info a {
   color: #222a35;
   cursor: pointer;
