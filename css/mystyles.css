@@ -315,14 +315,16 @@ body {
 }
 
 .gallery-tiles {
-  overflow: scroll;
   height: 100vh;
 }
 .gallery-tiles img {
   background-color: #f0f0f0;
 }
+.gallery-tiles .is-medium-bg {
+  background-color: #b4b4b4;
+}
 .gallery-tiles .is-dark-bg {
-  background-color: #aaaaaa;
+  background-color: #3c3c3c;
 }
 
 .br-info a {
