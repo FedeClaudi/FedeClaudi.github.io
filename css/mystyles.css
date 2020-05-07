@@ -328,6 +328,10 @@ body {
   background-color: #3c3c3c;
 }
 
+.gallery-tile {
+  cursor: pointer;
+}
+
 .br-info a {
   color: #222a35;
   cursor: pointer;
