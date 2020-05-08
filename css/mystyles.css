@@ -327,6 +327,9 @@ body {
 .gallery-tiles .is-dark-bg {
   background-color: #3c3c3c;
 }
+.gallery-tiles .is-gradientr-bg {
+  background-image: linear-gradient(to right, #fafafa, #787878);
+}
 
 .gallery-tile {
   cursor: pointer;
