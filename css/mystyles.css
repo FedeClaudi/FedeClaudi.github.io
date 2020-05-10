@@ -332,6 +332,9 @@ body {
   margin: auto !important;
   background-color: #f0f0f0;
 }
+.gallery-tiles .is-white-bg {
+  background-color: white;
+}
 .gallery-tiles .is-medium-bg {
   background-color: #b4b4b4;
 }
