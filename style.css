@@ -104,10 +104,10 @@ a:hover {
 }
 .os-projects-content .proj-img {
   max-height: 400px;
-  max-width: 512px;
+  max-width: 100%;
   border-radius: 8px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1060px) {
   .os-projects-content .proj-img {
     display: none;
   }
