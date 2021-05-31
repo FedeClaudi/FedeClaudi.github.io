@@ -74,6 +74,11 @@
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.05);
   min-height: 512px;
 }
+@media (max-width: 800px) {
+  .os-projects-content {
+    box-shadow: none;
+  }
+}
 .os-projects-content .proj-columns {
   padding: 30px 30px;
 }
@@ -86,6 +91,11 @@
   max-height: 400px;
   max-width: 512px;
   border-radius: 8px;
+}
+@media (max-width: 800px) {
+  .os-projects-content .proj-img {
+    display: none;
+  }
 }
 .os-projects-content .proj-title {
   color: #63717e;
@@ -113,6 +123,25 @@
   background-color: #1e1e1e !important;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .cv-hide {
+    display: none;
+  }
+}
+
+.cv-show {
+  display: none;
+}
+@media (max-width: 800px) {
+  .cv-show {
+    display: block;
+  }
+}
+
+.cv-message {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

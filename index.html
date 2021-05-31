@@ -15,7 +15,10 @@
     <!-- <link rel="stylesheet" type="text/css" href="../css/personal.css"> -->
     <script async type="text/javascript" src="../js/bulma.js"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./animations.css">
+
 </head>
+
 
 
 
@@ -187,25 +190,9 @@
 
         <section class="os-projects-content">
         <div id="scidraw" class="content-tab" >
-                <!-- <div class="card proj-card">
-                        <div class="card-image">
-                          <figure class="image is-4by3">
-                            <img src="./scidraw.png" alt="Placeholder image">
-                          </figure>
-                        </div>
-                        <div class="card-content">
-                      
-                          <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                          </div>
-                        </div>
-                      </div> -->
-            <div class="columns proj-columns is-8">
+            <div class="columns proj-columns">
                 <div class="column is-two-fifths">
-                    <img src="./scidraw.png" class="proj-img" style="border: 2px solid #728fbf">
+                    <img src="./scidraw.png" class="proj-img">
 
                 </div>
                 <div class="column">
@@ -368,4 +355,28 @@
           evt.currentTarget.className += " is-active";
           evt.currentTarget.className += " blue";
         }
+        </script>
+
+<script>
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#' + burger.dataset.target);
+        var header = document.querySelector('.headroom');
+        
+        //Bulma responsive nav
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+        
+        //Headroom (using Animate.css styles)
+        var headroom = new Headroom(header, {
+          offset: 105,
+          tolerance: 5,
+          classes: {
+            initial: "animated",
+            pinned: "slideInDown",//custom: slideDown
+            unpinned: "slideOutUp"//custom: slideUp
+          }
+        });
+        headroom.init();
         </script>

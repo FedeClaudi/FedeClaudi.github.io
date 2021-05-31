@@ -12,6 +12,8 @@ $dark-grey: #3c3c3c
 //         color:  $dark-blue
 
 
+    
+
 .hero-columns
     width: 100%
     margin: 0% 10%
@@ -83,6 +85,10 @@ $dark-grey: #3c3c3c
     // border: 1px solid rgba(0, 0, 0, .8)
     min-height: 512px
 
+    @media (max-width: 800px)
+            box-shadow: none
+        
+
     .proj-columns
         padding: 30px 30px
 
@@ -95,6 +101,11 @@ $dark-grey: #3c3c3c
         max-height: 400px
         max-width: 512px
         border-radius: 8px
+
+        @media (max-width: 800px)
+            display: none
+        
+
 
     .proj-title
         color: $blue-grey
@@ -123,3 +134,17 @@ $dark-grey: #3c3c3c
     color: white
     text-align: center
 
+
+
+.cv-hide
+        @media (max-width: 800px)
+            display: none
+
+.cv-show
+    display: none
+
+    @media (max-width: 800px)
+        display: block
+
+.cv-message
+    margin-top: 100px

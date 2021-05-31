@@ -1,0 +1,14 @@
+To update the CV, go to [https://github.com/FedeClaudi/My_CV](repo) and generate a new cv.html with
+```python
+CV().to_html("cv.html")
+```
+
+To edit and visualize the website live:
+1. host the website locally with
+```
+python -m http.server 
+```
+2. automatically update the style with
+   ```
+   sass --watch style.sass style.css
+   ```
