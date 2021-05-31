@@ -1,3 +1,11 @@
+a {
+  font-weight: bold;
+  color: #3c3c3c;
+}
+a:hover {
+  color: #3d79d8;
+}
+
 .hero-columns {
   width: 100%;
   margin: 0% 10%;
@@ -13,7 +21,7 @@
   color: #3c3c3c;
 }
 .links-box a:hover {
-  color: #4771b4;
+  color: #3d79d8;
 }
 
 .title {
@@ -22,6 +30,13 @@
 
 .main {
   padding: 5%;
+}
+
+.interest-tag {
+  background-color: #77a2e6;
+  color: white;
+  border-radius: 50%;
+  height: 12px;
 }
 
 .publications {

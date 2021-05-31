@@ -1,15 +1,17 @@
 $light-blue: #5f8ed8
+$lighter-blue: #77a2e6
+$blue: #3d79d8
 $dark-blue: #4771b4
 $blue-grey: #63717e
 $light-grey: #636363
 $dark-grey: #3c3c3c
 
-// a
-//     font-weight: bold
-//     color: #2828281a
+a
+    font-weight: bold
+    color: $dark-grey
 
-//     &:hover
-//         color:  $dark-blue
+    &:hover
+        color:  $blue
 
 
     
@@ -27,13 +29,19 @@ $dark-grey: #3c3c3c
         font-weight: bold
         color: $dark-grey
         &:hover
-            color: $dark-blue
+            color: $blue
 
 .title
     color: $blue-grey
 
 .main
     padding: 5%
+
+.interest-tag
+    background-color: $lighter-blue
+    color: white
+    border-radius: 50%
+    height: 12px
 
 .publications
     text-align: center

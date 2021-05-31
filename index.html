@@ -149,157 +149,254 @@
     <!-- About -->
     <section class="main">
         <section class="section" id="about">
-                <div class="container">
+            <div class="container">
 
-            <div class="section-heading">
-                <h3 class="title is-2">About Me</h3>
-                <div class="container">
-                    <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in
-                        the
-                        field of
-                        <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for
-                        <strong>Coffee</strong>.
-                        Looking for an opportunity to work and upgrade, as well as being involved in an organization
-                        that
-                        believes
-                        in gaining a competitive edge and giving back to the community.</p>
+                <div class="section-heading">
+                    <h3 class="title is-2">About Me</h3>
+                    <div class="container">
+                        <p>
+                            I'm a PhD Students in Systems neuroscience at the <a
+                                href="https://www.sainsburywellcome.org/web/" target="_blank">Sainsbury Wellcome
+                                Centre</a> - in the
+                            <a href="https://www.branco-lab.org/people/" target="_blank">Branco Lab</a>.
+                            I trained as a biologist in Milano and did a master and research internship in the <a
+                                href="http://duguidlab.com/en/" target="_blank">Duguid lab</a> in Edinburgh.
+                        </p>
+                        <hr>
+                        <p>
+                            I started my PhD with an experimental project aimed at investigating the behavioural bases
+                            of decision making under threat. More recently, my focus
+                            has moved towards a more computational/theoretical perspective: my current interests revolve
+                            around ideas related to the
+                            <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-neuro-092619-094115"
+                                target="_blank">computation through dynamics</a> framework.
+                            I'm interested in the study of population dynamics and how they related to computations
+                            performed by neural circuits.
+                        </p>
+                        <p>
+                            In my current project I'm investigating the role of several brain regions in the control of
+                            goal directed locomotion using multi-units recordings
+                            in freely moving animals and RNNs.
+                        </p>
+                        <hr>
+                        <p>
+                            Alongside my research projects, I was lucky enough to get involved in several <a
+                                href=#os-projects>open source projects</a> aimed at providing
+                            software which can be freely used by the research community.
+                        </p>
+                        <hr>
+                        <div class="columns tags">
+                                <div class="column ">
+                                    Interests:
+                                    </div>
+                            <div class="column tag  is-info is-light">
+                                population dynamics
+                            </div>
+                            <div class="column tag  is-info is-light">
+                                RNN
+                            </div>
+                            <div class="column tag  is-info is-light">
+                                topology
+                            </div>
+                            <div class="column tag  is-info is-light">
+                                differential geometry
+                            </div>
+                            <div class="column tag  is-info is-light">
+                                control theory
+                            </div>
+                            <div class="column tag  is-info is-light">
+                                motor control
+                            </div>
+                            <div class="column tag  is-info is-light">
+                                locomotion
+                            </div>
+                            <div class="column tag  is-info is-light">
+                                navigation
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
     </section>
 
-        <!-- os-projects -->
-        <section class="hero is-fullwidth blue-hero" id="os-projects">
-                <div class="hero-body">
-                        <h3 class="title is-2">Open source projects</h3>
+    <!-- os-projects -->
+    <section class="hero is-fullwidth blue-hero" id="os-projects">
+        <div class="hero-body">
+            <h3 class="title is-2">Open source projects</h3>
+        </div>
+
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth is-large">
+                <div class="container">
+                    <ul>
+                        <li class="tab is-active blue" onclick="openTab(event,'scidraw')"><a><b>scidraw.io</b></a></li>
+                        <li class="tab" onclick="openTab(event,'brainrender')"><a><b>brainrender</b></a></li>
+                        <li class="tab" onclick="openTab(event,'brainglobe')"><a><b>brainglobe</b></a></li>
+                    </ul>
                 </div>
+            </nav>
+        </div>
+    </section>
 
-                <div class="hero-foot">
-                        <nav class="tabs is-boxed is-fullwidth is-large">
-                                <div class="container">
-                                  <ul>
-                                    <li class="tab is-active blue" onclick="openTab(event,'scidraw')"><a ><b>scidraw.io</b></a></li>
-                                    <li class="tab" onclick="openTab(event,'brainrender')"><a ><b>brainrender</b></a></li>
-                                    <li class="tab" onclick="openTab(event,'brainglobe')"><a ><b>brainglobe</b></a></li>
-                                  </ul>
-                                </div>
-                              </nav>
-                          </div>
-        </section>
-
-        <section class="os-projects-content">
-        <div id="scidraw" class="content-tab" >
+    <section class="os-projects-content">
+        <div id="scidraw" class="content-tab">
             <div class="columns proj-columns">
                 <div class="column is-two-fifths">
                     <img src="./scidraw.png" class="proj-img">
 
                 </div>
                 <div class="column">
-                        <h4 class='proj-title'>scidraw.io</h5><br>
-                        <p>This is a description of what scidraw is.. why... with who... links...</p>
+                    <h4 class='proj-title'>scidraw.io</h5><br>
+                        <p>Link: <a href="https://scidraw.io/" target="_blank">scidraw.io/</a></p><br>
+                        <p>
+                            <b class='blue'>Scidraw.io</b> is a free open source repository of high quality drawings of animals, 
+                            scientific setups and everything that might be useful for generating illutrations for presentations and papers.
+                        </p>
+                        <p>
+                            Content hosted on <b class='blue'>scidraw.io</b> is generated by individual scientists and is made freely available for anyone to use. 
+                        </p>
+                        <hr>
+                        <p>
+                            I've created <b class='blue'>scidraw.io</b> together with <a href="https://harston.io" target="_blank">Alex Harston</a>.
+                        </p>
                 </div>
             </div>
         </div>
 
 
-            <div id="brainrender" class="content-tab" style="display: none">
-                    <div class="columns proj-columns">
-                    <div class="column is-two-fifths">
-                            <img src="./aba.png" class="proj-img">
-        
-                        </div>
-                        <div class="column">
-                                <h4 class='proj-title'>brainrender</h5><br>
-                                <p>This is a description of what brainrender is.. why... with who... links...</p>
-                        </div>
-                    </div>
-                    </div>
-            </div>
+        <div id="brainrender" class="content-tab" style="display: none">
+            <div class="columns proj-columns">
+                <div class="column is-two-fifths">
+                    <img src="./aba.png" class="proj-img">
 
-
-                <div id="brainglobe" class="content-tab" style="display: none">
-                        <div class="columns proj-columns">
-                        <div class="column is-two-fifths">
-                                <img src="./BG_logo_full.png" class="proj-img">
-            
-                            </div>
-                            <div class="column">
-                                    <h4 class='proj-title'>brainglobe</h5><br>
-                                    <p>This is a description of what brainglobe is.. why... with who... links...</p>
-                            </div>
-                        </div>
-                        </div>
                 </div>
-        </section>
+                <div class="column">
+                    <h4 class='proj-title'>brainrender</h5><br>
+                        <p>Link: <a href="https://docs.brainrender.info/" target="_blank">docs.brainrender.info</a></p><br>
+                        <p>
+                            <b class='blue'>Brainrender</b> is an open-source Python software for interactive 3D visualization
+                            of neuroanatomical datasets.
+                        </p>
+                        <p>
+                            <b class='blue'>Brainrender</b> makes it easy to visualize in 3D anatomical data from publicly available datasets and generated within individual
+                            laboratories explore the intricated 3D structure of individual neurons and brain regions. By facilitating the cration of high quality renderings, 
+                            images and interactive visualizations <b class='blue'>Brainrender</b> also aims to improve how anatomical data are disseminated by the research community.
+                        </p>
+                        <hr>
+                        <p>
+                            <b class='blue'>Brainrender</b> is part of the BrainGlobe suite of python software for computational neuroanatomy.</br>
+                            You can read about <b class='blue'>Brainrender</b> <a href="https://elifesciences.org/articles/65751" target="_blank">here</a>.
+
+                        </p>
+                        
+                        
+            </div>
+        </div>
+        </div>
+
+
+        <div id="brainglobe" class="content-tab" style="display: none">
+            <div class="columns proj-columns">
+                <div class="column is-two-fifths">
+                    <img src="./BG_logo_full.png" class="proj-img">
+
+                </div>
+                <div class="column">
+                    <h4 class='proj-title'>brainglobe</h5><br>
+                        <p>Link: <a href="https://docs.brainglobe.info/" target="_blank">docs.brainglobe.info</a></p><br>
+                        <p>
+                                The core goal of <b class='blue'>BrainGlobe</b> is to develop a suite of Python-based software tools for computational neuroanatomy. 
+                                We developed several software packages to access, analyze and visualize anatomical data, 
+                                by ensuring the interoperability of all of BrainGlobe's software we aim to facilitate the 
+                                development of analysis pipelines and facilitate the process of going from raw data to publication-ready content
+                        </p>
+                        <hr>
+                        <p>
+                                <b class='blue'>BrainGlobe</b> was developed with
+                                <a href="https://twitter.com/adamltyson" target="_blank">Adam Tyson</a> and 
+                                <a href="https://twitter.com/l_petrucco" target="_blank">Luigi Petrucco</a>.<br>
+                                You can read about <b class='blue'>BrainGlobe</b> <a href="https://brainglobe.info/" target="_blank">here</a>.
+                        </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
 
 
-        <!-- Publications -->
-        <section class="main">
+    <!-- Publications -->
+    <section class="main">
         <section class="section" id="publications">
-                <div class="container">
+            <div class="container">
 
-            <div class="section-heading">
-                <h3 class="title is-2">Publications</h3>
+                <div class="section-heading">
+                    <h3 class="title is-2">Publications</h3>
 
-            </div>
-            <div class="container publications">
-                <h4 class="year">2021</h4>
-                <div class='publication'>
-                    <b class="pub-title">Visualizing anatomically registered data with brainrender</b>
-                    <p><b>Federico Claudi</b>, Adam L Tyson, Luigi Petrucco, Troy W Margrie, Ruben Portugues, Tiago
-                        Branco</p>
-                    <p><i>eLife</i></p>
-                    <p>
-                        <a class="pub-link" href="https://elifesciences.org/articles/65751"
-                            target="_blank">doi.org/10.7554/eLife.65751</a>
-                    </p>
                 </div>
+                <div class="container publications">
+                    <h4 class="year">2021</h4>
+                    <div class='publication'>
+                        <b class="pub-title">Visualizing anatomically registered data with brainrender</b>
+                        <p><b>Federico Claudi</b>, Adam L Tyson, Luigi Petrucco, Troy W Margrie, Ruben Portugues, Tiago
+                            Branco</p>
+                        <p><i>eLife</i></p>
+                        <p>
+                            <a class="pub-link" href="https://elifesciences.org/articles/65751"
+                                target="_blank">doi.org/10.7554/eLife.65751</a>
+                        </p>
+                    </div>
 
-                <div class='publication'>
-                    <b class="pub-title">Tools for accurate post hoc determination of marker location within whole-brain
-                        microscopy images</b>
-                    <p>Adam L Tyson, Mateo Vélez-Fort, Charly V Rousseau, Lee Cossell, Chryssanthi Tsitoura, Horst A
-                        Obenhaus, <b>Federico Claudi</b>, Stephen C Lenzi, Tiago Branco, Troy W Margrie</p>
-                    <p><i>bioRxiv</i></p>
-                    <p>
-                        <a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2021.05.21.445133v1.abstract"
-                            target="_blank">doi.org/10.1101/2021.05.21.445133 </a>
-                    </p>
-                </div>
-                <hr>
+                    <div class='publication'>
+                        <b class="pub-title">Tools for accurate post hoc determination of marker location within
+                            whole-brain
+                            microscopy images</b>
+                        <p>Adam L Tyson, Mateo Vélez-Fort, Charly V Rousseau, Lee Cossell, Chryssanthi Tsitoura, Horst A
+                            Obenhaus, <b>Federico Claudi</b>, Stephen C Lenzi, Tiago Branco, Troy W Margrie</p>
+                        <p><i>bioRxiv</i></p>
+                        <p>
+                            <a class="pub-link"
+                                href="https://www.biorxiv.org/content/10.1101/2021.05.21.445133v1.abstract"
+                                target="_blank">doi.org/10.1101/2021.05.21.445133 </a>
+                        </p>
+                    </div>
+                    <hr>
 
-                <h4 class="year">2020</h4>
-                <div class='publication'>
-                    <b class="pub-title">BrainGlobe Atlas API: a common interface for neuroanatomical atlases</b>
-                    <p><b>Federico Claudi</b>, Luigi Petrucco, Adam Tyson, Tiago Branco, Troy Margrie, Ruben Portugues
-                    </p>
-                    <p><i>JOSS</i></p>
-                    <p>
-                        <a class="pub-link" href="https://joss.theoj.org/papers/10.21105/joss.02668"
-                            target="_blank">doi.org/10.21105/joss.02668 </a>
-                    </p>
-                </div>
-                <hr>
+                    <h4 class="year">2020</h4>
+                    <div class='publication'>
+                        <b class="pub-title">BrainGlobe Atlas API: a common interface for neuroanatomical atlases</b>
+                        <p><b>Federico Claudi</b>, Luigi Petrucco, Adam Tyson, Tiago Branco, Troy Margrie, Ruben
+                            Portugues
+                        </p>
+                        <p><i>JOSS</i></p>
+                        <p>
+                            <a class="pub-link" href="https://joss.theoj.org/papers/10.21105/joss.02668"
+                                target="_blank">doi.org/10.21105/joss.02668 </a>
+                        </p>
+                    </div>
+                    <hr>
 
-                <h4 class="year">2019</h4>
-                <div class='publication'>
-                    <b class="pub-title">Cerebellar-recipient motor thalamus drives behavioral context-specific movement
-                        initiation</b>
-                    <p>Joshua Dacre, Matt Colligan, Julian Ammer, Julia Schiemann, Thomas Clarke, Victor Chamosa-Pino,
-                        <b>Federico Claudi</b>, J Alex Harston, Constantinos Eleftheriou, Janelle MP Pakan, Cheng-Chiu
-                        Huang, Adam Hantman, Nathalie L Rochefort, Ian Duguid </p>
-                    <p><i>bioRxiv</i></p>
-                    <p>
-                        <a class="pub-link" href="https://www.biorxiv.org/content/10.1101/802124v1.abstract"
-                            target="_blank">doi.org/10.1101/802124 </a>
-                    </p>
-                </div>
-                <hr>
+                    <h4 class="year">2019</h4>
+                    <div class='publication'>
+                        <b class="pub-title">Cerebellar-recipient motor thalamus drives behavioral context-specific
+                            movement
+                            initiation</b>
+                        <p>Joshua Dacre, Matt Colligan, Julian Ammer, Julia Schiemann, Thomas Clarke, Victor
+                            Chamosa-Pino,
+                            <b>Federico Claudi</b>, J Alex Harston, Constantinos Eleftheriou, Janelle MP Pakan,
+                            Cheng-Chiu
+                            Huang, Adam Hantman, Nathalie L Rochefort, Ian Duguid </p>
+                        <p><i>bioRxiv</i></p>
+                        <p>
+                            <a class="pub-link" href="https://www.biorxiv.org/content/10.1101/802124v1.abstract"
+                                target="_blank">doi.org/10.1101/802124 </a>
+                        </p>
+                    </div>
+                    <hr>
 
-                <!-- template -->
-                <!-- <div class='publication'>
+                    <!-- template -->
+                    <!-- <div class='publication'>
                     <b class="pub-title"></b>
                     <p><b>Federico Claudi</b>, </p>
                     <p><i>eLife</i></p>
@@ -307,7 +404,7 @@
                     <a class="pub-link" href="" target="_blank"></a>
                     </p>
             </div> -->
-            </div>
+                </div>
             </div>
         </section>
 
@@ -324,9 +421,10 @@
                 <div class="columns">
                     <div class="column is-6 is-offset-3">
                         <div class="box">
-                           <p>I'm currently working at: the <a href="https://www.sainsburywellcome.org/web/" target="_blank">Sainsbury Wellcome Centre</a> in London, UK.</p>
-                           <hr>
-                           <p><b>email</b>: federico.claudi.17@ucl.ac.uk</p>
+                            <p>I'm currently working at: the <a href="https://www.sainsburywellcome.org/web/"
+                                    target="_blank">Sainsbury Wellcome Centre</a> in London, UK.</p>
+                            <hr>
+                            <p><b>email</b>: federico.claudi.17@ucl.ac.uk</p>
                         </div>
                     </div>
                 </div>
@@ -340,43 +438,43 @@
 </html>
 
 <script>
-        function openTab(evt, tabName) {
-          var i, x, tablinks;
-          x = document.getElementsByClassName("content-tab");
-          for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tab");
-          for (i = 0; i < x.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" is-active", "");
-              tablinks[i].className = tablinks[i].className.replace(" blue", "");
-          }
-          document.getElementById(tabName).style.display = "block";
-          evt.currentTarget.className += " is-active";
-          evt.currentTarget.className += " blue";
+    function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("content-tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
         }
-        </script>
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+            tablinks[i].className = tablinks[i].className.replace(" blue", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " is-active";
+        evt.currentTarget.className += " blue";
+    }
+</script>
 
 <script>
-        var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#' + burger.dataset.target);
-        var header = document.querySelector('.headroom');
-        
-        //Bulma responsive nav
-        burger.addEventListener('click', function(){
-          burger.classList.toggle('is-active');
-          nav.classList.toggle('is-active');
-        });
-        
-        //Headroom (using Animate.css styles)
-        var headroom = new Headroom(header, {
-          offset: 105,
-          tolerance: 5,
-          classes: {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#' + burger.dataset.target);
+    var header = document.querySelector('.headroom');
+
+    //Bulma responsive nav
+    burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+    });
+
+    //Headroom (using Animate.css styles)
+    var headroom = new Headroom(header, {
+        offset: 105,
+        tolerance: 5,
+        classes: {
             initial: "animated",
-            pinned: "slideInDown",//custom: slideDown
-            unpinned: "slideOutUp"//custom: slideUp
-          }
-        });
-        headroom.init();
-        </script>
+            pinned: "slideInDown", //custom: slideDown
+            unpinned: "slideOutUp" //custom: slideUp
+        }
+    });
+    headroom.init();
+</script>
