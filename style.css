@@ -102,4 +102,17 @@
   color: #4771b4;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                     CV                                     */
+/* -------------------------------------------------------------------------- */
+.cv-body {
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #1e1e1e !important;
+  color: white;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
