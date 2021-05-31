@@ -1,226 +1,371 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<style>
-.r1 {font-weight: bold}
-.r2 {color: #ffa726}
-.r3 {color: #ffcc80}
-.r4 {color: #ff7043}
-.r5 {color: #ffab91; font-weight: bold}
-.r6 {color: #90caf9; font-weight: bold}
-.r7 {color: #90caf9; font-weight: bold; text-decoration: underline}
-.r8 {color: #ffa726; font-weight: bold}
-.r9 {color: #7d7d7d}
-.r10 {color: #a5d6a7; font-weight: bold; font-style: italic}
-.r11 {color: #8e754f}
-.r12 {color: #008000; font-weight: bold}
-.r13 {color: #ffca28}
-.r14 {color: #fb8c00}
-.r15 {color: #ffcc80; font-weight: bold}
-.r16 {color: #bdbdbd}
-.r17 {color: #7d7d7d; font-style: italic}
-.r18 {color: #b0bec5}
-.r19 {color: #ffcc80; font-weight: bold; font-style: italic}
-.r20 {color: #ec407a; font-weight: bold}
-.r21 {color: #78909c}
-.r22 {color: #b0bec5; font-style: italic}
-.r23 {color: #43a047}
-.r24 {color: #66bb6a; font-weight: bold}
-.r25 {color: #66bb6a}
-body {
-    color: #dcdcdc;
-    background-color: #1e1e1e;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Claudi</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/personal.css"> -->
+    <script async type="text/javascript" src="../js/bulma.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
-<html>
+
+
+
 <body>
-    <code>
-        <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span class="r1">                                                                                                                                                                                    </span>
-                                 <span class="r2">name:</span>  <span class="r1">Federico Claudi</span>                                                                                                                             
-                                <span class="r2">email:</span>  <span class="r1">federico.claudi.17@ucl.ac.uk</span>                                                                                                                
-                                                                                                                                                                                    
-                              <span class="r3">website:</span>  <span class="r1">https://fedeclaudi.github.io</span>                                                                                                                
-                               <span class="r3">github:</span>  <span class="r1">https://github.com/FedeClaudi</span>                                                                                                               
-                              <span class="r3">twitter:</span>  <span class="r1">https://twitter.com/Federico_claudi</span>                                                                                                         
+    <!-- Navigation bar -->
+    <nav class="navbar is-link is-fixed-top">
+        <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">
+                    <span class="icon">
+                        <i class="fas fa-info"></i>
+                    </span>
+                    <span>Info</span>
+                </a>
+                <a class="navbar-item" href="#publications">
+                    <span class="icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <span>Publications</span>
+                </a>
+                <a class="navbar-item" href="cv.html">
+                    <span class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span>Resume</span>
+                </a>
+                <a class="navbar-item" href="#os-projects">
+                    <span class="icon">
+                        <i class="fas fa-th-list"></i>
+                    </span>
+                    <span>Open Source</span>
+                </a>
+                <a class="navbar-item" href="#contact">
+                    <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero is-link is-fullheight is-fullheight-with-navbar">
+        <div class="hero-body">
+            <div class="columns hero-columns">
+                <div class="column">
+                    <div class="container">
+                        <h1 class="title is-1">
+                            Federico Claudi
+                        </h1>
+
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <!-- Links -->
+                    <div class="box links-box">
+
+                        <!-- Github -->
+                        <div class="level">
+                            <a href="https://github.com/FedeClaudi" target="_blank">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <span class="icon is-large">
+                                            <i class="fab fa-lg fa-github"></i>
+                                        </span>
+                                    </div>
+                                    <div class="level-item">
+                                        GitHub
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
 
-<span class="r4">╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮</span>
-<span class="r4">│</span>  <span class="r1">                                                                                                                                                                  </span>  <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r5">Curriculum Vitae</span>                                                                                                                                                   <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r5">────────────────</span>                                                                                                                                                   <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r6">         </span><span class="r7">Education:</span>                                                                                                                                                <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r1">      Date        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Title</span><span class="r1">                                        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Supervisor</span><span class="r1">                                  </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Insitute</span><span class="r1">                     </span>   <span class="r4">│</span>
-<span class="r4">│</span>   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   <span class="r4">│</span>
-<span class="r4">│</span>     <span class="r9">(2017 - now )</span>           <span class="r3">PhD in </span><span class="r10">"Experimental and theoretical systems</span>         Dr. Tiago Branco                                    Sainsbury Wellcome Centre <span class="r9">UCL</span>   <span class="r4">│</span>
-<span class="r4">│</span>                             <span class="r10">neuroscience"</span>                                                                                                                            <span class="r4">│</span>
-<span class="r4">│</span>     <span class="r9">(2015 - 2016)</span>           <span class="r3">Master in Research in </span><span class="r10">"Integrative </span>                  Dr. Ian Duguid                                      University of Edinburgh         <span class="r4">│</span>
-<span class="r4">│</span>                             <span class="r10">Neuroscience"</span>                                                                                                                            <span class="r4">│</span>
-<span class="r4">│</span>     <span class="r9">(2012 - 2015)</span>           <span class="r3">Bachelor in </span><span class="r10">"Medical Biotechnologies"</span>                Dr. Ian Duguid                                      University of Edinburgh         <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r6">         </span><span class="r7">Extracurricular education</span>                                                                                                                                 <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r1">      Date        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Title</span><span class="r1">                                        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Insitute</span><span class="r1">                                    </span> <span class="r1">     </span> <span class="r1">                              </span>   <span class="r4">│</span>
-<span class="r4">│</span>   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2015a</span>               <span class="r3">Online Course in </span><span class="r10">"Medical Neuroscience"</span>              Duke University, USA<span class="r9">  Attended on: </span>                                                 <span class="r4">│</span>
-<span class="r4">│</span>                                                                                  <span class="r9">coursera.org</span>                                                                        <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2015b</span>               <span class="r3">Online Course in </span><span class="r10">"Synapses, Neurons and </span>             Hebrew University, Jerusalem, Israel<span class="r9">  </span>                                              <span class="r4">│</span>
-<span class="r4">│</span>                             <span class="r10">Brain"</span>                                               <span class="r9">Attended on: coursera.org</span>                                                           <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r6">         </span><span class="r7">Research experience</span>                                                                                                                                       <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r1">      Date       </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Name</span><span class="r1">                                        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Insitute</span><span class="r1">                                   </span> <span class="r1">    </span> <span class="r1"> </span><span class="r8">Supervisor</span><span class="r1">                   </span> <span class="r1">   </span>   <span class="r4">│</span>
-<span class="r4">│</span>   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   <span class="r4">│</span>
-<span class="r4">│</span>    <span class="r9">(2017 - now )</span>           <span class="r3">PhD research project </span><span class="r11">(4 years)</span>                      Sainsbury Wellcome Centre,<span class="r9"> UK</span>                     Dr. Tiago Branco.                   <span class="r4">│</span>
-<span class="r4">│</span>    <span class="r9">(2016 - 2017)</span>           <span class="r3">Visiting scientist </span><span class="r11">(1 year)</span>                         University of Edinburgh,<span class="r9"> UK</span>                       Dr. Ian Duguid.                     <span class="r4">│</span>
-<span class="r4">│</span>    <span class="r9">(2015 - 2016)</span>           <span class="r3">Master project </span><span class="r11">(1 year)</span>                             University of Edinburgh,<span class="r9"> UK</span>                       Dr. Ian Duguid.                     <span class="r4">│</span>
-<span class="r4">│</span>    <span class="r9">(2015 - 2015)</span>           <span class="r3">Bachelor dissertation project </span><span class="r11">(4 months)</span>            Katholiege Universitei,<span class="r9"> Leuven, Belgium</span>                                               <span class="r4">│</span>
-<span class="r4">│</span>    <span class="r9">(2011 - 2011)</span>           <span class="r3">Summer internship </span><span class="r11">(1 month)</span>                         Università degli Studi,<span class="r9"> Milano, Italy</span>                                                 <span class="r4">│</span>
-<span class="r4">│</span>    <span class="r9">(2010 - 2010)</span>           <span class="r3">Summer internship </span><span class="r11">(1 month)</span>                         Columbia university,<span class="r9"> New York City, USA</span>           Dr. Filippo Mancia                  <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r6">         </span><span class="r7">Teaching experience</span>                                                                                                                                       <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r1">      Date        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Name</span><span class="r1">                                         </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Insitute</span><span class="r1">                                    </span> <span class="r1">     </span> <span class="r1">                              </span>   <span class="r4">│</span>
-<span class="r4">│</span>   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2020</span>                <span class="r3">Teaching Assistant at </span><span class="r10">NeuroMatchAcademy.</span>             Neuromatch Academy                                                                  <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2019</span>                <a href="https://www.xhmfoundation.com/braincamp-kosovo-2019"><span class="r3">Teacher at </span></a><a href="https://www.xhmfoundation.com/braincamp-kosovo-2019"><span class="r10">Braincamp</span></a>                                 ATOMI institute,<span class="r9"> Pristina</span>                                                           <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2016</span>                <span class="r3">Training of colleagues in microsurgical and </span>         University of Edinburgh,<span class="r9"> Edinburgh</span>                                                  <span class="r4">│</span>
-<span class="r4">│</span>                             <span class="r3">behavioural techniques</span>                                                                                                                   <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r6">         </span><span class="r7">Poster presentations</span>                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r1">      Date       </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Title</span><span class="r1">                                       </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Authors</span><span class="r1">                                    </span> <span class="r1">    </span> <span class="r1"> </span><span class="r8">Conference</span><span class="r1">                   </span> <span class="r1">   </span>   <span class="r4">│</span>
-<span class="r4">│</span>   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2020</span>               <span class="r3">Fast unsupervised learning and innate </span>              <span class="r12">Federico Claudi</span>, Dario Campagner, Tiago           Bernstein Conference                <span class="r4">│</span>
-<span class="r4">│</span>                            <span class="r3">heuristics support escape path selection</span>            Branco                                                                                <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r6">         </span><span class="r7">Awards and fellowships</span>                                                                                                                                    <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">│</span>   <span class="r1">      Date        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Title</span><span class="r1">                                        </span> <span class="r1">     </span> <span class="r1"> </span><span class="r8">Institution</span><span class="r1">                                 </span> <span class="r1">     </span> <span class="r1">                              </span>   <span class="r4">│</span>
-<span class="r4">│</span>   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2020</span>                <span class="r3">Wellcome Trust 4-Year PhD Fellowship.</span>                Sainsbury Wellcome Centre,<span class="r9"> University </span>                                              <span class="r4">│</span>
-<span class="r4">│</span>                                                                                  <span class="r9">College London</span>                                                                      <span class="r4">│</span>
-<span class="r4">│</span>         <span class="r9">2015</span>                <span class="r3">Erasmus scholarship for the bachelor project</span>         Università degli Studi,<span class="r9"> Milano, Italy</span>                                               <span class="r4">│</span>
-<span class="r4">│</span>                             <span class="r3">in Leuven, Belgium. </span>                                                                                                                     <span class="r4">│</span>
-<span class="r4">│</span>                                                                                                                                                                      <span class="r4">│</span>
-<span class="r4">╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</span>
-<span class="r13">╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮</span>
-<span class="r13">│</span>  <span class="r1">                                                                                                                                                                  </span>  <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r8">Publications</span>                                                                                                                                                       <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r8">────────────</span>                                                                                                                                                       <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">│</span>  <span class="r1">                                                                                                                                                          </span>  <span class="r14">│</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">│</span>   <span class="r15">Federico Claudi</span>                                                                                                                                            <span class="r14">│</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">│</span>   <span class="r16">PhD Student, University College London</span>                                                                                                                     <span class="r14">│</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">│</span>   <span class="r17">Interests: Neuroscience behaviour </span>                                                                                                                         <span class="r14">│</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">│</span>                                                                                                                                        <span class="r18">Total citations: </span><span class="r2">25</span>   <span class="r14">│</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">│</span>                                                                                                                                                 <span class="r18">H-index: </span><span class="r2">2</span>   <span class="r14">│</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">│</span>                                                                                                                                                              <span class="r14">│</span>   <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r14">╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                 <span class="r5">2020</span>                                                                                 <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r19">BrainGlobe Atlas API: a common interface for neuroanatomical atlases</span>                                                                                               <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r20">Federico Claudi</span>,<span class="r21"> Luigi Petrucco</span>,<span class="r21"> Adam L Tyson</span>,<span class="r21"> Tiago Branco</span>,<span class="r21"> Troy W Margrie</span>,<span class="r21"> Ruben Portugues</span>,                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r22">Journal of Open Source Software</span>                                                                                                                                    <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                       <span class="r18">Citations: </span><span class="r2">2</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r19">Brainrender. A python based software for visualisation of neuroanatomical and morphological data.</span>                                                                  <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r20">Federico Claudi</span>,<span class="r21"> Adam L Tyson</span>,<span class="r21"> Tiago Branco</span>,                                                                                                                       <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r22">BioRxiv</span>                                                                                                                                                            <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                       <span class="r18">Citations: </span><span class="r2">2</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r19">Brainrender: a python-based software for visualizing anatomically registered data</span>                                                                                  <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r20">Federico Claudi</span>,<span class="r21"> Adam L Tyson</span>,<span class="r21"> Luigi Petrucco</span>,<span class="r21"> Troy W Margrie</span>,<span class="r21"> Ruben Portugues</span>,<span class="r21"> Tiago Branco</span>,                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r22">bioRxiv</span>                                                                                                                                                            <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                       <span class="r18">Citations: </span><span class="r2">0</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r13">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                 <span class="r5">2019</span>                                                                                 <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r19">Cerebellar-recipient motor thalamus drives behavioral context-specific movement initiation</span>                                                                         <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r21">Joshua Dacre</span>,<span class="r21"> Matt Colligan</span>,<span class="r21"> Julian Ammer</span>,<span class="r21"> Julia Schiemann</span>,<span class="r21"> Thomas Clarke</span>,<span class="r21"> Victor Chamosa-Pino</span>,<span class="r20"> Federico Claudi</span>,<span class="r21"> J Alex Harston</span>,<span class="r21"> Constantinos Eleftheriou</span>,<span class="r21"> </span>        <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r21">Janelle MP Pakan</span>,<span class="r21"> Cheng-Chiu Huang</span>,<span class="r21"> Adam Hantman</span>,<span class="r21"> Nathalie L Rochefort</span>,<span class="r21"> Ian Duguid</span>,                                                                                <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r22">BioRxiv</span>                                                                                                                                                            <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                       <span class="r18">Citations: </span><span class="r2">2</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r13">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                 <span class="r5">2016</span>                                                                                 <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r19">CXCL4 and CXCL4L1 differentially affect monocyte survival and dendritic cell differentiation and phagocytosis</span>                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r21">Mieke Gouwy</span>,<span class="r21"> Pieter Ruytinx</span>,<span class="r21"> Egle Radice</span>,<span class="r20"> Federico Claudi</span>,<span class="r21"> Katrien Van Raemdonck</span>,<span class="r21"> Raffaella Bonecchi</span>,<span class="r21"> Massimo Locati</span>,<span class="r21"> Sofie Struyf</span>,                                <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r22">PloS one</span>                                                                                                                                                           <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                      <span class="r18">Citations: </span><span class="r2">19</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r19">CXCL4L1 induces a unique transcriptional profile in CD14 (+) peripheral blood monocytes</span>                                                                            <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r21">P Ruytinx</span>,<span class="r21"> E Radice</span>,<span class="r20"> F Claudi</span>,<span class="r21"> K Van Raemdonck</span>,<span class="r21"> M Locati</span>,<span class="r21"> S Struyf</span>,<span class="r21"> M Gouwy</span>,                                                                                       <span class="r13">│</span>
-<span class="r13">│</span>   <span class="r22">European Journal Of Clinical Investigation</span>                                                                                                                         <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                       <span class="r18">Citations: </span><span class="r2">0</span>   <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">│</span>                                                                                                                                                                      <span class="r13">│</span>
-<span class="r13">╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</span>
-<span class="r23">╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮</span>
-<span class="r23">│</span>  <span class="r1">                                                                                                                                                                  </span>  <span class="r23">│</span>
-<span class="r23">│</span>   <span class="r24">Open source projects</span>                                                                                                                                               <span class="r23">│</span>
-<span class="r23">│</span>   <span class="r24">────────────────────</span>                                                                                                                                               <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>   <span class="r25">brainglobe</span>                                                                                                                                                         <span class="r23">│</span>
-<span class="r23">│</span>   The brainglobe atlas API (BG-AtlasAPI) provides a common interface for programmers to download and process brain atlas data from multiple sources.                 <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                              <span class="r21">Github url:</span> <span class="r9">https://github.com/brainglobe/bg-atlasapi</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                      <span class="r21">Documentation:</span> <span class="r9">https://docs.brainglobe.info/bg-atlasapi/usage</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                          <span class="r18">Stars: </span><span class="r2">34</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>   <span class="r25">brainrender</span>                                                                                                                                                        <span class="r23">│</span>
-<span class="r23">│</span>   brainrender is a python package for the visualization of three dimensional neuro-anatomical data. The goal of brainrender is to facilitate the exploration and     <span class="r23">│</span>
-<span class="r23">│</span>   dissemination of neuro-anatomical data.                                                                                                                            <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                              <span class="r21">Github url:</span> <span class="r9">https://github.com/brainglobe/brainrender</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                      <span class="r21">Documentation:</span> <span class="r9">https://docs.brainrender.info/</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                         <span class="r18">Stars: </span><span class="r2">161</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>   <span class="r25">pyinspect</span>                                                                                                                                                          <span class="r23">│</span>
-<span class="r23">│</span>   pyinspect, the python package for lazy programmers. Inspect your code, improve tracebacks and automatic googling for bug fixes.                                    <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                <span class="r21">Github url:</span> <span class="r9">https://github.com/FedeClaudi/pyinspect</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                             <span class="r21">Documentation:</span> <span class="r9">https://github.com/FedeClaudi/pyinspect</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                          <span class="r18">Stars: </span><span class="r2">64</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>   <span class="r25">refy</span>                                                                                                                                                               <span class="r23">│</span>
-<span class="r23">│</span>   A better literature recomendation system.                                                                                                                          <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                     <span class="r21">Github url:</span> <span class="r9">https://github.com/FedeClaudi/refy</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                  <span class="r21">Documentation:</span> <span class="r9">https://github.com/FedeClaudi/refy</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                           <span class="r18">Stars: </span><span class="r2">8</span>   <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">│</span>                                                                                                                                                                      <span class="r23">│</span>
-<span class="r23">╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</span>
-</pre>
-    </code>
+                        <!-- Twitter -->
+                        <div class="level">
+                            <a href="https://twitter.com/Federico_claudi" target="_blank">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <span class="icon is-large">
+                                            <i class="fab fa-lg fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                    <div class="level-item">
+                                        Twitter
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- scholar -->
+                        <div class="level">
+                            <a href="https://scholar.google.com/citations?user=8eDOmAQAAAAJ&hl=en" target="_blank">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <span class="icon is-large">
+                                            <i class="fas fa-lg fa-book-open"></i>
+                                        </span>
+                                    </div>
+                                    <div class="level-item">
+                                        Google Scholar
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <hr>
+                        <div class="container">
+                            Currently at: <a href="https://www.branco-lab.org/people/" target="_blank">Branco Lab</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="main">
+        <section class="section" id="about">
+                <div class="container">
+
+            <div class="section-heading">
+                <h3 class="title is-2">About Me</h3>
+                <div class="container">
+                    <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in
+                        the
+                        field of
+                        <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for
+                        <strong>Coffee</strong>.
+                        Looking for an opportunity to work and upgrade, as well as being involved in an organization
+                        that
+                        believes
+                        in gaining a competitive edge and giving back to the community.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+
+        <!-- os-projects -->
+        <section class="hero is-fullwidth blue-hero" id="os-projects">
+                <div class="hero-body">
+                        <h3 class="title is-2">Open source projects</h3>
+                </div>
+
+                <div class="hero-foot">
+                        <nav class="tabs is-boxed is-fullwidth is-large">
+                                <div class="container">
+                                  <ul>
+                                    <li class="tab is-active blue" onclick="openTab(event,'scidraw')"><a ><b>scidraw.io</b></a></li>
+                                    <li class="tab" onclick="openTab(event,'brainrender')"><a ><b>brainrender</b></a></li>
+                                    <li class="tab" onclick="openTab(event,'brainglobe')"><a ><b>brainglobe</b></a></li>
+                                  </ul>
+                                </div>
+                              </nav>
+                          </div>
+        </section>
+
+        <section class="os-projects-content">
+        <div id="scidraw" class="content-tab" >
+                <!-- <div class="card proj-card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="./scidraw.png" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                      
+                          <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                          </div>
+                        </div>
+                      </div> -->
+            <div class="columns proj-columns is-8">
+                <div class="column is-two-fifths">
+                    <img src="./scidraw.png" class="proj-img" style="border: 2px solid #728fbf">
+
+                </div>
+                <div class="column">
+                        <h4 class='proj-title'>scidraw.io</h5><br>
+                        <p>This is a description of what scidraw is.. why... with who... links...</p>
+                </div>
+            </div>
+        </div>
+
+
+            <div id="brainrender" class="content-tab" style="display: none">
+                    <div class="columns proj-columns">
+                    <div class="column is-two-fifths">
+                            <img src="./aba.png" class="proj-img">
+        
+                        </div>
+                        <div class="column">
+                                <h4 class='proj-title'>brainrender</h5><br>
+                                <p>This is a description of what brainrender is.. why... with who... links...</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+
+                <div id="brainglobe" class="content-tab" style="display: none">
+                        <div class="columns proj-columns">
+                        <div class="column is-two-fifths">
+                                <img src="./BG_logo_full.png" class="proj-img">
+            
+                            </div>
+                            <div class="column">
+                                    <h4 class='proj-title'>brainglobe</h5><br>
+                                    <p>This is a description of what brainglobe is.. why... with who... links...</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+        </section>
+
+
+
+        <!-- Publications -->
+        <section class="main">
+        <section class="section" id="publications">
+                <div class="container">
+
+            <div class="section-heading">
+                <h3 class="title is-2">Publications</h3>
+
+            </div>
+            <div class="container publications">
+                <h4 class="year">2021</h4>
+                <div class='publication'>
+                    <b class="pub-title">Visualizing anatomically registered data with brainrender</b>
+                    <p><b>Federico Claudi</b>, Adam L Tyson, Luigi Petrucco, Troy W Margrie, Ruben Portugues, Tiago
+                        Branco</p>
+                    <p><i>eLife</i></p>
+                    <p>
+                        <a class="pub-link" href="https://elifesciences.org/articles/65751"
+                            target="_blank">doi.org/10.7554/eLife.65751</a>
+                    </p>
+                </div>
+
+                <div class='publication'>
+                    <b class="pub-title">Tools for accurate post hoc determination of marker location within whole-brain
+                        microscopy images</b>
+                    <p>Adam L Tyson, Mateo Vélez-Fort, Charly V Rousseau, Lee Cossell, Chryssanthi Tsitoura, Horst A
+                        Obenhaus, <b>Federico Claudi</b>, Stephen C Lenzi, Tiago Branco, Troy W Margrie</p>
+                    <p><i>bioRxiv</i></p>
+                    <p>
+                        <a class="pub-link" href="https://www.biorxiv.org/content/10.1101/2021.05.21.445133v1.abstract"
+                            target="_blank">doi.org/10.1101/2021.05.21.445133 </a>
+                    </p>
+                </div>
+                <hr>
+
+                <h4 class="year">2020</h4>
+                <div class='publication'>
+                    <b class="pub-title">BrainGlobe Atlas API: a common interface for neuroanatomical atlases</b>
+                    <p><b>Federico Claudi</b>, Luigi Petrucco, Adam Tyson, Tiago Branco, Troy Margrie, Ruben Portugues
+                    </p>
+                    <p><i>JOSS</i></p>
+                    <p>
+                        <a class="pub-link" href="https://joss.theoj.org/papers/10.21105/joss.02668"
+                            target="_blank">doi.org/10.21105/joss.02668 </a>
+                    </p>
+                </div>
+                <hr>
+
+                <h4 class="year">2019</h4>
+                <div class='publication'>
+                    <b class="pub-title">Cerebellar-recipient motor thalamus drives behavioral context-specific movement
+                        initiation</b>
+                    <p>Joshua Dacre, Matt Colligan, Julian Ammer, Julia Schiemann, Thomas Clarke, Victor Chamosa-Pino,
+                        <b>Federico Claudi</b>, J Alex Harston, Constantinos Eleftheriou, Janelle MP Pakan, Cheng-Chiu
+                        Huang, Adam Hantman, Nathalie L Rochefort, Ian Duguid </p>
+                    <p><i>bioRxiv</i></p>
+                    <p>
+                        <a class="pub-link" href="https://www.biorxiv.org/content/10.1101/802124v1.abstract"
+                            target="_blank">doi.org/10.1101/802124 </a>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- template -->
+                <!-- <div class='publication'>
+                    <b class="pub-title"></b>
+                    <p><b>Federico Claudi</b>, </p>
+                    <p><i>eLife</i></p>
+                    <p>
+                    <a class="pub-link" href="" target="_blank"></a>
+                    </p>
+            </div> -->
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="title is-2">Contact</h3>
+                    <h4 class="subtitle is-5">Get in touch</h4>
+                </div>
+                <br>
+
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <div class="box">
+                           <p>I'm currently working at: the <a href="https://www.sainsburywellcome.org/web/" target="_blank">Sainsbury Wellcome Centre</a> in London, UK.</p>
+                           <hr>
+                           <p><b>email</b>: federico.claudi.17@ucl.ac.uk</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
 </body>
+
 </html>
+
+<script>
+        function openTab(evt, tabName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("content-tab");
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tab");
+          for (i = 0; i < x.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+              tablinks[i].className = tablinks[i].className.replace(" blue", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " is-active";
+          evt.currentTarget.className += " blue";
+        }
+        </script>
