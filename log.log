@@ -1246,3 +1246,71 @@ Starting biorxiv daily search
 
 Starting biorxiv daily search
 2021-06-28 23:21:30.405 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 23:33:06.027 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 23:33:06.028 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 23:33:10.512 | DEBUG    | refy.daily:__init__:61 - Getting data from biorxiv
+2021-06-28 23:33:14.732 | DEBUG    | refy.daily:fetch:161 - Downloading metadata for 146 papers || 2021-06-27 -> 2021-06-28
+2021-06-28 23:33:22.658 | DEBUG    | refy.daily:fetch:179 - Kept 29 biorxiv papers
+2021-06-28 23:33:22.659 | DEBUG    | refy.daily:__init__:65 - Loading user papers
+2021-06-28 23:33:23.468 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 168 entries
+2021-06-28 23:33:23.473 | DEBUG    | refy.input:load_user_input:54 - 167/168 user papers have abstracts
+2021-06-28 23:33:23.473 | DEBUG    | refy.daily:__init__:69 - Embedding papers
+2021-06-28 23:33:27.185 | DEBUG    | refy.daily:__init__:82 - Retuning suggestions
+2021-06-28 23:33:27.185 | DEBUG    | refy.daily:get_suggestions:191 - getting suggestions
+2021-06-28 23:33:27.238 | DEBUG    | refy.daily:__init__:86 - Getting keywords
+2021-06-28 23:33:28.513 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 23:33:28.514 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 23:33:28.702 | DEBUG    | refy._query:to_html:223 - Saving query to .HTML at: ./_recomendations.html
+2021-06-28 23:33:28.702 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 23:33:28.702 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 23:33:28.862 | INFO     | __main__:<module>:35 - Creating refy.html
+2021-06-28 23:33:50.703 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 23:33:50.703 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 23:33:55.207 | DEBUG    | refy.daily:__init__:61 - Getting data from biorxiv
+2021-06-28 23:33:59.382 | DEBUG    | refy.daily:fetch:161 - Downloading metadata for 146 papers || 2021-06-27 -> 2021-06-28
+2021-06-28 23:34:07.803 | DEBUG    | refy.daily:fetch:179 - Kept 29 biorxiv papers
+2021-06-28 23:34:07.803 | DEBUG    | refy.daily:__init__:65 - Loading user papers
+2021-06-28 23:34:08.638 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 168 entries
+2021-06-28 23:34:08.642 | DEBUG    | refy.input:load_user_input:54 - 167/168 user papers have abstracts
+2021-06-28 23:34:08.642 | DEBUG    | refy.daily:__init__:69 - Embedding papers
+2021-06-28 23:34:12.287 | DEBUG    | refy.daily:__init__:82 - Retuning suggestions
+2021-06-28 23:34:12.287 | DEBUG    | refy.daily:get_suggestions:191 - getting suggestions
+2021-06-28 23:34:12.338 | DEBUG    | refy.daily:__init__:86 - Getting keywords
+2021-06-28 23:34:13.792 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 23:34:13.792 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 23:34:14.009 | DEBUG    | refy._query:to_html:223 - Saving query to .HTML at: ./_recomendations.html
+2021-06-28 23:34:14.010 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 23:34:14.010 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 23:34:14.194 | INFO     | __main__:<module>:35 - Creating refy.html
+2021-06-28 23:34:14.197 | INFO     | __main__:<module>:186 - Done
+2021-06-28 23:37:19.820 | DEBUG    | refy.download:download_all:105 - Checking that all files are present
+2021-06-28 23:37:19.821 | DEBUG    | refy.download:download_all:111 - Downloading data with: 14 parallel processes
+2021-06-28 23:37:19.823 | DEBUG    | refy.download:download_all:120 - Not downloading d2v_model.model because it exists already
+2021-06-28 23:37:19.823 | DEBUG    | refy.download:download_all:120 - Not downloading d2v_model.model.docvecs.vectors_docs.npy because it exists already
+2021-06-28 23:37:19.823 | DEBUG    | refy.download:download_all:120 - Not downloading d2v_model.model.wv.vectors.npy because it exists already
+2021-06-28 23:37:19.823 | DEBUG    | refy.download:download_all:120 - Not downloading d2v_model.model.trainables.syn1neg.npy because it exists already
+2021-06-28 23:37:19.825 | DEBUG    | refy.daily:__init__:50 - 
+
+Starting biorxiv daily search
+2021-06-28 23:37:19.825 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 23:37:24.401 | DEBUG    | refy.daily:__init__:57 - Getting data from biorxiv
+2021-06-28 23:37:28.363 | DEBUG    | refy.daily:fetch:157 - Downloading metadata for 1005 papers || 2021-06-21 -> 2021-06-28
+2021-06-28 23:38:13.516 | DEBUG    | refy.daily:fetch:175 - Kept 197 biorxiv papers
+2021-06-28 23:38:13.517 | DEBUG    | refy.daily:__init__:61 - Loading user papers
+2021-06-28 23:38:14.321 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 168 entries
+2021-06-28 23:38:14.325 | DEBUG    | refy.input:load_user_input:54 - 167/168 user papers have abstracts
+2021-06-28 23:38:14.325 | DEBUG    | refy.daily:__init__:65 - Embedding papers
+2021-06-28 23:38:21.678 | DEBUG    | refy.daily:__init__:78 - Retuning suggestions
+2021-06-28 23:38:21.678 | DEBUG    | refy.daily:get_suggestions:187 - getting suggestions
+2021-06-28 23:38:21.975 | DEBUG    | refy.daily:__init__:82 - Getting keywords
+2021-06-28 23:38:23.235 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 23:38:23.236 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 23:38:23.450 | DEBUG    | refy._query:to_html:222 - Saving query to .HTML at: ./_recomendations.html
+2021-06-28 23:38:23.450 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 23:38:23.451 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 23:38:23.659 | INFO     | __main__:<module>:25 - Creating refy.html
+2021-06-28 23:38:23.660 | INFO     | __main__:<module>:176 - Done

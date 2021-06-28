@@ -5,21 +5,11 @@ from refy.daily import Daily
 from loguru import logger
 from pathlib import Path
 import sys
-# import zipfile
 
 # setup logging
 logger.remove()
 logger.add(sys.stdout, level='DEBUG')
 logger.add('log.log')
-
-# unpack D2V model for 
-# to_unpack = (
-#     'd2v_model.model',
-
-# )
-# logger.info('unpacking files')
-# zipfile.ZipFile('d2v_model.model.zip', 'r').extractall()
-
 
 
 # first run refy
@@ -28,8 +18,8 @@ Daily(
     html_path='./_recomendations.html',
     N=50,
     show_html=False,
+    n_days=7,  # from last week
 )
-
 
 # then create a dedicated HTML file
 logger.info('Creating refy.html')
@@ -181,6 +171,6 @@ TEMPLATE = TEMPLATE.replace('--REFY STYLE--', _rec_style)
 TEMPLATE = TEMPLATE.replace('--REFY CONTENT --', _rec_content)
 TEMPLATE = TEMPLATE.replace('monospace"><', 'monospace"><div class="refy-code"><')
 # save to file
-with open('website/refy.html', 'w') as fout:
+with open('./refy.html', 'w') as fout:
     fout.write(TEMPLATE)
 logger.info('Done')
