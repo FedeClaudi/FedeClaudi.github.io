@@ -1182,3 +1182,67 @@ Starting biorxiv daily search
 
 Starting biorxiv daily search
 2021-06-28 22:00:06.734 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:13:49.591 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:13:49.591 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:16:07.731 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:16:07.732 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:17:22.123 | INFO     | __main__:<module>:13 - unpacking files
+2021-06-28 22:21:24.530 | INFO     | __main__:<module>:17 - unpacking files
+2021-06-28 22:21:31.532 | INFO     | __main__:<module>:17 - unpacking files
+2021-06-28 22:21:32.379 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:21:32.380 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:25:49.076 | INFO     | __main__:<module>:17 - unpacking files
+2021-06-28 22:25:49.670 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:25:49.671 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:26:18.591 | INFO     | __main__:<module>:17 - unpacking files
+2021-06-28 22:26:19.237 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:26:19.238 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:26:57.373 | INFO     | __main__:<module>:17 - unpacking files
+2021-06-28 22:26:58.009 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:26:58.010 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:27:02.398 | DEBUG    | refy.daily:__init__:61 - Getting data from biorxiv
+2021-06-28 22:27:06.983 | DEBUG    | refy.daily:fetch:161 - Downloading metadata for 128 papers || 2021-06-27 -> 2021-06-28
+2021-06-28 22:27:15.323 | DEBUG    | refy.daily:fetch:179 - Kept 24 biorxiv papers
+2021-06-28 22:27:15.324 | DEBUG    | refy.daily:__init__:65 - Loading user papers
+2021-06-28 22:27:16.132 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 168 entries
+2021-06-28 22:27:16.137 | DEBUG    | refy.input:load_user_input:54 - 167/168 user papers have abstracts
+2021-06-28 22:27:16.137 | DEBUG    | refy.daily:__init__:69 - Embedding papers
+2021-06-28 22:27:19.485 | DEBUG    | refy.daily:__init__:82 - Retuning suggestions
+2021-06-28 22:27:19.485 | DEBUG    | refy.daily:get_suggestions:191 - getting suggestions
+2021-06-28 22:27:19.531 | DEBUG    | refy.daily:__init__:86 - Getting keywords
+2021-06-28 22:27:20.813 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 22:27:20.813 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 22:27:21.084 | DEBUG    | refy._query:to_html:223 - Saving query to .HTML at: ./_recomendations.html
+2021-06-28 22:27:21.085 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 22:27:21.085 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 22:27:21.278 | INFO     | __main__:<module>:32 - Creating refy.html
+2021-06-28 22:27:21.279 | INFO     | __main__:<module>:183 - Done
+2021-06-28 22:38:53.655 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:38:53.656 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:39:38.841 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:39:38.842 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:42:48.895 | DEBUG    | refy.download:retrieve_over_http:84 - Done downloading d2v_model.model
+2021-06-28 22:42:48.895 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:42:48.896 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 23:21:30.404 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 23:21:30.405 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model

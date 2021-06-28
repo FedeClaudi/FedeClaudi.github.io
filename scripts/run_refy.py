@@ -1,12 +1,25 @@
+from refy import settings
+settings.DOWNLOAD_MODEL_ONLY = True
+
 from refy.daily import Daily
 from loguru import logger
 from pathlib import Path
 import sys
+# import zipfile
 
 # setup logging
 logger.remove()
 logger.add(sys.stdout, level='DEBUG')
 logger.add('log.log')
+
+# unpack D2V model for 
+# to_unpack = (
+#     'd2v_model.model',
+
+# )
+# logger.info('unpacking files')
+# zipfile.ZipFile('d2v_model.model.zip', 'r').extractall()
+
 
 
 # first run refy
@@ -66,7 +79,7 @@ TEMPLATE = """
 </head>
 <html>
 
-<body>
+<body style="background-color: white;">
     <!-- Navigation bar -->
     <nav class="navbar is-link is-fixed-top">
             <div class="navbar-brand">
@@ -139,7 +152,7 @@ TEMPLATE = """
             </div>
             </code>
 
-            <div class="box cv-message cv-hide">
+            <div class="box refy-message cv-hide">
                 <p>The papers recomendations displayed here are generated automatically using a package of mine:
                 <a href="https://github.com/FedeClaudi/refy" target="_blank">refy</a>: a scientific papers recomendation
                 tool that facilitates finding new, relevant papers for your research.
