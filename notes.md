@@ -9,6 +9,7 @@ To edit and visualize the website live:
 python -m http.server 
 ```
 2. automatically update the style with
-   ```
-   sass --watch style.sass style.css
-   ```
+```
+sass --watch style.sass style.css
+```
+3. open in a web browser: `http://0.0.0.0:8000/`
