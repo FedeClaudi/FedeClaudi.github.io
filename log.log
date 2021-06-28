@@ -1137,3 +1137,37 @@
 </pre>
     
 2021-06-28 21:32:26.910 | INFO     | __main__:<module>:169 - Done
+2021-06-28 21:46:31.312 | DEBUG    | refy.download:download_all:91 - Checking that all files are present
+2021-06-28 21:46:31.314 | DEBUG    | refy.download:download_all:102 - Not downloading example_library.bib because it exists already
+2021-06-28 21:46:31.314 | DEBUG    | refy.download:download_all:102 - Not downloading database.ftr because it exists already
+2021-06-28 21:46:31.314 | DEBUG    | refy.download:download_all:102 - Not downloading abstracts.json because it exists already
+2021-06-28 21:46:31.314 | DEBUG    | refy.download:download_all:102 - Not downloading test_database.ftr because it exists already
+2021-06-28 21:46:31.315 | DEBUG    | refy.download:download_all:102 - Not downloading test_abstracts.json because it exists already
+2021-06-28 21:46:31.315 | DEBUG    | refy.download:download_all:102 - Not downloading biorxiv_database.ftr because it exists already
+2021-06-28 21:46:31.315 | DEBUG    | refy.download:download_all:102 - Not downloading biorxiv_abstracts.json because it exists already
+2021-06-28 21:46:31.315 | DEBUG    | refy.download:download_all:102 - Not downloading d2v_model.model because it exists already
+2021-06-28 21:46:31.315 | DEBUG    | refy.download:download_all:102 - Not downloading d2v_model.model.docvecs.vectors_docs.npy because it exists already
+2021-06-28 21:46:31.316 | DEBUG    | refy.download:download_all:102 - Not downloading d2v_model.model.wv.vectors.npy because it exists already
+2021-06-28 21:46:31.316 | DEBUG    | refy.download:download_all:102 - Not downloading d2v_model.model.trainables.syn1neg.npy because it exists already
+2021-06-28 21:46:31.317 | DEBUG    | refy.daily:__init__:48 - 
+
+Starting biorxiv daily search
+2021-06-28 21:46:31.317 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 21:46:35.736 | DEBUG    | refy.daily:__init__:55 - Getting data from biorxiv
+2021-06-28 21:46:40.481 | DEBUG    | refy.daily:fetch:155 - Downloading metadata for 127 papers || 2021-06-27 -> 2021-06-28
+2021-06-28 21:46:48.775 | DEBUG    | refy.daily:fetch:173 - Kept 24 biorxiv papers
+2021-06-28 21:46:48.775 | DEBUG    | refy.daily:__init__:59 - Loading user papers
+2021-06-28 21:46:49.593 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 168 entries
+2021-06-28 21:46:49.597 | DEBUG    | refy.input:load_user_input:54 - 167/168 user papers have abstracts
+2021-06-28 21:46:49.598 | DEBUG    | refy.daily:__init__:63 - Embedding papers
+2021-06-28 21:46:52.863 | DEBUG    | refy.daily:__init__:76 - Retuning suggestions
+2021-06-28 21:46:52.864 | DEBUG    | refy.daily:get_suggestions:185 - getting suggestions
+2021-06-28 21:46:52.908 | DEBUG    | refy.daily:__init__:80 - Getting keywords
+2021-06-28 21:46:54.169 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 21:46:54.169 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 21:46:54.331 | DEBUG    | refy._query:to_html:222 - Saving query to .HTML at: ./_recomendations.html
+2021-06-28 21:46:54.331 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-06-28 21:46:54.332 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-06-28 21:46:54.569 | INFO     | __main__:<module>:22 - Creating refy.html
+2021-06-28 21:47:12.387 | INFO     | __main__:<module>:22 - Creating refy.html
+2021-06-28 21:47:12.388 | INFO     | __main__:<module>:173 - Done

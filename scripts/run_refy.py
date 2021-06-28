@@ -1,5 +1,7 @@
-from refy.daily import Daily, set_logging
+from refy.daily import Daily
 from loguru import logger
+from pathlib import Path
+import sys
 
 # setup logging
 logger.remove()
@@ -26,9 +28,7 @@ with open('_recomendations.html', 'r') as fin:
 # get style and content sections
 _rec_style = _recomendations_html.split('<style>')[1].split('</style>')[0]
 _rec_content = _recomendations_html.split('<code>')[1].split('</code>')[0]
-# idx = _rec_content.index('<span class="r1">')
-# _rec_content = _rec_content[idx:]
-logger.debug(_rec_content)
+Path('_recomendations.html').unlink()
 
 # create complete HTML
 TEMPLATE = """
@@ -168,6 +168,6 @@ TEMPLATE = TEMPLATE.replace('--REFY STYLE--', _rec_style)
 TEMPLATE = TEMPLATE.replace('--REFY CONTENT --', _rec_content)
 TEMPLATE = TEMPLATE.replace('monospace"><', 'monospace"><div class="refy-code"><')
 # save to file
-with open('refy.html', 'w') as fout:
+with open('website/refy.html', 'w') as fout:
     fout.write(TEMPLATE)
 logger.info('Done')
