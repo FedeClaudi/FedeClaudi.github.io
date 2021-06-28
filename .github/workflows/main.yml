@@ -27,4 +27,4 @@ jobs:
           
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python update.py
+          python scripts/run_refy.py
