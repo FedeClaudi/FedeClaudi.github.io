@@ -139,6 +139,10 @@ a:hover {
   text-align: center;
 }
 
+.cv-darks {
+  background-color: #1e1e1e !important;
+}
+
 .cv-hide {
   width: 80%;
   margin: auto;
