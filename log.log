@@ -1171,3 +1171,14 @@ Starting biorxiv daily search
 2021-06-28 21:46:54.569 | INFO     | __main__:<module>:22 - Creating refy.html
 2021-06-28 21:47:12.387 | INFO     | __main__:<module>:22 - Creating refy.html
 2021-06-28 21:47:12.388 | INFO     | __main__:<module>:173 - Done
+2021-06-28 21:49:01.521 | DEBUG    | refy.download:download_all:91 - Checking that all files are present
+2021-06-28 21:49:06.406 | DEBUG    | refy.download:retrieve_over_http:81 - Done downloading example_library.bib
+2021-06-28 21:51:28.015 | DEBUG    | refy.daily:__init__:48 - 
+
+Starting biorxiv daily search
+2021-06-28 21:51:28.016 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-06-28 22:00:06.733 | DEBUG    | refy.download:retrieve_over_http:84 - Done downloading d2v_model.model
+2021-06-28 22:00:06.733 | DEBUG    | refy.daily:__init__:54 - 
+
+Starting biorxiv daily search
+2021-06-28 22:00:06.734 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
