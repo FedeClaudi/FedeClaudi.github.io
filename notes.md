@@ -22,7 +22,3 @@ CV().to_html("cv.html")
 ```
     python scripts/run_refy.py
 ```
-
-
-
- 
