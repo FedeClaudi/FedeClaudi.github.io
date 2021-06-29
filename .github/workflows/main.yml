@@ -11,9 +11,7 @@ name: refy
 #  schedule:
 #  -cron: "0 8 * * 1" # Every Monday at 9AM UK time (8 AM UTC)
 on:
-  push:
-    branches:
-    - main
+  push
   schedule:
   - cron: "0 11 * * 1-5"
 
