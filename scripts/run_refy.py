@@ -156,7 +156,7 @@ TEMPLATE = """
                     To find relevant papers refy uses a `.bib` file with metadata about papers that I've read and found 
                     relevant in the past. Unlike other paper recomendation systems it doesn't use single papers or keywords
                     as reference and is thus poised to give more insightful recomendations. You can see which papers
-                    are in my '.bib' file <a href="https://github.com/FedeClaudi/refy/blob/main/library.bib" target="_blank">here</a>
+                    are in my '.bib' file <a href="https://github.com/FedeClaudi/FedeClaudi.github.io/blob/master/library.bib" target="_blank">here</a>
                 </p>
                 <hr>
                 <p>
