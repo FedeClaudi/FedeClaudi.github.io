@@ -1,5 +1,6 @@
 from refy import settings
 settings.DOWNLOAD_MODEL_ONLY = True
+settings.DOWNLOAD_FAST = False
 
 from refy.daily import Daily
 from loguru import logger
