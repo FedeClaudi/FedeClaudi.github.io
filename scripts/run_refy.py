@@ -17,7 +17,7 @@ logger.add('log.log')
 Daily(
     './library.bib',
     html_path='./_recomendations.html',
-    N=20 ,
+    N=30 ,
     show_html=False,
     n_days=7,  # from last week
 )
