@@ -147,8 +147,7 @@ TEMPLATE = """
                 <p>The papers recomendations displayed here are generated automatically using a package of mine:
                 <a href="https://github.com/FedeClaudi/refy" target="_blank">refy</a>: a scientific papers recomendation
                 tool that facilitates finding new, relevant papers for your research.
-                One of refy's fetures is called <b>Daily</b>: it finds preprint that came out on BiorXiv in the last 24
-                hours which could be relevant given ones interests, this is what you're seeing below here: the results 
+                One of refy's fetures is called <b>Daily</b>: it finds preprint that came out on BiorXiv in the last week which could be relevant given ones interests, this is what you're seeing below here: the results 
                 from refy's <b>Daily</b> recomendations.
                 </p>
                 <hr>
