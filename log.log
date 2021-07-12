@@ -1386,3 +1386,32 @@ Starting biorxiv daily search
 2021-06-29 09:09:11.332 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
 2021-06-29 09:09:11.468 | INFO     | __main__:<module>:25 - Creating refy.html
 2021-06-29 09:09:11.469 | INFO     | __main__:<module>:176 - Done
+2021-07-12 21:52:31.245 | DEBUG    | refy.download:retrieve_over_http:80 - Downloading d2v_model.model
+2021-07-12 22:00:18.071 | DEBUG    | refy.download:retrieve_over_http:96 - Done downloading d2v_model.model
+2021-07-12 22:00:19.674 | DEBUG    | refy.download:retrieve_over_http:80 - Downloading d2v_model.model.docvecs.vectors_docs.npy
+2021-07-12 22:22:06.626 | DEBUG    | refy.download:retrieve_over_http:96 - Done downloading d2v_model.model.docvecs.vectors_docs.npy
+2021-07-12 22:22:08.335 | DEBUG    | refy.download:retrieve_over_http:80 - Downloading d2v_model.model.wv.vectors.npy
+2021-07-12 22:36:13.955 | DEBUG    | refy.download:retrieve_over_http:96 - Done downloading d2v_model.model.wv.vectors.npy
+2021-07-12 22:36:15.688 | DEBUG    | refy.download:retrieve_over_http:80 - Downloading d2v_model.model.trainables.syn1neg.npy
+2021-07-12 22:45:21.966 | DEBUG    | refy.download:retrieve_over_http:96 - Done downloading d2v_model.model.trainables.syn1neg.npy
+2021-07-12 22:45:21.968 | DEBUG    | refy.daily:__init__:55 - 
+
+Starting biorxiv daily search
+2021-07-12 22:45:21.968 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-07-12 22:45:27.066 | DEBUG    | refy.daily:__init__:62 - Getting data from biorxiv
+2021-07-12 22:45:30.538 | DEBUG    | refy.daily:fetch:164 - Downloading metadata for 976 papers || 2021-07-05 -> 2021-07-12
+2021-07-12 22:46:02.831 | DEBUG    | refy.daily:fetch:182 - Kept 215 biorxiv papers
+2021-07-12 22:46:02.832 | DEBUG    | refy.daily:__init__:66 - Loading user papers
+2021-07-12 22:46:03.387 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 168 entries
+2021-07-12 22:46:03.391 | DEBUG    | refy.input:load_user_input:54 - 167/168 user papers have abstracts
+2021-07-12 22:46:03.392 | DEBUG    | refy.daily:__init__:70 - Embedding papers
+2021-07-12 22:46:10.849 | DEBUG    | refy.daily:__init__:83 - Retuning suggestions
+2021-07-12 22:46:10.850 | DEBUG    | refy.daily:get_suggestions:194 - getting suggestions
+2021-07-12 22:46:11.180 | DEBUG    | refy.daily:__init__:87 - Getting keywords
+2021-07-12 22:46:12.665 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-12 22:46:12.666 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-07-12 22:46:12.969 | DEBUG    | refy._query:to_html:222 - Saving query to .HTML at: ./_recomendations.html
+2021-07-12 22:46:12.969 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-12 22:46:12.969 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-07-12 22:46:13.200 | INFO     | __main__:<module>:26 - Creating refy.html
+2021-07-12 22:46:13.201 | INFO     | __main__:<module>:176 - Done
