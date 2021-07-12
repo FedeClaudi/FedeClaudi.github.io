@@ -31,14 +31,12 @@ jobs:
         run: |
           python scripts/run_refy.py
 
-  report:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+
       - uses: actions/checkout@v2      
       - name: Commit refy.html
         run: |
           git config --global user.name 'auto-update'
           git config --global user.email 'FedeClaudi@users.noreply.github.com'
+          git add "refy.html"
           git commit -am "updating refs"
           git push
