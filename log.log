@@ -1386,3 +1386,68 @@ Starting biorxiv daily search
 2021-06-29 09:09:11.332 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
 2021-06-29 09:09:11.468 | INFO     | __main__:<module>:25 - Creating refy.html
 2021-06-29 09:09:11.469 | INFO     | __main__:<module>:176 - Done
+2021-07-12 22:48:18.666 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model because it exists already
+2021-07-12 22:48:18.667 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.docvecs.vectors_docs.npy because it exists already
+2021-07-12 22:48:18.667 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.wv.vectors.npy because it exists already
+2021-07-12 22:48:18.667 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.trainables.syn1neg.npy because it exists already
+2021-07-12 22:48:18.670 | DEBUG    | refy.daily:__init__:55 - 
+
+Starting biorxiv daily search
+2021-07-12 22:48:18.671 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-07-12 22:48:27.481 | DEBUG    | refy.daily:__init__:62 - Getting data from biorxiv
+2021-07-12 22:48:31.845 | DEBUG    | refy.daily:fetch:165 - Downloading metadata for 976 papers || 2021-07-05 -> 2021-07-12
+2021-07-12 22:49:11.833 | DEBUG    | refy.daily:fetch:182 - Kept 215 biorxiv papers
+2021-07-12 22:49:11.836 | DEBUG    | refy.daily:__init__:66 - Loading user papers
+2021-07-12 22:50:08.536 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1177 entries
+2021-07-12 22:50:08.569 | DEBUG    | refy.input:load_user_input:54 - 1056/1177 user papers have abstracts
+2021-07-12 22:50:08.570 | DEBUG    | refy.daily:__init__:70 - Embedding papers
+2021-07-12 22:50:56.857 | DEBUG    | refy.daily:__init__:83 - Retuning suggestions
+2021-07-12 22:50:56.859 | DEBUG    | refy.daily:get_suggestions:194 - getting suggestions
+2021-07-12 22:51:04.725 | DEBUG    | refy.daily:__init__:87 - Getting keywords
+2021-07-12 22:51:27.523 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-12 22:51:27.524 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-07-12 22:51:28.404 | DEBUG    | refy._query:to_html:222 - Saving query to .HTML at: ./_recomendations.html
+2021-07-12 22:51:28.405 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-12 22:51:28.406 | DEBUG    | refy.suggestions:to_table:150 - Suggestions -> table
+2021-07-12 22:51:29.352 | INFO     | __main__:<module>:26 - Creating refy.html
+2021-07-12 22:51:29.354 | INFO     | __main__:<module>:176 - Done
+2021-07-19 08:10:56.168 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model because it exists already
+2021-07-19 08:10:56.169 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.docvecs.vectors_docs.npy because it exists already
+2021-07-19 08:10:56.169 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.wv.vectors.npy because it exists already
+2021-07-19 08:10:56.170 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.trainables.syn1neg.npy because it exists already
+2021-07-19 08:10:56.171 | DEBUG    | refy.daily:__init__:57 - 
+
+Starting biorxiv & arxiv daily search
+2021-07-19 08:10:56.171 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-07-19 08:11:01.125 | DEBUG    | refy.daily:__init__:64 - Getting data from biorxiv & arxiv
+2021-07-19 08:11:01.196 | DEBUG    | refy.daily:_download_arxiv:195 - downloading papers from arxiv.
+2021-07-19 08:11:01.199 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.AI (1/14)
+2021-07-19 08:11:06.301 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.GL (2/14)
+2021-07-19 08:11:07.188 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.LG (3/14)
+2021-07-19 08:11:13.945 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.NE (4/14)
+2021-07-19 08:11:15.486 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.MA (5/14)
+2021-07-19 08:11:17.154 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.RO (6/14)
+2021-07-19 08:11:19.409 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.SY (7/14)
+2021-07-19 08:11:21.050 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.AT (8/14)
+2021-07-19 08:11:22.406 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.DG (9/14)
+2021-07-19 08:11:23.691 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.DS (10/14)
+2021-07-19 08:11:25.079 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.GN (11/14)
+2021-07-19 08:11:27.352 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.OC (12/14)
+2021-07-19 08:11:29.666 | DEBUG    | refy.daily:_download_arxiv:203 -  category q-bio.NC (13/14)
+2021-07-19 08:11:31.192 | DEBUG    | refy.daily:_download_arxiv:203 -  category q-bio.QM (14/14)
+2021-07-19 08:11:37.629 | DEBUG    | refy.daily:_download_biorxiv:168 - Downloading metadata for 929 papers from bioarxiv || 2021-07-12 -> 2021-07-19
+2021-07-19 08:12:18.785 | DEBUG    | refy.daily:fetch:279 - Kept 850/1031 biorxiv/arxiv papers
+2021-07-19 08:12:18.786 | DEBUG    | refy.daily:__init__:68 - Loading user papers
+2021-07-19 08:12:42.691 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1177 entries
+2021-07-19 08:12:42.705 | DEBUG    | refy.input:load_user_input:54 - 1056/1177 user papers have abstracts
+2021-07-19 08:12:42.706 | DEBUG    | refy.daily:__init__:72 - Embedding papers
+2021-07-19 08:13:21.111 | DEBUG    | refy.daily:__init__:85 - Retuning suggestions
+2021-07-19 08:13:21.112 | DEBUG    | refy.daily:get_suggestions:292 - getting suggestions
+2021-07-19 08:13:29.760 | DEBUG    | refy.daily:__init__:89 - Getting keywords
+2021-07-19 08:13:37.380 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-19 08:13:37.380 | DEBUG    | refy.suggestions:to_table:146 - Suggestions -> table
+2021-07-19 08:13:37.842 | DEBUG    | refy._query:to_html:222 - Saving query to .HTML at: ./_recomendations.html
+2021-07-19 08:13:37.842 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-19 08:13:37.842 | DEBUG    | refy.suggestions:to_table:146 - Suggestions -> table
+2021-07-19 08:13:38.294 | INFO     | __main__:<module>:26 - Creating refy.html
+2021-07-19 08:13:38.295 | INFO     | __main__:<module>:176 - Done
