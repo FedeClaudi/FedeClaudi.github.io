@@ -1527,3 +1527,43 @@ Starting biorxiv & arxiv daily search
 2021-07-19 06:58:11.358 | INFO     | __main__:<module>:26 - Creating refy.html
 2021-07-19 06:58:11.360 | INFO     | __main__:<module>:176 - Done
 >>>>>>> 52f141793a19e7ecb501bb43d7d4dd38bb662e99
+2021-07-19 08:14:25.035 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model because it exists already
+2021-07-19 08:14:25.035 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.docvecs.vectors_docs.npy because it exists already
+2021-07-19 08:14:25.036 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.wv.vectors.npy because it exists already
+2021-07-19 08:14:25.036 | DEBUG    | refy.download:download_all_slow:157 - Not downloading d2v_model.model.trainables.syn1neg.npy because it exists already
+2021-07-19 08:14:25.037 | DEBUG    | refy.daily:__init__:57 - 
+
+Starting biorxiv & arxiv daily search
+2021-07-19 08:14:25.038 | DEBUG    | refy.doc2vec:load_model:72 - Loading pre-trained doc2vec model
+2021-07-19 08:14:29.837 | DEBUG    | refy.daily:__init__:64 - Getting data from biorxiv & arxiv
+2021-07-19 08:14:29.905 | DEBUG    | refy.daily:_download_arxiv:195 - downloading papers from arxiv.
+2021-07-19 08:14:29.907 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.AI (1/14)
+2021-07-19 08:14:34.280 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.GL (2/14)
+2021-07-19 08:14:35.113 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.LG (3/14)
+2021-07-19 08:14:41.422 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.NE (4/14)
+2021-07-19 08:14:42.905 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.MA (5/14)
+2021-07-19 08:14:44.921 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.RO (6/14)
+2021-07-19 08:14:47.701 | DEBUG    | refy.daily:_download_arxiv:203 -  category cs.SY (7/14)
+2021-07-19 08:14:49.142 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.AT (8/14)
+2021-07-19 08:14:50.675 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.DG (9/14)
+2021-07-19 08:14:52.120 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.DS (10/14)
+2021-07-19 08:14:53.697 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.GN (11/14)
+2021-07-19 08:14:55.004 | DEBUG    | refy.daily:_download_arxiv:203 -  category math.OC (12/14)
+2021-07-19 08:14:57.285 | DEBUG    | refy.daily:_download_arxiv:203 -  category q-bio.NC (13/14)
+2021-07-19 08:14:58.761 | DEBUG    | refy.daily:_download_arxiv:203 -  category q-bio.QM (14/14)
+2021-07-19 08:15:05.353 | DEBUG    | refy.daily:_download_biorxiv:168 - Downloading metadata for 929 papers from bioarxiv || 2021-07-12 -> 2021-07-19
+2021-07-19 08:15:45.684 | DEBUG    | refy.daily:fetch:279 - Kept 850/1031 biorxiv/arxiv papers
+2021-07-19 08:15:45.685 | DEBUG    | refy.daily:__init__:68 - Loading user papers
+2021-07-19 08:16:05.566 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1177 entries
+2021-07-19 08:16:05.576 | DEBUG    | refy.input:load_user_input:54 - 1056/1177 user papers have abstracts
+2021-07-19 08:16:05.576 | DEBUG    | refy.daily:__init__:72 - Embedding papers
+2021-07-19 08:16:38.104 | DEBUG    | refy.daily:__init__:85 - Retuning suggestions
+2021-07-19 08:16:38.104 | DEBUG    | refy.daily:get_suggestions:292 - getting suggestions
+2021-07-19 08:16:46.689 | DEBUG    | refy.daily:__init__:89 - Getting keywords
+2021-07-19 08:16:54.455 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-19 08:16:54.455 | DEBUG    | refy.suggestions:to_table:146 - Suggestions -> table
+2021-07-19 08:16:54.851 | DEBUG    | refy._query:to_html:222 - Saving query to .HTML at: ./_recomendations.html
+2021-07-19 08:16:54.851 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-07-19 08:16:54.851 | DEBUG    | refy.suggestions:to_table:146 - Suggestions -> table
+2021-07-19 08:16:55.252 | INFO     | __main__:<module>:26 - Creating refy.html
+2021-07-19 08:16:55.253 | INFO     | __main__:<module>:176 - Done
