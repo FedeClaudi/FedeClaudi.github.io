@@ -1,11 +1,11 @@
 name: refy
 
 
-on: push
+#on: push
 
-#on:
-#  schedule:
-#  - cron: "0 6 * * 1" # Every Monday at 7AM UK time (8 AM UTC)
+on:
+  schedule:
+  - cron: "0 6 * * 1" # Every Monday at 7AM UK time (8 AM UTC)
 
 jobs:
   build:
@@ -30,13 +30,11 @@ jobs:
       - name: execute py script # run the run.py to get the latest data
         run: |
           python scripts/run_refy.py
-
-
-      - uses: actions/checkout@v2      
+    
       - name: Commit refy.html
         run: |
           git config --global user.name 'auto-update'
           git config --global user.email 'FedeClaudi@users.noreply.github.com'
-          git add "refy.html"
+          git add "."
           git commit -am "updating refs"
           git push
