@@ -1,8 +1,4 @@
-from refy import settings
-settings.DOWNLOAD_MODEL_ONLY = True
-settings.DOWNLOAD_FAST = False
-
-from refy.daily import Daily
+import refy
 from loguru import logger
 from pathlib import Path
 import sys
@@ -13,17 +9,16 @@ logger.add(sys.stdout, level='DEBUG')
 logger.add('log.log')
 
 
-# first run refy
-Daily(
-    './library.bib',
-    html_path='./_recomendations.html',
-    N=30 ,
-    show_html=False,
-    n_days=7,  # from last week
-)
 
 # then create a dedicated HTML file
 logger.info('Creating refy.html')
+refy.Recomender(
+ 'library.bib',            # path to your .bib file
+  n_days=7,               # fetch preprints from the last N days
+  N=50,                    # number of recomended papers 
+  show_html = False,
+  html_path='./_recomendations.html',
+)
 
 # read html
 with open('_recomendations.html', 'r') as fin:
