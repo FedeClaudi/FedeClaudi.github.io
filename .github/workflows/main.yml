@@ -1,11 +1,12 @@
 name: refy
 
 
-on: push
+# on: push
 
-# on:
-#   schedule:
-#   - cron: "0 6 * * *" # Every Monday at 7AM UK time (8 AM UTC)
+on: 
+  push:
+  schedule:
+    - cron: "0 6 * * 1,3,5" # Every Monday at 7AM UK time (8 AM UTC)
 
 jobs:
   build:
