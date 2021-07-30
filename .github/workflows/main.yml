@@ -29,6 +29,7 @@ jobs:
           pip install git+https://github.com/FedeClaudi/refy.git
 #          pip install refy -U
           
+          
       - name: execute py script # run the run.py to get the latest data
         run: |
           python scripts/run_refy.py
