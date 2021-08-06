@@ -2493,3 +2493,54 @@ Name: score, Length: 671, dtype: float64
 2021-08-06 06:23:58.721 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
 2021-08-06 06:23:58.722 | DEBUG    | refy.suggestions:to_table:146 - Suggestions -> table
 2021-08-06 06:23:59.187 | INFO     | __main__:<module>:157 - Done
+2021-08-06 09:25:59.834 | INFO     | __main__:<module>:14 - Creating refy.html
+2021-08-06 09:25:59.834 | DEBUG    | refy.recomend:__init__:44 - 
+
+Starting biorxiv & arxiv daily search
+2021-08-06 09:25:59.834 | DEBUG    | refy.recomend:__init__:53 - Downloading data from arxiv & biorxiv
+2021-08-06 09:25:59.998 | DEBUG    | refy.download:download_arxiv:53 - downloading papers from arxiv. || 2021-07-30 -> 2021-08-06
+2021-08-06 09:26:00.000 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 0 (requesting 500 papers) | collected 0 papers so far | min date: nan
+2021-08-06 09:26:00.000 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=0&sortBy=submittedDate&sortOrder=descending
+2021-08-06 09:26:03.410 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2021-08-06 09:26:23.417 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 500 (requesting 500 papers) | collected 500 papers so far | min date: 2021-08-02
+2021-08-06 09:26:23.418 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=500&sortBy=submittedDate&sortOrder=descending
+2021-08-06 09:26:26.673 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2021-08-06 09:26:26.685 | DEBUG    | refy.download:download_arxiv:138 - Downloaded 782 preprints from arxiv
+2021-08-06 09:26:30.855 | DEBUG    | refy.download:download_biorxiv:21 - Downloading metadata for 941 papers from bioarxiv || 2021-07-30 -> 2021-08-06
+2021-08-06 09:26:33.895 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 11%
+2021-08-06 09:26:37.278 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 21%
+2021-08-06 09:26:40.612 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 32%
+2021-08-06 09:26:43.791 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 43%
+2021-08-06 09:26:47.438 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 53%
+2021-08-06 09:26:50.647 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 64%
+2021-08-06 09:26:53.928 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 74%
+2021-08-06 09:26:57.221 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 85%
+2021-08-06 09:27:00.524 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 96%
+2021-08-06 09:27:03.751 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 106%
+2021-08-06 09:27:03.768 | DEBUG    | refy.download:download_biorxiv:44 - kept 183 preprints from biorxiv
+2021-08-06 09:27:03.927 | DEBUG    | refy.recomend:__init__:57 - Loading user papers
+2021-08-06 09:27:09.155 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1207 entries
+2021-08-06 09:27:09.167 | DEBUG    | refy.input:load_user_input:54 - 1079/1207 user papers have abstracts
+2021-08-06 09:27:09.249 | DEBUG    | refy.infer:fit_tfidf:9 - Fitting TF-IDF model
+2021-08-06 09:27:10.052 | DEBUG    | refy.recomend:fit:147 - Estimating distances
+2021-08-06 09:34:53.416 | DEBUG    | refy.recomend:fit:165 - Recomended papers scores: 0      0.052946
+1      0.037088
+2      0.033564
+3      0.032429
+4      0.032347
+         ...   
+956    0.000000
+957    0.000000
+958    0.000000
+959    0.000000
+960    0.000000
+Name: score, Length: 961, dtype: float64
+2021-08-06 09:34:53.426 | DEBUG    | refy.recomend:__init__:67 - Getting keywords
+2021-08-06 09:35:04.566 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-08-06 09:35:04.567 | DEBUG    | refy.suggestions:to_table:146 - Suggestions -> table
+2021-08-06 09:35:05.211 | DEBUG    | refy.results:to_html:158 - Saving query to .HTML at: ./_recomendations.html
+2021-08-06 09:35:05.212 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-08-06 09:35:05.212 | DEBUG    | refy.suggestions:to_table:146 - Suggestions -> table
+2021-08-06 09:35:05.693 | INFO     | __main__:<module>:157 - Done
