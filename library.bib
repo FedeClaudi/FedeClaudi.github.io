@@ -40453,3 +40453,47 @@
   language = "en",
   doi      = "10.1101/2021.10.10.463817"
 }
+
+@UNPUBLISHED{Schimel2021-tx,
+  title    = "{iLQR-VAE} : control-based learning of input-driven dynamics with
+              applications to neural data",
+  author   = "Schimel, Marine and Kao, Ta-Chu and Jensen, Kristopher T and
+              Hennequin, Guillaume",
+  abstract = "Understanding how neural dynamics give rise to behaviour is one
+              of the most fundamental questions in systems neuroscience. To
+              achieve this, a common approach is to record neural populations
+              in behaving animals, and model these data as emanating from a
+              latent dynamical system whose state trajectories can then be
+              related back to behavioural observations via some form of
+              decoding. As recordings are typically performed in localized
+              circuits that form only a part of the wider implicated network,
+              it is important to simultaneously learn the local dynamics and
+              infer any unobserved external input that might drive them. Here,
+              we introduce iLQR-VAE, a novel control-based approach to
+              variational inference in nonlinear dynamical systems, capable of
+              learning both latent dynamics, initial conditions, and ongoing
+              external inputs. As in recent deep learning approaches, our
+              method is based on an input-driven sequential variational
+              autoencoder (VAE). The main novelty lies in the use of the
+              powerful iterative linear quadratic regulator algorithm (iLQR) in
+              the recognition model. Optimization of the standard evidence
+              lower-bound requires differentiating through iLQR solutions,
+              which is made possible by recent advances in differentiable
+              control. Importantly, having the recognition model implicitly
+              defined by the generative model greatly reduces the number of
+              free parameters and allows for flexible, high-quality inference.
+              This makes it possible for instance to evaluate the model on a
+              single long trial after training on smaller chunks. We
+              demonstrate the effectiveness of iLQR-VAE on a range of synthetic
+              systems, with autonomous as well as input-driven dynamics. We
+              further show state-of-the-art performance on neural and
+              behavioural recordings in non-human primates during two different
+              reaching tasks. \#\#\# Competing Interest Statement The authors
+              have declared no competing interest.",
+  journal  = "bioRxiv",
+  pages    = "2021.10.07.463540",
+  month    =  oct,
+  year     =  2021,
+  language = "en",
+  doi      = "10.1101/2021.10.07.463540"
+}
