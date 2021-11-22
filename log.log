@@ -5000,3 +5000,58 @@ Name: score, Length: 922, dtype: float64
 2021-11-19 06:22:21.683 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
 2021-11-19 06:22:21.684 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
 2021-11-19 06:22:22.060 | INFO     | __main__:<module>:157 - Done
+2021-11-22 06:16:48.933 | INFO     | __main__:<module>:14 - Creating refy.html
+2021-11-22 06:16:48.933 | DEBUG    | refy.recomend:__init__:44 - 
+
+Starting biorxiv & arxiv daily search
+2021-11-22 06:16:48.933 | DEBUG    | refy.recomend:__init__:53 - Downloading data from arxiv & biorxiv
+2021-11-22 06:16:48.983 | DEBUG    | refy.download:download_arxiv:53 - downloading papers from arxiv. || 2021-11-15 -> 2021-11-22
+2021-11-22 06:16:48.985 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 0 (requesting 500 papers) | collected 0 papers so far | min date: nan
+2021-11-22 06:16:48.985 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=0&sortBy=submittedDate&sortOrder=descending
+2021-11-22 06:16:50.379 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 200 papers - filtering
+2021-11-22 06:17:10.392 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 200 (requesting 500 papers) | collected 200 papers so far | min date: 2021-11-18
+2021-11-22 06:17:10.392 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=200&sortBy=submittedDate&sortOrder=descending
+2021-11-22 06:17:13.451 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2021-11-22 06:17:33.476 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 900 (requesting 500 papers) | collected 700 papers so far | min date: 2021-11-15
+2021-11-22 06:17:33.476 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=900&sortBy=submittedDate&sortOrder=descending
+2021-11-22 06:17:38.189 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2021-11-22 06:17:38.199 | DEBUG    | refy.download:download_arxiv:138 - Downloaded 700 preprints from arxiv
+2021-11-22 06:17:40.649 | DEBUG    | refy.download:download_biorxiv:21 - Downloading metadata for 884 papers from bioarxiv || 2021-11-15 -> 2021-11-22
+2021-11-22 06:17:42.919 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 11%
+2021-11-22 06:17:45.202 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 23%
+2021-11-22 06:17:47.559 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 34%
+2021-11-22 06:17:49.668 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 45%
+2021-11-22 06:17:51.769 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 57%
+2021-11-22 06:17:54.108 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 68%
+2021-11-22 06:17:56.249 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 79%
+2021-11-22 06:17:58.412 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 90%
+2021-11-22 06:18:00.715 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 102%
+2021-11-22 06:18:00.728 | DEBUG    | refy.download:download_biorxiv:44 - kept 183 preprints from biorxiv
+2021-11-22 06:18:00.824 | DEBUG    | refy.recomend:__init__:57 - Loading user papers
+2021-11-22 06:18:05.565 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1289 entries
+2021-11-22 06:18:05.576 | DEBUG    | refy.input:load_user_input:54 - 1146/1289 user papers have abstracts
+2021-11-22 06:18:05.633 | DEBUG    | refy.recomend:__init__:63 - Final papers count: 877 preprints and 1146 user papers
+2021-11-22 06:18:05.634 | DEBUG    | refy.infer:fit_tfidf:9 - Fitting TF-IDF model
+2021-11-22 06:18:06.304 | DEBUG    | refy.recomend:fit:151 - Estimating distances
+2021-11-22 06:22:43.051 | DEBUG    | refy.recomend:fit:169 - Recomended papers scores: 0      0.036517
+1      0.030437
+2      0.028728
+3      0.028694
+4      0.028572
+         ...   
+872    0.000000
+873    0.000000
+874    0.000000
+875    0.000000
+876    0.000000
+Name: score, Length: 877, dtype: float64
+2021-11-22 06:22:43.059 | DEBUG    | refy.recomend:__init__:71 - Getting keywords
+2021-11-22 06:22:52.311 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-11-22 06:22:52.313 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2021-11-22 06:22:52.825 | DEBUG    | refy.results:to_html:158 - Saving query to .HTML at: ./_recomendations.html
+2021-11-22 06:22:52.825 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2021-11-22 06:22:52.827 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2021-11-22 06:22:53.206 | INFO     | __main__:<module>:157 - Done
