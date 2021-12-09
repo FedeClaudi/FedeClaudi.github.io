@@ -41797,3 +41797,55 @@
   issn      = "2153-0866",
   doi       = "10.1109/IROS45743.2020.9340640"
 }
+
+@ARTICLE{Altan2021-wb,
+  title    = "Estimating the dimensionality of the manifold underlying
+              multi-electrode neural recordings",
+  author   = "Altan, Ege and Solla, Sara A and Miller, Lee E and Perreault,
+              Eric J",
+  abstract = "It is generally accepted that the number of neurons in a given
+              brain area far exceeds the number of neurons needed to carry any
+              specific function controlled by that area. For example, motor
+              areas of the human brain contain tens of millions of neurons that
+              control the activation of tens or at most hundreds of muscles.
+              This massive redundancy implies the covariation of many neurons,
+              which constrains the population activity to a low-dimensional
+              manifold within the space of all possible patterns of neural
+              activity. To gain a conceptual understanding of the complexity of
+              the neural activity within a manifold, it is useful to estimate
+              its dimensionality, which quantifies the number of degrees of
+              freedom required to describe the observed population activity
+              without significant information loss. While there are many
+              algorithms for dimensionality estimation, we do not know which
+              are well suited for analyzing neural activity. The objective of
+              this study was to evaluate the efficacy of several representative
+              algorithms for estimating the dimensionality of linearly and
+              nonlinearly embedded data. We generated synthetic neural
+              recordings with known intrinsic dimensionality and used them to
+              test the algorithms' accuracy and robustness. We emulated some of
+              the important challenges associated with experimental data by
+              adding noise, altering the nature of the embedding of the
+              low-dimensional manifold within the high-dimensional recordings,
+              varying the dimensionality of the manifold, and limiting the
+              amount of available data. We demonstrated that linear algorithms
+              overestimate the dimensionality of nonlinear, noise-free data. In
+              cases of high noise, most algorithms overestimated the
+              dimensionality. We thus developed a denoising algorithm based on
+              deep learning, the ``Joint Autoencoder'', which significantly
+              improved subsequent dimensionality estimation. Critically, we
+              found that all algorithms failed when the intrinsic
+              dimensionality was high (above 20) or when the amount of data
+              used for estimation was low. Based on the challenges we observed,
+              we formulated a pipeline for estimating the dimensionality of
+              experimental neural data.",
+  journal  = "PLoS Comput. Biol.",
+  volume   =  17,
+  number   =  11,
+  pages    = "e1008591",
+  month    =  nov,
+  year     =  2021,
+  language = "en",
+  issn     = "1553-734X, 1553-7358",
+  pmid     = "34843461",
+  doi      = "10.1371/journal.pcbi.1008591"
+}
