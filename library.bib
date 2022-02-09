@@ -42774,3 +42774,45 @@
   isbn      = "9780898716887, 9780898718577",
   doi       = "10.1137/1.9780898718577"
 }
+
+@ARTICLE{Liniger2017-ej,
+  title         = "{Optimization-Based} Autonomous Racing of 1:43 Scale {RC}
+                   Cars",
+  author        = "Liniger, Alexander and Domahidi, Alexander and Morari,
+                   Manfred",
+  abstract      = "This paper describes autonomous racing of RC race cars based
+                   on mathematical optimization. Using a dynamical model of the
+                   vehicle, control inputs are computed by receding horizon
+                   based controllers, where the objective is to maximize
+                   progress on the track subject to the requirement of staying
+                   on the track and avoiding opponents. Two different control
+                   formulations are presented. The first controller employs a
+                   two-level structure, consisting of a path planner and a
+                   nonlinear model predictive controller (NMPC) for tracking.
+                   The second controller combines both tasks in one nonlinear
+                   optimization problem (NLP) following the ideas of contouring
+                   control. Linear time varying models obtained by
+                   linearization are used to build local approximations of the
+                   control NLPs in the form of convex quadratic programs (QPs)
+                   at each sampling time. The resulting QPs have a typical MPC
+                   structure and can be solved in the range of milliseconds by
+                   recent structure exploiting solvers, which is key to the
+                   real-time feasibility of the overall control scheme.
+                   Obstacle avoidance is incorporated by means of a high-level
+                   corridor planner based on dynamic programming, which
+                   generates convex constraints for the controllers according
+                   to the current position of opponents and the track layout.
+                   The control performance is investigated experimentally using
+                   1:43 scale RC race cars, driven at speeds of more than 3 m/s
+                   and in operating regions with saturated rear tire forces
+                   (drifting). The algorithms run at 50 Hz sampling rate on
+                   embedded computing platforms, demonstrating the real-time
+                   feasibility and high performance of optimization-based
+                   approaches for autonomous racing.",
+  month         =  nov,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  eprint        = "1711.07300",
+  primaryClass  = "math.OC",
+  arxivid       = "1711.07300"
+}
