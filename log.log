@@ -7964,3 +7964,56 @@ Name: score, Length: 1143, dtype: float64
 2022-03-30 06:27:28.276 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
 2022-03-30 06:27:28.277 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
 2022-03-30 06:27:28.546 | INFO     | __main__:<module>:157 - Done
+2022-04-01 06:18:43.554 | INFO     | __main__:<module>:14 - Creating refy.html
+2022-04-01 06:18:43.554 | DEBUG    | refy.recomend:__init__:44 - 
+
+Starting biorxiv & arxiv daily search
+2022-04-01 06:18:43.555 | DEBUG    | refy.recomend:__init__:53 - Downloading data from arxiv & biorxiv
+2022-04-01 06:18:43.646 | DEBUG    | refy.download:download_arxiv:53 - downloading papers from arxiv. || 2022-03-25 -> 2022-04-01
+2022-04-01 06:18:43.647 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 0 (requesting 500 papers) | collected 0 papers so far | min date: nan
+2022-04-01 06:18:43.647 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=0&sortBy=submittedDate&sortOrder=descending
+2022-04-01 06:18:47.599 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2022-04-01 06:19:07.610 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 500 (requesting 500 papers) | collected 500 papers so far | min date: 2022-03-29
+2022-04-01 06:19:07.610 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=500&sortBy=submittedDate&sortOrder=descending
+2022-04-01 06:19:08.366 | DEBUG    | refy.download:download_arxiv:78 -  !!! Failed to retrieve data from arxiv, likely an API limitation issue, wait a bit. !!!
+2022-04-01 06:19:08.366 | DEBUG    | refy.download:download_arxiv:81 - OrderedDict([('@xmlns', 'http://www.w3.org/2005/Atom'), ('link', OrderedDict([('@href', 'http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%20OR%20cat%3Acs.GL%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.NE%20OR%20cat%3Acs.MA%20OR%20cat%3Acs.RO%20OR%20cat%3Acs.SY%20OR%20cat%3Amath.AT%20OR%20cat%3Amath.DG%20OR%20cat%3Amath.DS%20OR%20cat%3Amath.GN%20OR%20cat%3Amath.OC%20OR%20cat%3Aq-bio.NC%20OR%20cat%3Aq-bio.QM%26id_list%3D%26start%3D500%26max_results%3D500'), ('@rel', 'self'), ('@type', 'application/atom+xml')])), ('title', OrderedDict([('@type', 'html'), ('#text', 'ArXiv Query: search_query=cat:cs.AI OR cat:cs.GL OR cat:cs.LG OR cat:cs.NE OR cat:cs.MA OR cat:cs.RO OR cat:cs.SY OR cat:math.AT OR cat:math.DG OR cat:math.DS OR cat:math.GN OR cat:math.OC OR cat:q-bio.NC OR cat:q-bio.QM&id_list=&start=500&max_results=500')])), ('id', 'http://arxiv.org/api/VBg/1F32mcbvOKRPcOZKT89Ws8Q'), ('updated', '2022-04-01T00:00:00-04:00'), ('opensearch:totalResults', OrderedDict([('@xmlns:opensearch', 'http://a9.com/-/spec/opensearch/1.1/'), ('#text', '283358')])), ('opensearch:startIndex', OrderedDict([('@xmlns:opensearch', 'http://a9.com/-/spec/opensearch/1.1/'), ('#text', '500')])), ('opensearch:itemsPerPage', OrderedDict([('@xmlns:opensearch', 'http://a9.com/-/spec/opensearch/1.1/'), ('#text', '500')]))])
+2022-04-01 06:19:08.369 | DEBUG    | refy.download:download_arxiv:138 - Downloaded 500 preprints from arxiv
+2022-04-01 06:19:13.543 | DEBUG    | refy.download:download_biorxiv:21 - Downloading metadata for 968 papers from bioarxiv || 2022-03-25 -> 2022-04-01
+2022-04-01 06:19:17.109 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 10%
+2022-04-01 06:19:20.285 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 21%
+2022-04-01 06:19:23.497 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 31%
+2022-04-01 06:19:26.728 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 41%
+2022-04-01 06:19:29.914 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 52%
+2022-04-01 06:19:33.208 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 62%
+2022-04-01 06:19:36.527 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 72%
+2022-04-01 06:19:39.660 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 83%
+2022-04-01 06:19:42.854 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 93%
+2022-04-01 06:19:45.994 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 103%
+2022-04-01 06:19:46.006 | DEBUG    | refy.download:download_biorxiv:44 - kept 198 preprints from biorxiv
+2022-04-01 06:19:46.081 | DEBUG    | refy.recomend:__init__:57 - Loading user papers
+2022-04-01 06:19:50.011 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1335 entries
+2022-04-01 06:19:50.023 | DEBUG    | refy.input:load_user_input:54 - 1188/1335 user papers have abstracts
+2022-04-01 06:19:50.079 | DEBUG    | refy.recomend:__init__:63 - Final papers count: 686 preprints and 1188 user papers
+2022-04-01 06:19:50.079 | DEBUG    | refy.infer:fit_tfidf:9 - Fitting TF-IDF model
+2022-04-01 06:19:50.716 | DEBUG    | refy.recomend:fit:151 - Estimating distances
+2022-04-01 06:23:34.154 | DEBUG    | refy.recomend:fit:169 - Recomended papers scores: 0      0.042832
+1      0.038567
+2      0.032841
+3      0.032822
+4      0.029209
+         ...   
+681    0.000000
+682    0.000000
+683    0.000000
+684    0.000000
+685    0.000000
+Name: score, Length: 686, dtype: float64
+2022-04-01 06:23:34.162 | DEBUG    | refy.recomend:__init__:71 - Getting keywords
+2022-04-01 06:23:43.683 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2022-04-01 06:23:43.685 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2022-04-01 06:23:44.038 | DEBUG    | refy.results:to_html:158 - Saving query to .HTML at: ./_recomendations.html
+2022-04-01 06:23:44.039 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2022-04-01 06:23:44.040 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2022-04-01 06:23:44.303 | INFO     | __main__:<module>:157 - Done
