@@ -8905,3 +8905,55 @@ Name: score, Length: 1051, dtype: float64
 2022-05-11 06:35:16.656 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
 2022-05-11 06:35:16.658 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
 2022-05-11 06:35:16.984 | INFO     | __main__:<module>:157 - Done
+2022-05-13 06:22:47.553 | INFO     | __main__:<module>:14 - Creating refy.html
+2022-05-13 06:22:47.553 | DEBUG    | refy.recomend:__init__:44 - 
+
+Starting biorxiv & arxiv daily search
+2022-05-13 06:22:47.553 | DEBUG    | refy.recomend:__init__:53 - Downloading data from arxiv & biorxiv
+2022-05-13 06:22:47.614 | DEBUG    | refy.download:download_arxiv:53 - downloading papers from arxiv. || 2022-05-06 -> 2022-05-13
+2022-05-13 06:22:47.616 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 0 (requesting 500 papers) | collected 0 papers so far | min date: nan
+2022-05-13 06:22:47.616 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=0&sortBy=submittedDate&sortOrder=descending
+2022-05-13 06:22:50.888 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2022-05-13 06:23:10.913 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 500 (requesting 500 papers) | collected 500 papers so far | min date: 2022-05-09
+2022-05-13 06:23:10.914 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=500&sortBy=submittedDate&sortOrder=descending
+2022-05-13 06:23:11.440 | DEBUG    | refy.download:download_arxiv:78 -  !!! Failed to retrieve data from arxiv, likely an API limitation issue, wait a bit. !!!
+2022-05-13 06:23:11.440 | DEBUG    | refy.download:download_arxiv:81 - {'@xmlns': 'http://www.w3.org/2005/Atom', 'link': {'@href': 'http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%20OR%20cat%3Acs.GL%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.NE%20OR%20cat%3Acs.MA%20OR%20cat%3Acs.RO%20OR%20cat%3Acs.SY%20OR%20cat%3Amath.AT%20OR%20cat%3Amath.DG%20OR%20cat%3Amath.DS%20OR%20cat%3Amath.GN%20OR%20cat%3Amath.OC%20OR%20cat%3Aq-bio.NC%20OR%20cat%3Aq-bio.QM%26id_list%3D%26start%3D500%26max_results%3D500', '@rel': 'self', '@type': 'application/atom+xml'}, 'title': {'@type': 'html', '#text': 'ArXiv Query: search_query=cat:cs.AI OR cat:cs.GL OR cat:cs.LG OR cat:cs.NE OR cat:cs.MA OR cat:cs.RO OR cat:cs.SY OR cat:math.AT OR cat:math.DG OR cat:math.DS OR cat:math.GN OR cat:math.OC OR cat:q-bio.NC OR cat:q-bio.QM&id_list=&start=500&max_results=500'}, 'id': 'http://arxiv.org/api/VBg/1F32mcbvOKRPcOZKT89Ws8Q', 'updated': '2022-05-13T00:00:00-04:00', 'opensearch:totalResults': {'@xmlns:opensearch': 'http://a9.com/-/spec/opensearch/1.1/', '#text': '288937'}, 'opensearch:startIndex': {'@xmlns:opensearch': 'http://a9.com/-/spec/opensearch/1.1/', '#text': '500'}, 'opensearch:itemsPerPage': {'@xmlns:opensearch': 'http://a9.com/-/spec/opensearch/1.1/', '#text': '500'}}
+2022-05-13 06:23:11.443 | DEBUG    | refy.download:download_arxiv:138 - Downloaded 500 preprints from arxiv
+2022-05-13 06:23:14.715 | DEBUG    | refy.download:download_biorxiv:21 - Downloading metadata for 895 papers from bioarxiv || 2022-05-06 -> 2022-05-13
+2022-05-13 06:23:17.889 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 11%
+2022-05-13 06:23:21.207 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 22%
+2022-05-13 06:23:24.451 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 34%
+2022-05-13 06:23:27.468 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 45%
+2022-05-13 06:23:30.654 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 56%
+2022-05-13 06:23:33.633 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 67%
+2022-05-13 06:23:36.961 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 78%
+2022-05-13 06:23:39.946 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 89%
+2022-05-13 06:23:42.995 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 101%
+2022-05-13 06:23:43.007 | DEBUG    | refy.download:download_biorxiv:44 - kept 152 preprints from biorxiv
+2022-05-13 06:23:43.075 | DEBUG    | refy.recomend:__init__:57 - Loading user papers
+2022-05-13 06:23:48.367 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1346 entries
+2022-05-13 06:23:48.378 | DEBUG    | refy.input:load_user_input:54 - 1198/1346 user papers have abstracts
+2022-05-13 06:23:48.433 | DEBUG    | refy.recomend:__init__:63 - Final papers count: 645 preprints and 1198 user papers
+2022-05-13 06:23:48.433 | DEBUG    | refy.infer:fit_tfidf:9 - Fitting TF-IDF model
+2022-05-13 06:23:49.050 | DEBUG    | refy.recomend:fit:151 - Estimating distances
+2022-05-13 06:27:22.691 | DEBUG    | refy.recomend:fit:169 - Recomended papers scores: 0      0.042025
+1      0.038783
+2      0.037525
+3      0.034698
+4      0.031439
+         ...   
+640    0.000000
+641    0.000000
+642    0.000000
+643    0.000000
+644    0.000000
+Name: score, Length: 645, dtype: float64
+2022-05-13 06:27:22.698 | DEBUG    | refy.recomend:__init__:71 - Getting keywords
+2022-05-13 06:27:32.580 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2022-05-13 06:27:32.582 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2022-05-13 06:27:32.940 | DEBUG    | refy.results:to_html:158 - Saving query to .HTML at: ./_recomendations.html
+2022-05-13 06:27:32.941 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2022-05-13 06:27:32.942 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2022-05-13 06:27:33.207 | INFO     | __main__:<module>:157 - Done
