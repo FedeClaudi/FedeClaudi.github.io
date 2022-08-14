@@ -42165,6 +42165,42 @@
   issn      = "0033-295X"
 }
 
+@INPROCEEDINGS{Schaeffer2022-ug,
+  title     = "Streaming Inference for Infinite Feature Models",
+  booktitle = "Proceedings of the 39th International Conference on Machine
+               Learning",
+  author    = "Schaeffer, Rylan and Du, Yilun and Liu, Gabrielle K and Fiete,
+               Ila",
+  editor    = "Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and
+               Szepesvari, Csaba and Niu, Gang and Sabato, Sivan",
+  abstract  = "Unsupervised learning from a continuous stream of data is
+               arguably one of the most common and most challenging problems
+               facing intelligent agents. One class of unsupervised models,
+               collectively termed feature models, attempts unsupervised
+               discovery of latent features underlying the data and includes
+               common models such as PCA, ICA, and NMF. However, if the data
+               arrives in a continuous stream, determining the number of
+               features is a significant challenge and the number may grow with
+               time. In this work, we make feature models significantly more
+               applicable to streaming data by imbuing them with the ability to
+               create new features, online, in a probabilistic and principled
+               manner. To achieve this, we derive a novel recursive form of the
+               Indian Buffet Process, which we term the Recursive IBP (R-IBP).
+               We demonstrate that R-IBP can be be used as a prior for feature
+               models to efficiently infer a posterior over an unbounded number
+               of latent features, with quasilinear average time complexity and
+               logarithmic average space complexity. We compare R-IBP to
+               existing offline sampling and variational baselines in two
+               feature models (Linear Gaussian and Factor Analysis) and
+               demonstrate on synthetic and real data that R-IBP achieves
+               comparable or better performance in significantly less time.",
+  publisher = "PMLR",
+  volume    =  162,
+  pages     = "19366--19387",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2022
+}
+
 % The entry below contains non-ASCII chars that could not be converted
 % to a LaTeX equivalent.
 @ARTICLE{Schuessler2020-jm,
@@ -42207,6 +42243,43 @@
   language  = "en",
   issn      = "0022-5193",
   pmid      = "7442286"
+}
+
+@INPROCEEDINGS{Sharma2022-rq,
+  title     = "Content Addressable Memory Without Catastrophic Forgetting by
+               Heteroassociation with a Fixed Scaffold",
+  booktitle = "Proceedings of the 39th International Conference on Machine
+               Learning",
+  author    = "Sharma, Sugandha and Chandra, Sarthak and Fiete, Ila",
+  editor    = "Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and
+               Szepesvari, Csaba and Niu, Gang and Sabato, Sivan",
+  abstract  = "Content-addressable memory (CAM) networks, so-called because
+               stored items can be recalled by partial or corrupted versions of
+               the items, exhibit near-perfect recall of a small number of
+               information-dense patterns below capacity and a 'memory cliff'
+               beyond, such that inserting a single additional pattern results
+               in catastrophic loss of all stored patterns. We propose a novel
+               CAM architecture, Memory Scaffold with Heteroassociation (MESH),
+               that factorizes the problems of internal attractor dynamics and
+               association with external content to generate a CAM continuum
+               without a memory cliff: Small numbers of patterns are stored
+               with complete information recovery matching standard CAMs, while
+               inserting more patterns still results in partial recall of every
+               pattern, with a graceful trade-off between pattern number and
+               pattern richness. Motivated by the architecture of the
+               Entorhinal-Hippocampal memory circuit in the brain, MESH is a
+               tripartite architecture with pairwise interactions that uses a
+               predetermined set of internally stabilized states together with
+               heteroassociation between the internal states and arbitrary
+               external patterns. We show analytically and experimentally that
+               for any number of stored patterns, MESH nearly saturates the
+               total information bound (given by the number of synapses) for
+               CAM networks, outperforming all existing CAM models.",
+  publisher = "PMLR",
+  volume    =  162,
+  pages     = "19658--19682",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2022
 }
 
 @BOOK{Kirk2012-ji,
@@ -42396,6 +42469,39 @@
   publisher = "psycnet.apa.org",
   year      =  1930,
   issn      = "0068-6506"
+}
+
+@INPROCEEDINGS{Boopathy2022-mo,
+  title     = "How to Train Your Wide Neural Network Without Backprop: An
+               {Input-Weight} Alignment Perspective",
+  booktitle = "Proceedings of the 39th International Conference on Machine
+               Learning",
+  author    = "Boopathy, Akhilan and Fiete, Ila",
+  editor    = "Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and
+               Szepesvari, Csaba and Niu, Gang and Sabato, Sivan",
+  abstract  = "Recent works have examined theoretical and empirical properties
+               of wide neural networks trained in the Neural Tangent Kernel
+               (NTK) regime. Given that biological neural networks are much
+               wider than their artificial counterparts, we consider NTK regime
+               wide neural networks as a possible model of biological neural
+               networks. Leveraging NTK theory, we show theoretically that
+               gradient descent drives layerwise weight updates that are
+               aligned with their input activity correlations weighted by
+               error, and demonstrate empirically that the result also holds in
+               finite-width wide networks. The alignment result allows us to
+               formulate a family of biologically-motivated,
+               backpropagation-free learning rules that are theoretically
+               equivalent to backpropagation in infinite-width networks. We
+               test these learning rules on benchmark problems in feedforward
+               and recurrent neural networks and demonstrate, in wide networks,
+               comparable performance to backpropagation. The proposed rules
+               are particularly effective in low data regimes, which are common
+               in biological learning settings.",
+  publisher = "PMLR",
+  volume    =  162,
+  pages     = "2178--2205",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  2022
 }
 
 @BOOK{Bertsekas2019-as,
