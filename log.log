@@ -11240,3 +11240,55 @@ Name: score, Length: 788, dtype: float64
 2022-08-22 06:31:46.658 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
 2022-08-22 06:31:46.660 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
 2022-08-22 06:31:46.992 | INFO     | __main__:<module>:157 - Done
+2022-08-24 06:21:07.286 | INFO     | __main__:<module>:14 - Creating refy.html
+2022-08-24 06:21:07.286 | DEBUG    | refy.recomend:__init__:44 - 
+
+Starting biorxiv & arxiv daily search
+2022-08-24 06:21:07.287 | DEBUG    | refy.recomend:__init__:53 - Downloading data from arxiv & biorxiv
+2022-08-24 06:21:07.340 | DEBUG    | refy.download:download_arxiv:53 - downloading papers from arxiv. || 2022-08-17 -> 2022-08-24
+2022-08-24 06:21:07.341 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 0 (requesting 500 papers) | collected 0 papers so far | min date: nan
+2022-08-24 06:21:07.341 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=0&sortBy=submittedDate&sortOrder=descending
+2022-08-24 06:21:10.360 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2022-08-24 06:21:30.377 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 500 (requesting 500 papers) | collected 500 papers so far | min date: 2022-08-19
+2022-08-24 06:21:30.377 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=500&sortBy=submittedDate&sortOrder=descending
+2022-08-24 06:21:30.814 | DEBUG    | refy.download:download_arxiv:78 -  !!! Failed to retrieve data from arxiv, likely an API limitation issue, wait a bit. !!!
+2022-08-24 06:21:30.815 | DEBUG    | refy.download:download_arxiv:81 - {'@xmlns': 'http://www.w3.org/2005/Atom', 'link': {'@href': 'http://arxiv.org/api/query?search_query%3Dcat%3Acs.AI%20OR%20cat%3Acs.GL%20OR%20cat%3Acs.LG%20OR%20cat%3Acs.NE%20OR%20cat%3Acs.MA%20OR%20cat%3Acs.RO%20OR%20cat%3Acs.SY%20OR%20cat%3Amath.AT%20OR%20cat%3Amath.DG%20OR%20cat%3Amath.DS%20OR%20cat%3Amath.GN%20OR%20cat%3Amath.OC%20OR%20cat%3Aq-bio.NC%20OR%20cat%3Aq-bio.QM%26id_list%3D%26start%3D500%26max_results%3D500', '@rel': 'self', '@type': 'application/atom+xml'}, 'title': {'@type': 'html', '#text': 'ArXiv Query: search_query=cat:cs.AI OR cat:cs.GL OR cat:cs.LG OR cat:cs.NE OR cat:cs.MA OR cat:cs.RO OR cat:cs.SY OR cat:math.AT OR cat:math.DG OR cat:math.DS OR cat:math.GN OR cat:math.OC OR cat:q-bio.NC OR cat:q-bio.QM&id_list=&start=500&max_results=500'}, 'id': 'http://arxiv.org/api/VBg/1F32mcbvOKRPcOZKT89Ws8Q', 'updated': '2022-08-24T00:00:00-04:00', 'opensearch:totalResults': {'@xmlns:opensearch': 'http://a9.com/-/spec/opensearch/1.1/', '#text': '303851'}, 'opensearch:startIndex': {'@xmlns:opensearch': 'http://a9.com/-/spec/opensearch/1.1/', '#text': '500'}, 'opensearch:itemsPerPage': {'@xmlns:opensearch': 'http://a9.com/-/spec/opensearch/1.1/', '#text': '500'}}
+2022-08-24 06:21:30.818 | DEBUG    | refy.download:download_arxiv:138 - Downloaded 500 preprints from arxiv
+2022-08-24 06:21:33.922 | DEBUG    | refy.download:download_biorxiv:21 - Downloading metadata for 823 papers from bioarxiv || 2022-08-17 -> 2022-08-24
+2022-08-24 06:21:36.960 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 12%
+2022-08-24 06:21:40.197 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 24%
+2022-08-24 06:21:43.266 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 36%
+2022-08-24 06:21:46.285 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 49%
+2022-08-24 06:21:49.159 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 61%
+2022-08-24 06:21:52.215 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 73%
+2022-08-24 06:21:54.994 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 85%
+2022-08-24 06:21:57.807 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 97%
+2022-08-24 06:22:00.625 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 109%
+2022-08-24 06:22:00.635 | DEBUG    | refy.download:download_biorxiv:44 - kept 129 preprints from biorxiv
+2022-08-24 06:22:00.701 | DEBUG    | refy.recomend:__init__:57 - Loading user papers
+2022-08-24 06:22:06.493 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1406 entries
+2022-08-24 06:22:06.504 | DEBUG    | refy.input:load_user_input:54 - 1257/1406 user papers have abstracts
+2022-08-24 06:22:06.563 | DEBUG    | refy.recomend:__init__:63 - Final papers count: 625 preprints and 1257 user papers
+2022-08-24 06:22:06.563 | DEBUG    | refy.infer:fit_tfidf:9 - Fitting TF-IDF model
+2022-08-24 06:22:07.202 | DEBUG    | refy.recomend:fit:151 - Estimating distances
+2022-08-24 06:25:37.431 | DEBUG    | refy.recomend:fit:169 - Recomended papers scores: 0      0.041732
+1      0.028063
+2      0.028005
+3      0.027144
+4      0.026919
+         ...   
+620    0.000000
+621    0.000000
+622    0.000000
+623    0.000000
+624    0.000000
+Name: score, Length: 625, dtype: float64
+2022-08-24 06:25:37.441 | DEBUG    | refy.recomend:__init__:71 - Getting keywords
+2022-08-24 06:25:47.451 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2022-08-24 06:25:47.452 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2022-08-24 06:25:47.809 | DEBUG    | refy.results:to_html:158 - Saving query to .HTML at: ./_recomendations.html
+2022-08-24 06:25:47.810 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2022-08-24 06:25:47.811 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2022-08-24 06:25:48.074 | INFO     | __main__:<module>:157 - Done
