@@ -27,7 +27,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip pip==22.2
           pip install wheel
-          pip install sklearn
+          pip install scikit-learn
           pip install git+https://github.com/FedeClaudi/refy.git
 #          pip install refy -U
           
