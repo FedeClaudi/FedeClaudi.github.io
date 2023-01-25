@@ -31138,55 +31138,6 @@
   doi      = "10.1101/2022.05.02.490273"
 }
 
-@UNPUBLISHED{Jensen2022-dx,
-  title    = "Beyond the Euclidean brain: inferring non-Euclidean latent
-              trajectories from spike trains",
-  author   = "Jensen, Kristopher T and Liu, David and Kao, Ta-Chu and Lengyel,
-              M{\'a}t{\'e} and Hennequin, Guillaume",
-  abstract = "Neuroscience faces a growing need for scalable data analysis
-              methods that reduce the dimensionality of population recordings
-              yet retain key aspects of the computation or behaviour. To
-              extract interpretable latent trajectories from neural data, it is
-              critical to embrace the inherent topology of the features of
-              interest: head direction evolves on a ring or torus, 3D body
-              rotations on the special orthogonal group, and navigation is best
-              described in the intrinsic coordinates of the environment.
-              Accordingly, we recently proposed the manifold Gaussian process
-              latent variable model (mGPLVM) to simultaneously infer latent
-              representations on non-Euclidean manifolds and how neurons are
-              tuned to these representations. This probabilistic method
-              generalizes previous Euclidean models and allows principled
-              selection between candidate latent topologies. While powerful,
-              mGPLVM makes two unjustified approximations that limit its
-              practical applicability to neural datasets. First, consecutive
-              latent states are assumed independent a priori , whereas
-              behaviour is continuous in time. Second, its Gaussian noise model
-              is inappropriate for positive integer spike counts. Previous work
-              in Euclidean LVMs such as GPFA has shown significant improvements
-              in performance when modeling such features appropriately ([Jensen
-              et al., 2021][1]). Here, we extend mGPLVM by incorporating
-              temporally continuous priors over latent states and flexible
-              count-based noise models. This improves inference on synthetic
-              data, avoiding negative spike count predictions and discontinuous
-              jumps in latent trajectories. On real data, we also mitigate
-              these pathologies while improving model fit compared to the
-              original mGPLVM formulation. In summary, our extended mGPLVM
-              provides a widely applicable tool for inferring (non-)Euclidean
-              neural representations from large-scale, heterogeneous population
-              recordings. We provide an efficient implementation in python,
-              relying on recent advances in approximate inference to e.g. fit
-              10,000 time bins of recording for 100 neurons in five minutes on
-              a single GPU. \#\#\# Competing Interest Statement The authors
-              have declared no competing interest. [1]: \#ref-3",
-  journal  = "bioRxiv",
-  pages    = "2022.05.11.490308",
-  month    =  may,
-  year     =  2022,
-  keywords = "To Read",
-  language = "en",
-  doi      = "10.1101/2022.05.11.490308"
-}
-
 @UNPUBLISHED{Noorman2022-qm,
   title    = "Accurate angular integration with only a handful of neurons",
   author   = "Noorman, Marcella and Hulse, Brad K and Jayaraman, Vivek and
