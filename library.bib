@@ -50832,3 +50832,57 @@
   doi       = "10.1038/nn.3265",
   pmc       = "PMC3638087"
 }
+
+@ARTICLE{Todorova2014-qq,
+  title     = "To sort or not to sort: the impact of spike-sorting on neural
+               decoding performance",
+  author    = "Todorova, Sonia and Sadtler, Patrick and Batista, Aaron and
+               Chase, Steven and Ventura, Val{\'e}rie",
+  abstract  = "OBJECTIVE: Brain-computer interfaces (BCIs) are a promising
+               technology for restoring motor ability to paralyzed patients.
+               Spiking-based BCIs have successfully been used in clinical
+               trials to control multi-degree-of-freedom robotic devices.
+               Current implementations of these devices require a lengthy
+               spike-sorting step, which is an obstacle to moving this
+               technology from the lab to the clinic. A viable alternative is
+               to avoid spike-sorting, treating all threshold crossings of the
+               voltage waveform on an electrode as coming from one putative
+               neuron. It is not known, however, how much decoding information
+               might be lost by ignoring spike identity. APPROACH: We present a
+               full analysis of the effects of spike-sorting schemes on
+               decoding performance. Specifically, we compare how well two
+               common decoders, the optimal linear estimator and the Kalman
+               filter, reconstruct the arm movements of non-human primates
+               performing reaching tasks, when receiving input from various
+               sorting schemes. The schemes we tested included: using threshold
+               crossings without spike-sorting; expert-sorting discarding the
+               noise; expert-sorting, including the noise as if it were another
+               neuron; and automatic spike-sorting using waveform features. We
+               also decoded from a joint statistical model for the waveforms
+               and tuning curves, which does not involve an explicit
+               spike-sorting step. MAIN RESULTS: Discarding the threshold
+               crossings that cannot be assigned to neurons degrades decoding:
+               no spikes should be discarded. Decoding based on spike-sorted
+               units outperforms decoding based on electrodes voltage
+               crossings: spike-sorting is useful. The four waveform based
+               spike-sorting methods tested here yield similar decoding
+               efficiencies: a fast and simple method is competitive. Decoding
+               using the joint waveform and tuning model shows promise but is
+               not consistently superior. SIGNIFICANCE: Our results indicate
+               that simple automated spike-sorting performs as well as the more
+               computationally or manually intensive methods used here. Even
+               basic spike-sorting adds value to the low-threshold
+               waveform-crossing methods often employed in BCI decoding.",
+  journal   = "J. Neural Eng.",
+  publisher = "iopscience.iop.org",
+  volume    =  11,
+  number    =  5,
+  pages     = "056005",
+  month     =  oct,
+  year      =  2014,
+  language  = "en",
+  issn      = "1741-2560, 1741-2552",
+  pmid      = "25082508",
+  doi       = "10.1088/1741-2560/11/5/056005",
+  pmc       = "PMC4454741"
+}
