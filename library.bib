@@ -22651,6 +22651,27 @@
   doi       = "10.1038/s41551-020-0542-9"
 }
 
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@ARTICLE{Wimalasena2020-nm,
+  title     = "From unstable input to robust output",
+  author    = "Wimalasena, Lahiru N and Miller, Lee E and Pandarinath, Chethan",
+  abstract  = "… recovery of BCI cursor control via manifold alignment (which …
+               ' method is that the alignment of successive windows of … ,
+               which may allow the manifold alignment and thus the decoder 's …",
+  journal   = "Nat Biomed Eng",
+  publisher = "nature.com",
+  volume    =  4,
+  number    =  7,
+  pages     = "665--667",
+  month     =  jul,
+  year      =  2020,
+  language  = "en",
+  issn      = "2157-846X",
+  pmid      = "32661304",
+  doi       = "10.1038/s41551-020-0587-9"
+}
+
 @ARTICLE{Wen2021-zs,
   title    = "Rapid adaptation of brain-computer interfaces to new neuronal
               ensembles or participants via generative modelling",
@@ -32382,6 +32403,62 @@
   doi      = "10.1101/2022.08.25.505122"
 }
 
+@UNPUBLISHED{Ma2022-vw,
+  title    = "Using adversarial networks to extend brain computer interface
+              decoding accuracy over time",
+  author   = "Ma, Xuan and Rizzoglio, Fabio and Perreault, Eric J and Miller,
+              Lee E and Kennedy, Ann",
+  abstract = "Existing intracortical brain computer interfaces (iBCIs)
+              transform neural activity into control signals capable of
+              restoring movement to persons with paralysis. However, the
+              accuracy of the ``decoder'' at the heart of the iBCI typically
+              degrades over time due to turnover of recorded neurons. To
+              compensate, decoders can be recalibrated, but this requires the
+              user to spend extra time and effort to provide the necessary
+              data, then learn the new dynamics. As the recorded neurons
+              change, one can think of the underlying movement intent signal
+              being expressed in changing coordinates. If a mapping can be
+              computed between the different coordinate systems, it may be
+              possible to stabilize the original decoder's mapping from brain
+              to behavior without recalibration. We previously proposed a
+              method based on Generalized Adversarial Networks (GANs), called
+              ``Adversarial Domain Adaptation Network'' (ADAN), which aligns
+              the distributions of latent signals within underlying
+              low-dimensional neural manifolds. However, ADAN was tested on
+              only a very limited dataset. Here we propose a method based on
+              Cycle-Consistent Adversarial Networks (Cycle-GAN), which aligns
+              the distributions of the full-dimensional neural recordings. We
+              tested both Cycle-GAN and ADAN on data from multiple monkeys and
+              behaviors and compared them to a linear method based on
+              Procrustes Alignment of axes provided by Factor Analysis (PAF).
+              Both GAN-based methods outperformed PAF. Cycle-GAN and ADAN (like
+              PAF) are unsupervised and require little data, making them
+              practical in real life. Overall, Cycle-GAN had the best
+              performance and was easier to train and more robust than ADAN,
+              making it ideal for stabilizing iBCI systems over time.
+              Significance Statement The inherent instabilities in the neural
+              signals acquired by intracortical microelectrode arrays cause the
+              performance of an intracortical brain computer interface (iBCI)
+              decoder to drop over time, as the movement intent signal must
+              essentially be recorded from neurons representing an
+              ever-changing coordinate system. Here, we address this problem
+              using Generative Adversarial Networks (GANs) to align these
+              coordinates and compare their success to another, recently
+              proposed linear method that uses Factor Analysis and Procrustes
+              alignment. Our proposed methods are fully unsupervised, can be
+              trained quickly, and require remarkably little new data. These
+              methods should give iBCI users access to decoders with unchanging
+              dynamics, and without the need for periodic supervised
+              recalibration. \#\#\# Competing Interest Statement The authors
+              have declared no competing interest.",
+  journal  = "bioRxiv",
+  pages    = "2022.08.26.504777",
+  month    =  aug,
+  year     =  2022,
+  language = "en",
+  doi      = "10.1101/2022.08.26.504777"
+}
+
 @UNPUBLISHED{Tuckute2022-rh,
   title    = "Many but not all deep neural network audio models capture brain
               responses and exhibit hierarchical region correspondence",
@@ -42077,6 +42154,41 @@
   pmid     = "34843461",
   doi      = "10.1371/journal.pcbi.1008591",
   pmc      = "PMC8659648"
+}
+
+@ARTICLE{Feulner2021-un,
+  title     = "Neural manifold under plasticity in a goal driven learning
+               behaviour",
+  author    = "Feulner, Barbara and Clopath, Claudia",
+  abstract  = "Neural activity is often low dimensional and dominated by only a
+               few prominent neural covariation patterns. It has been
+               hypothesised that these covariation patterns could form the
+               building blocks used for fast and flexible motor control.
+               Supporting this idea, recent experiments have shown that monkeys
+               can learn to adapt their neural activity in motor cortex on a
+               timescale of minutes, given that the change lies within the
+               original low-dimensional subspace, also called neural manifold.
+               However, the neural mechanism underlying this within-manifold
+               adaptation remains unknown. Here, we show in a computational
+               model that modification of recurrent weights, driven by a
+               learned feedback signal, can account for the observed
+               behavioural difference between within- and outside-manifold
+               learning. Our findings give a new perspective, showing that
+               recurrent weight changes do not necessarily lead to change in
+               the neural manifold. On the contrary, successful learning is
+               naturally constrained to a common subspace.",
+  journal   = "PLoS Comput. Biol.",
+  publisher = "journals.plos.org",
+  volume    =  17,
+  number    =  2,
+  pages     = "e1008621",
+  month     =  feb,
+  year      =  2021,
+  language  = "en",
+  issn      = "1553-734X, 1553-7358",
+  pmid      = "33544700",
+  doi       = "10.1371/journal.pcbi.1008621",
+  pmc       = "PMC7864452"
 }
 
 @ARTICLE{Tyson2021-sk,
