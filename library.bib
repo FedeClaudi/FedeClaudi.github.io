@@ -3840,44 +3840,58 @@
   doi       = "10.1016/j.jneumeth.2022.109489"
 }
 
-@ARTICLE{Koyama2010-qu,
-  title    = "Comparison of brain-computer interface decoding algorithms in
-              open-loop and closed-loop control",
-  author   = "Koyama, Shinsuke and Chase, Steven M and Whitford, Andrew S and
-              Velliste, Meel and Schwartz, Andrew B and Kass, Robert E",
-  abstract = "Neuroprosthetic devices such as a computer cursor can be
-              controlled by the activity of cortical neurons when an
-              appropriate algorithm is used to decode motor intention.
-              Algorithms which have been proposed for this purpose range from
-              the simple population vector algorithm (PVA) and optimal linear
-              estimator (OLE) to various versions of Bayesian decoders.
-              Although Bayesian decoders typically provide the most accurate
-              off-line reconstructions, it is not known which model assumptions
-              in these algorithms are critical for improving decoding
-              performance. Furthermore, it is not necessarily true that
-              improvements (or deficits) in off-line reconstruction will
-              translate into improvements (or deficits) in on-line control, as
-              the subject might compensate for the specifics of the decoder in
-              use at the time. Here we show that by comparing the performance
-              of nine decoders, assumptions about uniformly distributed
-              preferred directions and the way the cursor trajectories are
-              smoothed have the most impact on decoder performance in off-line
-              reconstruction, while assumptions about tuning curve linearity
-              and spike count variance play relatively minor roles. In on-line
-              control, subjects compensate for directional biases caused by
-              non-uniformly distributed preferred directions, leaving cursor
-              smoothing differences as the largest single algorithmic
-              difference driving decoder performance.",
-  journal  = "J. Comput. Neurosci.",
-  volume   =  29,
-  number   = "1-2",
-  pages    = "73--87",
-  month    =  aug,
-  year     =  2010,
-  language = "en",
-  issn     = "0929-5313, 1573-6873",
-  pmid     = "19904595",
-  doi      = "10.1007/s10827-009-0196-9"
+@ARTICLE{Shanechi2016-pa,
+  title     = "Robust {Brain-Machine} Interface Design Using Optimal Feedback
+               Control Modeling and Adaptive Point Process Filtering",
+  author    = "Shanechi, Maryam M and Orsborn, Amy L and Carmena, Jose M",
+  abstract  = "Much progress has been made in brain-machine interfaces (BMI)
+               using decoders such as Kalman filters and finding their
+               parameters with closed-loop decoder adaptation (CLDA). However,
+               current decoders do not model the spikes directly, and hence may
+               limit the processing time-scale of BMI control and adaptation.
+               Moreover, while specialized CLDA techniques for intention
+               estimation and assisted training exist, a unified and systematic
+               CLDA framework that generalizes across different setups is
+               lacking. Here we develop a novel closed-loop BMI training
+               architecture that allows for processing, control, and adaptation
+               using spike events, enables robust control and extends to
+               various tasks. Moreover, we develop a unified control-theoretic
+               CLDA framework within which intention estimation, assisted
+               training, and adaptation are performed. The architecture
+               incorporates an infinite-horizon optimal feedback-control (OFC)
+               model of the brain's behavior in closed-loop BMI control, and a
+               point process model of spikes. The OFC model infers the user's
+               motor intention during CLDA-a process termed intention
+               estimation. OFC is also used to design an autonomous and dynamic
+               assisted training technique. The point process model allows for
+               neural processing, control and decoder adaptation with every
+               spike event and at a faster time-scale than current decoders; it
+               also enables dynamic spike-event-based parameter adaptation
+               unlike current CLDA methods that use batch-based adaptation on
+               much slower adaptation time-scales. We conducted closed-loop
+               experiments in a non-human primate over tens of days to
+               dissociate the effects of these novel CLDA components. The OFC
+               intention estimation improved BMI performance compared with
+               current intention estimation techniques. OFC assisted training
+               allowed the subject to consistently achieve proficient control.
+               Spike-event-based adaptation resulted in faster and more
+               consistent performance convergence compared with batch-based
+               methods, and was robust to parameter initialization. Finally,
+               the architecture extended control to tasks beyond those used for
+               CLDA training. These results have significant implications
+               towards the development of clinically-viable neuroprosthetics.",
+  journal   = "PLoS Comput. Biol.",
+  publisher = "journals.plos.org",
+  volume    =  12,
+  number    =  4,
+  pages     = "e1004730",
+  month     =  apr,
+  year      =  2016,
+  language  = "en",
+  issn      = "1553-734X, 1553-7358",
+  pmid      = "27035820",
+  doi       = "10.1371/journal.pcbi.1004730",
+  pmc       = "PMC4818102"
 }
 
 @ARTICLE{Weir_undated-oc,
@@ -52390,4 +52404,44 @@
   pmid     = "19502004",
   doi      = "10.1016/j.neunet.2009.05.005",
   pmc      = "PMC2783655"
+}
+
+@ARTICLE{Koyama2010-qu,
+  title    = "Comparison of brain-computer interface decoding algorithms in
+              open-loop and closed-loop control",
+  author   = "Koyama, Shinsuke and Chase, Steven M and Whitford, Andrew S and
+              Velliste, Meel and Schwartz, Andrew B and Kass, Robert E",
+  abstract = "Neuroprosthetic devices such as a computer cursor can be
+              controlled by the activity of cortical neurons when an
+              appropriate algorithm is used to decode motor intention.
+              Algorithms which have been proposed for this purpose range from
+              the simple population vector algorithm (PVA) and optimal linear
+              estimator (OLE) to various versions of Bayesian decoders.
+              Although Bayesian decoders typically provide the most accurate
+              off-line reconstructions, it is not known which model assumptions
+              in these algorithms are critical for improving decoding
+              performance. Furthermore, it is not necessarily true that
+              improvements (or deficits) in off-line reconstruction will
+              translate into improvements (or deficits) in on-line control, as
+              the subject might compensate for the specifics of the decoder in
+              use at the time. Here we show that by comparing the performance
+              of nine decoders, assumptions about uniformly distributed
+              preferred directions and the way the cursor trajectories are
+              smoothed have the most impact on decoder performance in off-line
+              reconstruction, while assumptions about tuning curve linearity
+              and spike count variance play relatively minor roles. In on-line
+              control, subjects compensate for directional biases caused by
+              non-uniformly distributed preferred directions, leaving cursor
+              smoothing differences as the largest single algorithmic
+              difference driving decoder performance.",
+  journal  = "J. Comput. Neurosci.",
+  volume   =  29,
+  number   = "1-2",
+  pages    = "73--87",
+  month    =  aug,
+  year     =  2010,
+  language = "en",
+  issn     = "0929-5313, 1573-6873",
+  pmid     = "19904595",
+  doi      = "10.1007/s10827-009-0196-9"
 }
