@@ -3840,47 +3840,44 @@
   doi       = "10.1016/j.jneumeth.2022.109489"
 }
 
-@ARTICLE{Chase2009-hh,
-  title    = "Bias, optimal linear estimation, and the differences between
-              open-loop simulation and closed-loop performance of spiking-based
-              brain-computer interface algorithms",
-  author   = "Chase, Steven M and Schwartz, Andrew B and Kass, Robert E",
-  abstract = "The activity of dozens of simultaneously recorded neurons can be
-              used to control the movement of a robotic arm or a cursor on a
-              computer screen. This motor neural prosthetic technology has
-              spurred an increased interest in the algorithms by which motor
-              intention can be inferred. The simplest of these algorithms is
-              the population vector algorithm (PVA), where the activity of each
-              cell is used to weight a vector pointing in that neuron's
-              preferred direction. Off-line, it is possible to show that more
-              complicated algorithms, such as the optimal linear estimator
-              (OLE), can yield substantial improvements in the accuracy of
-              reconstructed hand movements over the PVA. We call this open-loop
-              performance. In contrast, this performance difference may not be
-              present in closed-loop, on-line control. The obvious difference
-              between open and closed-loop control is the ability to adapt to
-              the specifics of the decoder in use at the time. In order to
-              predict performance gains that an algorithm may yield in
-              closed-loop control, it is necessary to build a model that
-              captures aspects of this adaptation process. Here we present a
-              framework for modeling the closed-loop performance of the PVA and
-              the OLE. Using both simulations and experiments, we show that (1)
-              the performance gain with certain decoders can be far less
-              extreme than predicted by off-line results, (2) that subjects are
-              able to compensate for certain types of bias in decoders, and (3)
-              that care must be taken to ensure that estimation error does not
-              degrade the performance of theoretically optimal decoders.",
-  journal  = "Neural Netw.",
-  volume   =  22,
-  number   =  9,
-  pages    = "1203--1213",
-  month    =  nov,
-  year     =  2009,
+@ARTICLE{Koyama2010-qu,
+  title    = "Comparison of brain-computer interface decoding algorithms in
+              open-loop and closed-loop control",
+  author   = "Koyama, Shinsuke and Chase, Steven M and Whitford, Andrew S and
+              Velliste, Meel and Schwartz, Andrew B and Kass, Robert E",
+  abstract = "Neuroprosthetic devices such as a computer cursor can be
+              controlled by the activity of cortical neurons when an
+              appropriate algorithm is used to decode motor intention.
+              Algorithms which have been proposed for this purpose range from
+              the simple population vector algorithm (PVA) and optimal linear
+              estimator (OLE) to various versions of Bayesian decoders.
+              Although Bayesian decoders typically provide the most accurate
+              off-line reconstructions, it is not known which model assumptions
+              in these algorithms are critical for improving decoding
+              performance. Furthermore, it is not necessarily true that
+              improvements (or deficits) in off-line reconstruction will
+              translate into improvements (or deficits) in on-line control, as
+              the subject might compensate for the specifics of the decoder in
+              use at the time. Here we show that by comparing the performance
+              of nine decoders, assumptions about uniformly distributed
+              preferred directions and the way the cursor trajectories are
+              smoothed have the most impact on decoder performance in off-line
+              reconstruction, while assumptions about tuning curve linearity
+              and spike count variance play relatively minor roles. In on-line
+              control, subjects compensate for directional biases caused by
+              non-uniformly distributed preferred directions, leaving cursor
+              smoothing differences as the largest single algorithmic
+              difference driving decoder performance.",
+  journal  = "J. Comput. Neurosci.",
+  volume   =  29,
+  number   = "1-2",
+  pages    = "73--87",
+  month    =  aug,
+  year     =  2010,
   language = "en",
-  issn     = "0893-6080, 1879-2782",
-  pmid     = "19502004",
-  doi      = "10.1016/j.neunet.2009.05.005",
-  pmc      = "PMC2783655"
+  issn     = "0929-5313, 1573-6873",
+  pmid     = "19904595",
+  doi      = "10.1007/s10827-009-0196-9"
 }
 
 @ARTICLE{Weir_undated-oc,
@@ -52350,4 +52347,47 @@
   eprint        = "2211.11665",
   primaryClass  = "cs.LG",
   arxivid       = "2211.11665"
+}
+
+@ARTICLE{Chase2009-hh,
+  title    = "Bias, optimal linear estimation, and the differences between
+              open-loop simulation and closed-loop performance of spiking-based
+              brain-computer interface algorithms",
+  author   = "Chase, Steven M and Schwartz, Andrew B and Kass, Robert E",
+  abstract = "The activity of dozens of simultaneously recorded neurons can be
+              used to control the movement of a robotic arm or a cursor on a
+              computer screen. This motor neural prosthetic technology has
+              spurred an increased interest in the algorithms by which motor
+              intention can be inferred. The simplest of these algorithms is
+              the population vector algorithm (PVA), where the activity of each
+              cell is used to weight a vector pointing in that neuron's
+              preferred direction. Off-line, it is possible to show that more
+              complicated algorithms, such as the optimal linear estimator
+              (OLE), can yield substantial improvements in the accuracy of
+              reconstructed hand movements over the PVA. We call this open-loop
+              performance. In contrast, this performance difference may not be
+              present in closed-loop, on-line control. The obvious difference
+              between open and closed-loop control is the ability to adapt to
+              the specifics of the decoder in use at the time. In order to
+              predict performance gains that an algorithm may yield in
+              closed-loop control, it is necessary to build a model that
+              captures aspects of this adaptation process. Here we present a
+              framework for modeling the closed-loop performance of the PVA and
+              the OLE. Using both simulations and experiments, we show that (1)
+              the performance gain with certain decoders can be far less
+              extreme than predicted by off-line results, (2) that subjects are
+              able to compensate for certain types of bias in decoders, and (3)
+              that care must be taken to ensure that estimation error does not
+              degrade the performance of theoretically optimal decoders.",
+  journal  = "Neural Netw.",
+  volume   =  22,
+  number   =  9,
+  pages    = "1203--1213",
+  month    =  nov,
+  year     =  2009,
+  language = "en",
+  issn     = "0893-6080, 1879-2782",
+  pmid     = "19502004",
+  doi      = "10.1016/j.neunet.2009.05.005",
+  pmc      = "PMC2783655"
 }
