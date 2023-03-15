@@ -3840,58 +3840,50 @@
   doi       = "10.1016/j.jneumeth.2022.109489"
 }
 
-@ARTICLE{Shanechi2016-pa,
-  title     = "Robust {Brain-Machine} Interface Design Using Optimal Feedback
-               Control Modeling and Adaptive Point Process Filtering",
-  author    = "Shanechi, Maryam M and Orsborn, Amy L and Carmena, Jose M",
-  abstract  = "Much progress has been made in brain-machine interfaces (BMI)
-               using decoders such as Kalman filters and finding their
-               parameters with closed-loop decoder adaptation (CLDA). However,
-               current decoders do not model the spikes directly, and hence may
-               limit the processing time-scale of BMI control and adaptation.
-               Moreover, while specialized CLDA techniques for intention
-               estimation and assisted training exist, a unified and systematic
-               CLDA framework that generalizes across different setups is
-               lacking. Here we develop a novel closed-loop BMI training
-               architecture that allows for processing, control, and adaptation
-               using spike events, enables robust control and extends to
-               various tasks. Moreover, we develop a unified control-theoretic
-               CLDA framework within which intention estimation, assisted
-               training, and adaptation are performed. The architecture
-               incorporates an infinite-horizon optimal feedback-control (OFC)
-               model of the brain's behavior in closed-loop BMI control, and a
-               point process model of spikes. The OFC model infers the user's
-               motor intention during CLDA-a process termed intention
-               estimation. OFC is also used to design an autonomous and dynamic
-               assisted training technique. The point process model allows for
-               neural processing, control and decoder adaptation with every
-               spike event and at a faster time-scale than current decoders; it
-               also enables dynamic spike-event-based parameter adaptation
-               unlike current CLDA methods that use batch-based adaptation on
-               much slower adaptation time-scales. We conducted closed-loop
-               experiments in a non-human primate over tens of days to
-               dissociate the effects of these novel CLDA components. The OFC
-               intention estimation improved BMI performance compared with
-               current intention estimation techniques. OFC assisted training
-               allowed the subject to consistently achieve proficient control.
-               Spike-event-based adaptation resulted in faster and more
-               consistent performance convergence compared with batch-based
-               methods, and was robust to parameter initialization. Finally,
-               the architecture extended control to tasks beyond those used for
-               CLDA training. These results have significant implications
-               towards the development of clinically-viable neuroprosthetics.",
-  journal   = "PLoS Comput. Biol.",
-  publisher = "journals.plos.org",
-  volume    =  12,
-  number    =  4,
-  pages     = "e1004730",
-  month     =  apr,
-  year      =  2016,
+@ARTICLE{Lagang2013-fg,
+  title     = "Stochastic optimal control as a theory of brain-machine
+               interface operation",
+  author    = "Lagang, Manuel and Srinivasan, Lakshminarayan",
+  abstract  = "The closed-loop operation of brain-machine interfaces (BMI)
+               provides a framework to study the mechanisms behind neural
+               control through a restricted output channel, with emerging
+               clinical applications to stroke, degenerative disease, and
+               trauma. Despite significant empirically driven improvements in
+               closed-loop BMI systems, a fundamental, experimentally validated
+               theory of closed-loop BMI operation is lacking. Here we propose
+               a compact model based on stochastic optimal control to describe
+               the brain in skillfully operating canonical decoding algorithms.
+               The model produces goal-directed BMI movements with sensory
+               feedback and intrinsically noisy neural output signals. Various
+               experimentally validated phenomena emerge naturally from this
+               model, including performance deterioration with bin width,
+               compensation of biased decoders, and shifts in tuning curves
+               between arm control and BMI control. Analysis of the model
+               provides insight into possible mechanisms underlying these
+               behaviors, with testable predictions. Spike binning may erode
+               performance in part from intrinsic control-dependent
+               constraints, regardless of decoding accuracy. In compensating
+               decoder bias, the brain may incur an energetic cost associated
+               with action potential production. Tuning curve shifts, seen
+               after the mastery of a BMI-based skill, may reflect the brain's
+               implementation of a new closed-loop control policy. The
+               direction and magnitude of tuning curve shifts may be altered by
+               decoder structure, ensemble size, and the costs of closed-loop
+               control. Looking forward, the model provides a framework for the
+               design and simulated testing of an emerging class of BMI
+               algorithms that seek to directly exploit the presence of a human
+               in the loop.",
+  journal   = "Neural Comput.",
+  publisher = "direct.mit.edu",
+  volume    =  25,
+  number    =  2,
+  pages     = "374--417",
+  month     =  feb,
+  year      =  2013,
   language  = "en",
-  issn      = "1553-734X, 1553-7358",
-  pmid      = "27035820",
-  doi       = "10.1371/journal.pcbi.1004730",
-  pmc       = "PMC4818102"
+  issn      = "0899-7667, 1530-888X",
+  pmid      = "23148413",
+  doi       = "10.1162/NECO\_a\_00394"
 }
 
 @ARTICLE{Weir_undated-oc,
@@ -52444,4 +52436,58 @@
   issn     = "0929-5313, 1573-6873",
   pmid     = "19904595",
   doi      = "10.1007/s10827-009-0196-9"
+}
+
+@ARTICLE{Shanechi2016-pa,
+  title     = "Robust {Brain-Machine} Interface Design Using Optimal Feedback
+               Control Modeling and Adaptive Point Process Filtering",
+  author    = "Shanechi, Maryam M and Orsborn, Amy L and Carmena, Jose M",
+  abstract  = "Much progress has been made in brain-machine interfaces (BMI)
+               using decoders such as Kalman filters and finding their
+               parameters with closed-loop decoder adaptation (CLDA). However,
+               current decoders do not model the spikes directly, and hence may
+               limit the processing time-scale of BMI control and adaptation.
+               Moreover, while specialized CLDA techniques for intention
+               estimation and assisted training exist, a unified and systematic
+               CLDA framework that generalizes across different setups is
+               lacking. Here we develop a novel closed-loop BMI training
+               architecture that allows for processing, control, and adaptation
+               using spike events, enables robust control and extends to
+               various tasks. Moreover, we develop a unified control-theoretic
+               CLDA framework within which intention estimation, assisted
+               training, and adaptation are performed. The architecture
+               incorporates an infinite-horizon optimal feedback-control (OFC)
+               model of the brain's behavior in closed-loop BMI control, and a
+               point process model of spikes. The OFC model infers the user's
+               motor intention during CLDA-a process termed intention
+               estimation. OFC is also used to design an autonomous and dynamic
+               assisted training technique. The point process model allows for
+               neural processing, control and decoder adaptation with every
+               spike event and at a faster time-scale than current decoders; it
+               also enables dynamic spike-event-based parameter adaptation
+               unlike current CLDA methods that use batch-based adaptation on
+               much slower adaptation time-scales. We conducted closed-loop
+               experiments in a non-human primate over tens of days to
+               dissociate the effects of these novel CLDA components. The OFC
+               intention estimation improved BMI performance compared with
+               current intention estimation techniques. OFC assisted training
+               allowed the subject to consistently achieve proficient control.
+               Spike-event-based adaptation resulted in faster and more
+               consistent performance convergence compared with batch-based
+               methods, and was robust to parameter initialization. Finally,
+               the architecture extended control to tasks beyond those used for
+               CLDA training. These results have significant implications
+               towards the development of clinically-viable neuroprosthetics.",
+  journal   = "PLoS Comput. Biol.",
+  publisher = "journals.plos.org",
+  volume    =  12,
+  number    =  4,
+  pages     = "e1004730",
+  month     =  apr,
+  year      =  2016,
+  language  = "en",
+  issn      = "1553-734X, 1553-7358",
+  pmid      = "27035820",
+  doi       = "10.1371/journal.pcbi.1004730",
+  pmc       = "PMC4818102"
 }
