@@ -1401,48 +1401,61 @@
   pmid      = "12868646"
 }
 
-@ARTICLE{Kang2012-zz,
-  title     = "Decoding of finger, hand and arm kinematics using switching
-               linear dynamical systems with pre-motor cortical ensembles",
-  author    = "Kang, Xiaoxu and Schieber, Marc H and Thakor, Nitish V",
-  abstract  = "Previous works in Brain-Machine Interfaces (BMI) have mostly
-               used a single Kalman filter decoder for deriving continuous
-               kinematics in the complete execution of behavioral tasks. A
-               linear dynamical system may not be able to generalize the
-               sequence whose dynamics changes over time. Examples of such data
-               include human motion such as walking, running, and dancing each
-               of which exhibit complex constantly evolving dynamics. Switching
-               linear dynamical systems (S-LDSs) are powerful models capable of
-               describing a physical process governed by state equations that
-               switch from time to time. The present work demonstrates the
-               motion-state-dependent adaptive decoding of hand and arm
-               kinematics in four different behavioral tasks. Single-unit
-               neural activities were recorded from cortical ensembles in the
-               ventral and dorsal premotor (PMv and PMd) areas of a trained
-               rhesus monkey during four different reach-to-grasp tasks. We
-               constructed S-LDSs for decoding of continuous hand and arm
-               kinematics based on different epochs of the experiments, namely,
-               baseline, pre-movement planning, movement, and final fixation.
-               Average decoding accuracies as high as 89.9\%, 88.6\%, 89.8\%,
-               89.4\%, were achieved for motion-state-dependent decoding across
-               four different behavioral tasks, respectively (p<0.05); these
-               results are higher than previous works using a single Kalman
-               filter (accuracy: 0.83). These results demonstrate that the
-               adaptive decoding approach, or motion-state-dependent decoding,
-               may have a larger descriptive capability than the decoding
-               approach using a single decoder. This is a critical step towards
-               the development of a BMI for adaptive neural control of a
-               clinically viable prosthesis.",
-  journal   = "Conf. Proc. IEEE Eng. Med. Biol. Soc.",
-  publisher = "ieeexplore.ieee.org",
-  volume    =  2012,
-  pages     = "1732--1735",
-  year      =  2012,
+@ARTICLE{Song2022-bi,
+  title     = "Modeling and inference methods for switching regime-dependent
+               dynamical systems with multiscale neural observations",
+  author    = "Song, Christian Y and Hsieh, Han-Lin and Pesaran, Bijan and
+               Shanechi, Maryam M",
+  abstract  = "Objective.Realizing neurotechnologies that enable long-term
+               neural recordings across multiple spatial-temporal scales during
+               naturalistic behaviors requires new modeling and inference
+               methods that can simultaneously address two challenges. First,
+               the methods should aggregate information across all activity
+               scales from multiple recording sources such as spiking and field
+               potentials. Second, the methods should detect changes in the
+               regimes of behavior and/or neural dynamics during naturalistic
+               scenarios and long-term recordings. Prior regime detection
+               methods are developed for a single scale of activity rather than
+               multiscale activity, and prior multiscale methods have not
+               considered regime switching and are for stationary
+               cases.Approach.Here, we address both challenges by developing a
+               switching multiscale dynamical system model and the associated
+               filtering and smoothing methods. This model describes the
+               encoding of an unobserved brain state in multiscale spike-field
+               activity. It also allows for regime-switching dynamics using an
+               unobserved regime state that dictates the dynamical and encoding
+               parameters at every time-step. We also design the associated
+               switching multiscale inference methods that estimate both the
+               unobserved regime and brain states from simultaneous spike-field
+               activity.Main results.We validate the methods in both extensive
+               numerical simulations and prefrontal spike-field data recorded
+               in a monkey performing saccades for fluid rewards. We show that
+               these methods can successfully combine the spiking and field
+               potential observations to simultaneously track the regime and
+               brain states accurately. Doing so, these methods lead to better
+               state estimation compared with single-scale switching methods or
+               stationary multiscale methods. Also, for single-scale linear
+               Gaussian observations, the new switching smoother can better
+               generalize to diverse system settings compared to prior
+               switching smoothers.Significance.These modeling and inference
+               methods effectively incorporate both regime-detection and
+               multiscale observations. As such, they could facilitate
+               investigation of latent switching neural population dynamics and
+               improve future brain-machine interfaces by enabling inference in
+               naturalistic scenarios where regime-dependent multiscale
+               activity and behavior arise.",
+  journal   = "J. Neural Eng.",
+  publisher = "iopscience.iop.org",
+  volume    =  19,
+  number    =  6,
+  month     =  nov,
+  year      =  2022,
+  keywords  = "decoding; dynamical systems; multiscale neural observations;
+               spiking and field potential activity; switching state space",
   language  = "en",
-  issn      = "1557-170X",
-  pmid      = "23366244",
-  doi       = "10.1109/EMBC.2012.6346283",
-  pmc       = "PMC4216179"
+  issn      = "1741-2560, 1741-2552",
+  pmid      = "36261030",
+  doi       = "10.1088/1741-2552/ac9b94"
 }
 
 @ARTICLE{Edwards1954-hk,
@@ -19151,6 +19164,50 @@
 
 @MISC{noauthor_undated-pm,
   title = "Refactoring {UI} v1.0.1.pdf"
+}
+
+@ARTICLE{Kang2012-zz,
+  title     = "Decoding of finger, hand and arm kinematics using switching
+               linear dynamical systems with pre-motor cortical ensembles",
+  author    = "Kang, Xiaoxu and Schieber, Marc H and Thakor, Nitish V",
+  abstract  = "Previous works in Brain-Machine Interfaces (BMI) have mostly
+               used a single Kalman filter decoder for deriving continuous
+               kinematics in the complete execution of behavioral tasks. A
+               linear dynamical system may not be able to generalize the
+               sequence whose dynamics changes over time. Examples of such data
+               include human motion such as walking, running, and dancing each
+               of which exhibit complex constantly evolving dynamics. Switching
+               linear dynamical systems (S-LDSs) are powerful models capable of
+               describing a physical process governed by state equations that
+               switch from time to time. The present work demonstrates the
+               motion-state-dependent adaptive decoding of hand and arm
+               kinematics in four different behavioral tasks. Single-unit
+               neural activities were recorded from cortical ensembles in the
+               ventral and dorsal premotor (PMv and PMd) areas of a trained
+               rhesus monkey during four different reach-to-grasp tasks. We
+               constructed S-LDSs for decoding of continuous hand and arm
+               kinematics based on different epochs of the experiments, namely,
+               baseline, pre-movement planning, movement, and final fixation.
+               Average decoding accuracies as high as 89.9\%, 88.6\%, 89.8\%,
+               89.4\%, were achieved for motion-state-dependent decoding across
+               four different behavioral tasks, respectively (p<0.05); these
+               results are higher than previous works using a single Kalman
+               filter (accuracy: 0.83). These results demonstrate that the
+               adaptive decoding approach, or motion-state-dependent decoding,
+               may have a larger descriptive capability than the decoding
+               approach using a single decoder. This is a critical step towards
+               the development of a BMI for adaptive neural control of a
+               clinically viable prosthesis.",
+  journal   = "Conf. Proc. IEEE Eng. Med. Biol. Soc.",
+  publisher = "ieeexplore.ieee.org",
+  volume    =  2012,
+  pages     = "1732--1735",
+  year      =  2012,
+  language  = "en",
+  issn      = "1557-170X",
+  pmid      = "23366244",
+  doi       = "10.1109/EMBC.2012.6346283",
+  pmc       = "PMC4216179"
 }
 
 @ARTICLE{Gold2007-tn,
