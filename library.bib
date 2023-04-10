@@ -1401,61 +1401,53 @@
   pmid      = "12868646"
 }
 
-@ARTICLE{Song2022-bi,
-  title     = "Modeling and inference methods for switching regime-dependent
-               dynamical systems with multiscale neural observations",
-  author    = "Song, Christian Y and Hsieh, Han-Lin and Pesaran, Bijan and
-               Shanechi, Maryam M",
-  abstract  = "Objective.Realizing neurotechnologies that enable long-term
-               neural recordings across multiple spatial-temporal scales during
-               naturalistic behaviors requires new modeling and inference
-               methods that can simultaneously address two challenges. First,
-               the methods should aggregate information across all activity
-               scales from multiple recording sources such as spiking and field
-               potentials. Second, the methods should detect changes in the
-               regimes of behavior and/or neural dynamics during naturalistic
-               scenarios and long-term recordings. Prior regime detection
-               methods are developed for a single scale of activity rather than
-               multiscale activity, and prior multiscale methods have not
-               considered regime switching and are for stationary
-               cases.Approach.Here, we address both challenges by developing a
-               switching multiscale dynamical system model and the associated
-               filtering and smoothing methods. This model describes the
-               encoding of an unobserved brain state in multiscale spike-field
-               activity. It also allows for regime-switching dynamics using an
-               unobserved regime state that dictates the dynamical and encoding
-               parameters at every time-step. We also design the associated
-               switching multiscale inference methods that estimate both the
-               unobserved regime and brain states from simultaneous spike-field
-               activity.Main results.We validate the methods in both extensive
-               numerical simulations and prefrontal spike-field data recorded
-               in a monkey performing saccades for fluid rewards. We show that
-               these methods can successfully combine the spiking and field
-               potential observations to simultaneously track the regime and
-               brain states accurately. Doing so, these methods lead to better
-               state estimation compared with single-scale switching methods or
-               stationary multiscale methods. Also, for single-scale linear
-               Gaussian observations, the new switching smoother can better
-               generalize to diverse system settings compared to prior
-               switching smoothers.Significance.These modeling and inference
-               methods effectively incorporate both regime-detection and
-               multiscale observations. As such, they could facilitate
-               investigation of latent switching neural population dynamics and
-               improve future brain-machine interfaces by enabling inference in
-               naturalistic scenarios where regime-dependent multiscale
-               activity and behavior arise.",
-  journal   = "J. Neural Eng.",
-  publisher = "iopscience.iop.org",
-  volume    =  19,
-  number    =  6,
-  month     =  nov,
-  year      =  2022,
-  keywords  = "decoding; dynamical systems; multiscale neural observations;
-               spiking and field potential activity; switching state space",
+@ARTICLE{Hotson2016-ml,
+  title     = "High Precision Neural Decoding of Complex Movement Trajectories
+               using Recursive Bayesian Estimation with Dynamic Movement
+               Primitives",
+  author    = "Hotson, Guy and Smith, Ryan J and Rouse, Adam G and Schieber,
+               Marc H and Thakor, Nitish V and Wester, Brock A",
+  abstract  = "Brain-machine interfaces (BMIs) are a rapidly progressing
+               technology with the potential to restore function to victims of
+               severe paralysis via neural control of robotic systems. Great
+               strides have been made in directly mapping a user's cortical
+               activity to control of the individual degrees of freedom of
+               robotic end-effectors. While BMIs have yet to achieve the level
+               of reliability desired for widespread clinical use,
+               environmental sensors (e.g. RGB-D cameras for object detection)
+               and prior knowledge of common movement trajectories hold great
+               potential for improving system performance. Here we present a
+               novel sensor fusion paradigm for BMIs that capitalizes on
+               information able to be extracted from the environment to greatly
+               improve the performance of control. This was accomplished by
+               using dynamic movement primitives to model the 3D endpoint
+               trajectories of manipulating various objects. We then used a
+               switching unscented Kalman filter to continuously arbitrate
+               between the 3D endpoint kinematics predicted by the dynamic
+               movement primitives and control derived from neural signals. We
+               experimentally validated our system by decoding 3D endpoint
+               trajectories executed by a non-human primate manipulating four
+               different objects at various locations. Performance using our
+               system showed a dramatic improvement over using neural signals
+               alone, with median distance between actual and decoded
+               trajectories decreasing from 31.1 cm to 9.9 cm, and mean
+               correlation increasing from 0.80 to 0.98. Our results indicate
+               that our sensor fusion framework can dramatically increase the
+               fidelity of neural prosthetic trajectory decoding.",
+  journal   = "IEEE Robot Autom Lett",
+  publisher = "ieeexplore.ieee.org",
+  volume    =  1,
+  number    =  2,
+  pages     = "676--683",
+  month     =  jul,
+  year      =  2016,
+  keywords  = "Brain Machine Interface; Cognitive Human-Robot Interaction;
+               Physically Assistive Devices",
   language  = "en",
-  issn      = "1741-2560, 1741-2552",
-  pmid      = "36261030",
-  doi       = "10.1088/1741-2552/ac9b94"
+  issn      = "2377-3766",
+  pmid      = "28630937",
+  doi       = "10.1109/LRA.2016.2516590",
+  pmc       = "PMC5473343"
 }
 
 @ARTICLE{Edwards1954-hk,
@@ -1581,24 +1573,6 @@
   language = "en",
   issn     = "0022-3034",
   pmid     = "11536194"
-}
-
-% The entry below contains non-ASCII chars that could not be converted
-% to a LaTeX equivalent.
-@ARTICLE{Petreska2011-cr,
-  title     = "Dynamical segmentation of single trials from population neural
-               data",
-  author    = "Petreska, Biljana and Yu, Byron M and Cunningham, John P and
-               Santhanam, Gopal and Ryu, Stephen and Shenoy, Krishna V and
-               Sahani, Maneesh",
-  abstract  = "… based on a Hidden Switching Linear Dynamical System (HSLDS)
-               model… neural decoding applications [9, 10, 11] where they are
-               variously known as Switching Linear Dynamical System …",
-  journal   = "Adv. Neural Inf. Process. Syst.",
-  publisher = "proceedings.neurips.cc",
-  volume    =  24,
-  year      =  2011,
-  issn      = "1049-5258"
 }
 
 @ARTICLE{Pouget2003-qe,
@@ -19228,6 +19202,63 @@
   pmc       = "PMC4216179"
 }
 
+@ARTICLE{Song2022-bi,
+  title     = "Modeling and inference methods for switching regime-dependent
+               dynamical systems with multiscale neural observations",
+  author    = "Song, Christian Y and Hsieh, Han-Lin and Pesaran, Bijan and
+               Shanechi, Maryam M",
+  abstract  = "Objective.Realizing neurotechnologies that enable long-term
+               neural recordings across multiple spatial-temporal scales during
+               naturalistic behaviors requires new modeling and inference
+               methods that can simultaneously address two challenges. First,
+               the methods should aggregate information across all activity
+               scales from multiple recording sources such as spiking and field
+               potentials. Second, the methods should detect changes in the
+               regimes of behavior and/or neural dynamics during naturalistic
+               scenarios and long-term recordings. Prior regime detection
+               methods are developed for a single scale of activity rather than
+               multiscale activity, and prior multiscale methods have not
+               considered regime switching and are for stationary
+               cases.Approach.Here, we address both challenges by developing a
+               switching multiscale dynamical system model and the associated
+               filtering and smoothing methods. This model describes the
+               encoding of an unobserved brain state in multiscale spike-field
+               activity. It also allows for regime-switching dynamics using an
+               unobserved regime state that dictates the dynamical and encoding
+               parameters at every time-step. We also design the associated
+               switching multiscale inference methods that estimate both the
+               unobserved regime and brain states from simultaneous spike-field
+               activity.Main results.We validate the methods in both extensive
+               numerical simulations and prefrontal spike-field data recorded
+               in a monkey performing saccades for fluid rewards. We show that
+               these methods can successfully combine the spiking and field
+               potential observations to simultaneously track the regime and
+               brain states accurately. Doing so, these methods lead to better
+               state estimation compared with single-scale switching methods or
+               stationary multiscale methods. Also, for single-scale linear
+               Gaussian observations, the new switching smoother can better
+               generalize to diverse system settings compared to prior
+               switching smoothers.Significance.These modeling and inference
+               methods effectively incorporate both regime-detection and
+               multiscale observations. As such, they could facilitate
+               investigation of latent switching neural population dynamics and
+               improve future brain-machine interfaces by enabling inference in
+               naturalistic scenarios where regime-dependent multiscale
+               activity and behavior arise.",
+  journal   = "J. Neural Eng.",
+  publisher = "iopscience.iop.org",
+  volume    =  19,
+  number    =  6,
+  month     =  nov,
+  year      =  2022,
+  keywords  = "decoding; dynamical systems; multiscale neural observations;
+               spiking and field potential activity; switching state space",
+  language  = "en",
+  issn      = "1741-2560, 1741-2552",
+  pmid      = "36261030",
+  doi       = "10.1088/1741-2552/ac9b94"
+}
+
 @ARTICLE{Gold2007-tn,
   title     = "The neural basis of decision making",
   author    = "Gold, Joshua I and Shadlen, Michael N",
@@ -20533,6 +20564,24 @@
   year     =  2019,
   language = "en",
   doi      = "10.1101/690958"
+}
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@ARTICLE{Petreska2011-cr,
+  title     = "Dynamical segmentation of single trials from population neural
+               data",
+  author    = "Petreska, Biljana and Yu, Byron M and Cunningham, John P and
+               Santhanam, Gopal and Ryu, Stephen and Shenoy, Krishna V and
+               Sahani, Maneesh",
+  abstract  = "… based on a Hidden Switching Linear Dynamical System (HSLDS)
+               model… neural decoding applications [9, 10, 11] where they are
+               variously known as Switching Linear Dynamical System …",
+  journal   = "Adv. Neural Inf. Process. Syst.",
+  publisher = "proceedings.neurips.cc",
+  volume    =  24,
+  year      =  2011,
+  issn      = "1049-5258"
 }
 
 @ARTICLE{Bari2019-iw,
