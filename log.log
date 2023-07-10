@@ -18259,3 +18259,63 @@ Name: score, Length: 717, dtype: float64
 2023-07-07 06:28:41.272 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
 2023-07-07 06:28:41.273 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
 2023-07-07 06:28:41.543 | INFO     | __main__:<module>:157 - Done
+2023-07-10 06:18:22.187 | INFO     | __main__:<module>:14 - Creating refy.html
+2023-07-10 06:18:22.187 | DEBUG    | refy.recomend:__init__:44 - 
+
+Starting biorxiv & arxiv daily search
+2023-07-10 06:18:22.187 | DEBUG    | refy.recomend:__init__:53 - Downloading data from arxiv & biorxiv
+2023-07-10 06:18:22.298 | DEBUG    | refy.download:download_arxiv:53 - downloading papers from arxiv. || 2023-07-03 -> 2023-07-10
+2023-07-10 06:18:22.299 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 0 (requesting 500 papers) | collected 0 papers so far | min date: nan
+2023-07-10 06:18:22.299 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=0&sortBy=submittedDate&sortOrder=descending
+2023-07-10 06:18:23.526 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 100 papers - filtering
+2023-07-10 06:18:43.548 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 100 (requesting 500 papers) | collected 100 papers so far | min date: 2023-07-07
+2023-07-10 06:18:43.548 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=100&sortBy=submittedDate&sortOrder=descending
+2023-07-10 06:18:44.774 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 100 papers - filtering
+2023-07-10 06:19:04.781 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 300 (requesting 500 papers) | collected 200 papers so far | min date: 2023-07-06
+2023-07-10 06:19:04.781 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=300&sortBy=submittedDate&sortOrder=descending
+2023-07-10 06:19:07.969 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2023-07-10 06:19:27.995 | DEBUG    | refy.download:download_arxiv:63 -      sending biorxiv request with start index: 1000 (requesting 500 papers) | collected 700 papers so far | min date: 2023-07-03
+2023-07-10 06:19:27.995 | DEBUG    | refy.download:download_arxiv:69 -          request url:
+http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.GL+OR+cat:cs.LG+OR+cat:cs.NE+OR+cat:cs.MA+OR+cat:cs.RO+OR+cat:cs.SY+OR+cat:math.AT+OR+cat:math.DG+OR+cat:math.DS+OR+cat:math.GN+OR+cat:math.OC+OR+cat:q-bio.NC+OR+cat:q-bio.QM&max_results=500&start=1000&sortBy=submittedDate&sortOrder=descending
+2023-07-10 06:19:31.093 | DEBUG    | refy.download:download_arxiv:84 -      downloaded 500 papers - filtering
+2023-07-10 06:19:31.101 | DEBUG    | refy.download:download_arxiv:138 - Downloaded 700 preprints from arxiv
+2023-07-10 06:19:35.760 | DEBUG    | refy.download:download_biorxiv:21 - Downloading metadata for 929 papers from bioarxiv || 2023-07-03 -> 2023-07-10
+2023-07-10 06:19:40.044 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 11%
+2023-07-10 06:19:44.299 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 22%
+2023-07-10 06:19:48.495 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 32%
+2023-07-10 06:19:52.928 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 43%
+2023-07-10 06:19:57.318 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 54%
+2023-07-10 06:20:01.980 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 65%
+2023-07-10 06:20:06.273 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 75%
+2023-07-10 06:20:10.691 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 86%
+2023-07-10 06:20:15.091 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 97%
+2023-07-10 06:20:19.147 | DEBUG    | refy.download:download_biorxiv:36 -      downloaded 108%
+2023-07-10 06:20:19.157 | DEBUG    | refy.download:download_biorxiv:44 - kept 209 preprints from biorxiv
+2023-07-10 06:20:19.271 | DEBUG    | refy.recomend:__init__:57 - Loading user papers
+2023-07-10 06:20:28.745 | DEBUG    | refy.input:load_user_input:37 - Loaded user input from file: library.bib | 1648 entries
+2023-07-10 06:20:28.756 | DEBUG    | refy.input:load_user_input:54 - 1481/1648 user papers have abstracts
+2023-07-10 06:20:28.842 | DEBUG    | refy.recomend:__init__:63 - Final papers count: 898 preprints and 1481 user papers
+2023-07-10 06:20:28.842 | DEBUG    | refy.infer:fit_tfidf:9 - Fitting TF-IDF model
+2023-07-10 06:20:29.610 | DEBUG    | refy.recomend:fit:151 - Estimating distances
+2023-07-10 06:30:48.119 | DEBUG    | refy.recomend:fit:169 - Recomended papers scores: 0      0.038320
+1      0.037993
+2      0.037333
+3      0.033097
+4      0.029226
+         ...   
+893    0.000000
+894    0.000000
+895    0.000000
+896    0.000000
+897    0.000000
+Name: score, Length: 898, dtype: float64
+2023-07-10 06:30:48.132 | DEBUG    | refy.recomend:__init__:71 - Getting keywords
+2023-07-10 06:31:00.504 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2023-07-10 06:31:00.505 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2023-07-10 06:31:00.853 | DEBUG    | refy.results:to_html:158 - Saving query to .HTML at: ./_recomendations.html
+2023-07-10 06:31:00.854 | DEBUG    | refy.keywords:to_table:111 - keywords -> table
+2023-07-10 06:31:00.855 | DEBUG    | refy.suggestions:to_table:155 - Suggestions -> table
+2023-07-10 06:31:01.111 | INFO     | __main__:<module>:157 - Done
