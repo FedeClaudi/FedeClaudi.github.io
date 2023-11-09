@@ -1,9 +1,6 @@
-$light-blue: #5f8ed8
-$lighter-blue: #77a2e6
+$light-blue: #0d3069
+$lighter-blue: #062048
 $blue: #3d79d8
-$dark-blue: #4771b4
-$blue-grey: #63717e
-$light-grey: #636363
 $dark-grey: #3c3c3c
 
 a
@@ -13,8 +10,6 @@ a
     &:hover
         color:  $blue
 
-
-    
 
 .hero-columns
     width: 100%
@@ -31,148 +26,76 @@ a
         &:hover
             color: $blue
 
-.title
-    color: $blue-grey
+/* ---------------------------------- hero ---------------------------------- */
+// .myhero
 
-.main
-    padding: 5%
+/* ----------------------------------- bio ---------------------------------- */
+$main-image-size: 200px
+$small-image-size: 50px
+$offset: 20px
 
-.interest-tag
-    background-color: $lighter-blue
-    color: white
-    border-radius: 50%
-    height: 12px
+.col-pad
+    margin:10rem 0
+    @media (max-width: 600px) 
+        margin: 2rem 0
 
-.publications
-    text-align: center
-    padding: 2% 10%
-    
-    .year
-        font-size: 28px
-        font-weight: 900
-        color: $dark-grey
-        margin-bottom: 24px
+.container
+  position: relative
+  margin: 5em 5em
 
-    .publication
-        margin-bottom: 26px
-        text-align: left
-        font-size: 16px
-        color: $light-grey
+.round_img
+  width: $main-image-size
+  height: $main-image-size
+  background-color: #3498db
+  border-radius: 50%
+  border: 1px solid rgb(120, 120, 120)
 
-        .pub-title
-            font-size: 18px
-            color: $dark-grey
+.small-image
+  width: $small-image-size
+  height: $small-image-size
+  background-color: white
+  border-radius: 50%
+  position: absolute
+  top: 25%
+  left: 5%
+  width: fit-content
+  height: fit-content
+  border-radius: 40px
+  padding: 0px 12px 0px 0px
 
-        .pub-link
-            color: $light-grey
-            font-weight: normal
+.top
+    transform: translate(125px, -70px)
 
-.blue-hero
-    background-color: $light-blue
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, .15)
+.two
+    transform: translate(160px, -10px)
 
-    h3
-        color: white
+.three
+    transform: translate(160px, 50px)
 
-    .tab
-        a
-            color: white
-
-        &:hover
-            a
-                color: $light-blue
-
-.blue
-    color: $light-blue
-
-.os-projects-content
-    margin: 0 9.5%
-    padding: 24px 24px
-    border-radius: 0px 0px 12px 12px
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, .05)
-    // border: 1px solid rgba(0, 0, 0, .8)
-    min-height: 512px
-
-    @media (max-width: 800px)
-            box-shadow: none
-        
-
-    .proj-columns
-        padding: 30px 30px
-
-        .is-two-fifths
-            padding-right:32px
-            margin-right: 30px
-            text-align: right
-
-    .proj-img
-        max-height: 400px
-        max-width: 100%
-        border-radius: 8px
-
-        @media (max-width: 1060px)
-            display: none
-        
+.bottom
+    transform: translate(125px, 110px)
 
 
-    .proj-title
-        color: $blue-grey
-        font-size: 28px
-        font-weight: bold
-        text-align: left
-
-.contact-section
-    a
-        font-weight: bold
-        color: $dark-grey
-        &:hover
-            color: $dark-blue
-
-
-/* -------------------------------------------------------------------------- */
-/*                                     CV                                     */
-/* -------------------------------------------------------------------------- */
-
-.cv-body
-    width: 80%
-    margin: auto
-    border-radius: 20px
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, .2)
-    color: white
-    text-align: center
-
-
-.cv-dark
-    background-color: #1e1e1e !important
-
-.cv-hide
-    width: 80%
-    margin: auto
-    background-color: white !important
-    @media (max-width: 800px)
+.bio-images-large-screen
+    // hide on phone
+    @media (max-width: 600px)
         display: none
 
-.cv-show
+.bio-images-small-screen
     display: none
-
-    @media (max-width: 800px)
+    // show on phone
+    @media (max-width: 600px) 
         display: block
 
-.cv-message
-    margin-top: 100px
-    margin-bottom: 64px
-
-.refy-message
-    margin-bottom: 64px
-
-.refy-code
-    background-color: #1e1e1e !important
-    margin: 32px auto
-    padding: 24px
-    width: 80%
-    border-radius: 20px
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, .2)
+.bio-link-small
     text-align: center
 
-.refy-content
-    background-color: white
+
+.bio-paragraph
+    text-align: center
+    margin: 0rem 2rem 2rem 2rem
+
+.col-right
+    margin-right: 10rem
+    @media (max-width: 600px) 
+        margin-right: 0rem
