@@ -6,108 +6,196 @@ a:hover {
   color: #3d79d8;
 }
 
-.hero-columns {
-  width: 100%;
-  margin: 0% 10%;
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.links-box {
-  font-size: 20px;
-  padding-left: 24px;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-}
-.links-box a {
-  font-weight: bold;
-  color: #3c3c3c;
-}
-.links-box a:hover {
-  color: #3d79d8;
-}
-
-/* ---------------------------------- hero ---------------------------------- */
-/* ----------------------------------- bio ---------------------------------- */
-.col-pad {
-  margin: 10rem 0;
-}
-@media (max-width: 600px) {
-  .col-pad {
-    margin: 2rem 0;
-  }
-}
-
-.container {
-  position: relative;
-  margin: 5em 5em;
-}
-
-.round_img {
-  width: 200px;
-  height: 200px;
-  background-color: #3498db;
-  border-radius: 50%;
-  border: 1px solid #787878;
-}
-
-.small-image {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border-radius: 50%;
+.background {
+  background: #23232d;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 25%;
-  left: 5%;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 40px;
-  padding: 0px 12px 0px 0px;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
-.top {
-  transform: translate(125px, -70px);
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50vw solid white;
+  border-bottom: calc(50vw * .8) solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
 }
-
-.two {
-  transform: translate(160px, -10px);
-}
-
-.three {
-  transform: translate(160px, 50px);
-}
-
-.bottom {
-  transform: translate(125px, 110px);
-}
-
-@media (max-width: 600px) {
-  .bio-images-large-screen {
+@media (max-width: 768px) {
+  .triangle {
+    border-left: 100vw solid white;
+    border-bottom: 30vh solid transparent;
     display: none;
   }
 }
 
-.bio-images-small-screen {
-  display: none;
+.brainimage {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  border-radius: 50%;
+  background-image: url(images/federico.jpg);
+  background-size: contain;
+  border: 1px solid #c8c8c8;
 }
-@media (max-width: 600px) {
-  .bio-images-small-screen {
-    display: block;
+@media (max-width: 768px) {
+  .brainimage {
+    display: none;
+  }
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: light;
+  color: #23232d;
+  position: absolute;
+  top: 6vh;
+  left: 200px;
+}
+@media (max-width: 768px) {
+  .name {
+    top: 1vh;
+    right: 5vw;
+    left: auto;
+    bottom: auto;
+    color: #23232d;
+  }
+}
+
+.email {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #23232d;
+  position: absolute;
+  top: 14.2vh;
+  left: 200px;
+}
+@media (max-width: 768px) {
+  .email {
+    top: 6vh;
+    right: 5vw;
+    bottom: auto;
+    left: auto;
+    color: #23232d;
+  }
+}
+
+.namebackground {
+  width: 100%;
+  height: 12vh;
+  background: white;
+}
+
+/* ----------------------------------- bio ---------------------------------- */
+.biolinks {
+  margin-right: 5vw;
+  margin-top: 6vh;
+  height: 20vh;
+}
+@media (max-width: 768px) {
+  .biolinks {
+    margin: auto 0;
+    height: auto;
+    justify-content: center;
+    padding: 0 0.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .biocols {
+    width: 80%;
+    margin: -2vh auto;
   }
 }
 
 .bio-link-small {
-  text-align: center;
+  color: white;
+  display: ruby;
+  font-size: 1.15rem;
 }
-
-.bio-paragraph {
-  text-align: center;
-  margin: 0rem 2rem 2rem 2rem;
+@media (max-width: 768px) {
+  .bio-link-small {
+    margin-left: 0;
+    justify-content: center;
+    font-size: 0.75rem;
+    display: auto;
+  }
 }
-
-.col-right {
-  margin-right: 10rem;
+.bio-link-small a {
+  color: white;
+  text-decoration: none;
 }
-@media (max-width: 600px) {
-  .col-right {
+.bio-link-small .bioicon {
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(0.2rem);
+}
+@media (max-width: 768px) {
+  .bio-link-small .bioicon {
     margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+/* --------------------------------- biotext -------------------------------- */
+.biotext {
+  color: white;
+  width: 50%;
+  margin-left: 45vw;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .biotext {
+    width: 90%;
+    margin: 3em auto;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+}
+.biotext .bio-paragraph {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  font-weight: lighter;
+  padding-right: 1em;
+}
+@media (max-width: 768px) {
+  .biotext .bio-paragraph {
+    padding: 0.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+}
+.biotext a {
+  color: #ade3f0;
+  text-decoration: none;
+}
+.biotext b {
+  color: white;
+}
+.biotext .bpone {
+  border-right: 2px solid #ade3f0;
+  padding-right: 1em;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .biotext .bpone {
+    border-right: none;
+    margin-bottom: 0.25rem;
   }
 }
 
