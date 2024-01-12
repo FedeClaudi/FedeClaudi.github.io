@@ -21,3 +21,125 @@ body
     background-color: $dark !important
     min-height: 100vh
     min-width: 100vw
+    padding-bottom: 5vh
+
+
+.is-narrow
+    width: 80%
+    margin: auto
+
+    @media (max-width: 768px)
+        width: 90%
+
+
+.name
+    font-size: 3rem
+    font-weight: light
+    color: white
+    font-family: DM Serif Display
+
+    @media (max-width: 768px)
+        font-size: 2rem
+        text-align: center
+
+
+.email
+    font-size: 2rem
+    font-weight: lighter
+    color: white
+
+    @media (max-width: 768px)
+        font-size: 1.5rem
+        text-align: center
+
+
+/* ----------------------------------- bio ---------------------------------- */
+
+.biolinks
+    margin-right: 5vw
+    margin-top: 6vh
+    height: 20vh
+
+    @media (max-width: 768px)
+        margin: auto 0
+        height: auto
+        justify-content: center
+        padding: 0 .2rem
+
+.biocols
+    // spread horizontally
+    display: flex
+    justify-content: space-between
+
+
+//     @media (max-width: 768px)
+//         width: 80%
+//         margin: -2vh auto
+
+.bio-link-small
+    color: white
+    display: ruby
+    font-size: 1.15rem
+
+    @media (max-width: 768px)
+        margin-left: 0
+        justify-content: center
+        // width: calc(100vw / 3)
+        font-size: 1rem
+        display: auto
+
+    a
+        color: white
+        text-decoration: none
+
+    .bioicon
+        width: 2rem
+        height: 2rem
+        transform: translateY(0.2rem)
+
+        @media (max-width: 768px)
+            margin-right: 0rem
+            margin-left: 0rem
+
+
+    /* --------------------------------- biotext -------------------------------- */
+
+.biotext
+    color: white
+    width: 70%
+    margin-left: 25vw
+    text-align: right
+    font-size: 1.2rem
+
+    @media (max-width: 768px)
+        width: 90%
+        margin: 3em auto
+        text-align: center
+
+    .bio-paragraph
+        margin-top: 1em
+        margin-bottom: 3em
+        font-weight: lighter
+        padding-right: 1em
+
+        @media (max-width: 768px)
+            padding: .5em
+            margin-top:0
+            margin-bottom: 1em
+
+    a
+        color: $highlight
+        text-decoration: none
+        font-weight: bold
+    b
+        color: white
+
+    .bpone
+        border-right: 2px solid $highlight
+        padding-right: 1em
+        font-size: 1.2rem
+        margin-bottom: 2rem
+
+        @media (max-width: 768px)
+            border-right: none
+        margin-bottom: .25rem

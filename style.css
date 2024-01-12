@@ -2,6 +2,140 @@ body {
   background-color: #2A3947 !important;
   min-height: 100vh;
   min-width: 100vw;
+  padding-bottom: 5vh;
+}
+
+.is-narrow {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .is-narrow {
+    width: 90%;
+  }
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: light;
+  color: white;
+  font-family: DM Serif Display;
+}
+@media (max-width: 768px) {
+  .name {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.email {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: white;
+}
+@media (max-width: 768px) {
+  .email {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* ----------------------------------- bio ---------------------------------- */
+.biolinks {
+  margin-right: 5vw;
+  margin-top: 6vh;
+  height: 20vh;
+}
+@media (max-width: 768px) {
+  .biolinks {
+    margin: auto 0;
+    height: auto;
+    justify-content: center;
+    padding: 0 0.2rem;
+  }
+}
+
+.biocols {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio-link-small {
+  color: white;
+  display: ruby;
+  font-size: 1.15rem;
+  /* --------------------------------- biotext -------------------------------- */
+}
+@media (max-width: 768px) {
+  .bio-link-small {
+    margin-left: 0;
+    justify-content: center;
+    font-size: 1rem;
+    display: auto;
+  }
+}
+.bio-link-small a {
+  color: white;
+  text-decoration: none;
+}
+.bio-link-small .bioicon {
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(0.2rem);
+}
+@media (max-width: 768px) {
+  .bio-link-small .bioicon {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+.biotext {
+  color: white;
+  width: 70%;
+  margin-left: 25vw;
+  text-align: right;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .biotext {
+    width: 90%;
+    margin: 3em auto;
+    text-align: center;
+  }
+}
+.biotext .bio-paragraph {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  font-weight: lighter;
+  padding-right: 1em;
+}
+@media (max-width: 768px) {
+  .biotext .bio-paragraph {
+    padding: 0.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+}
+.biotext a {
+  color: #ffcc67fb;
+  text-decoration: none;
+  font-weight: bold;
+}
+.biotext b {
+  color: white;
+}
+.biotext .bpone {
+  border-right: 2px solid #ffcc67fb;
+  padding-right: 1em;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-bottom: 0.25rem;
+}
+@media (max-width: 768px) {
+  .biotext .bpone {
+    border-right: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
