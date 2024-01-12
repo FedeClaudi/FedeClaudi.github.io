@@ -1,104 +1,57 @@
-$background-color: rgb(35, 35, 45)
-$blue: #3d79d8
-$dark-grey: #3c3c3c
-$accent: rgb(173, 227, 240)
-$pink: rgb(246, 239, 233)
-
-a
-    font-weight: bold
-    color: $dark-grey
-
-    &:hover
-        color:  $blue
-
+@use 'sass:color'
+    
+$dark: #2A3947
+$light: #4c6780
+$darker: #1E2A35
+$darkest: #0d1e32
+$offwhite: #d5d5d5
+$grey: #aabfd1
+$highlight: #ffcc67fb
+$highlight_light: #f8d794fb
+$highlight_bold : #ffcc67fb
+$link: rgb(173, 136, 255)
+$h4color: #f4d392fb
+$salmon: #fb835f
+$green: #6bce70
+$lightblue: #58b4ff
+$lilla: #a98cdf
 
 
 body
-  margin: 0
-  padding: 0
-  overflow: hidden 
+    background-color: $dark !important
+    min-height: 100vh
+    min-width: 100vw
+    padding-bottom: 5vh
 
-.background
-    background: $background-color
-    width: 100vw
-    height: 100vh
-    position: absolute
-    top: 0
-    left: 0
-    z-index: -2
 
-.triangle
-    width: 0
-    height: 0
-    border-left: 50vw solid white  
-    border-bottom: calc(50vw * .8) solid transparent  
-    position: absolute
-    top: 0
-    left: 0
-    overflow: hidden
-    z-index: -1
-
-    //    on mobile, change the size of the triangle
-    @media (max-width: 768px)
-        border-left: 100vw solid white
-        border-bottom: 30vh solid transparent
-        display: none
-
-.brainimage
-    width: 150px
-    height: 150px
-    position: absolute
-    top: 25px
-    left: 25px
-    border-radius: 50%
-
-    //blur radious
-    // box-shadow: 0 0 10px 10px $pink inset
-    background-image: url(images/federico.jpg)
-    background-size: contain
-    border: 1px solid rgb(200, 200, 200)
+.is-narrow
+    width: 80%
+    margin: auto
 
     @media (max-width: 768px)
-        display: none
+        width: 90%
+
 
 .name
-    font-size: 2rem
+    font-size: 3rem
     font-weight: light
-    color: $background-color
-    position: absolute
-    top: 6vh
-    left: 200px
+    color: white
+    font-family: DM Serif Display
 
-    // on mobile, put it at the top
     @media (max-width: 768px)
-        top: 1vh
-        right: 5vw
-        left: auto
-        bottom: auto
-        color: $background-color
+        font-size: 2rem
+        text-align: center
+
 
 .email
-    font-size: 1rem
+    font-size: 2rem
     font-weight: lighter
-    color: $background-color
-    position: absolute
-    top: 14.2vh
-    left: 200px
+    color: white
 
-    // on mobile, put it at the top
     @media (max-width: 768px)
-        top: 6vh
-        right: 5vw
-        bottom: auto
-        left: auto
-        color: $background-color
+        font-size: 1.5rem
+        text-align: center
 
-
-
-.namebackground
-    width: 100%
-    height: 12vh
-    background: white
 
 /* ----------------------------------- bio ---------------------------------- */
 
@@ -114,9 +67,14 @@ body
         padding: 0 .2rem
 
 .biocols
-    @media (max-width: 768px)
-        width: 80%
-        margin: -2vh auto
+    // spread horizontally
+    display: flex
+    justify-content: space-between
+
+
+//     @media (max-width: 768px)
+//         width: 80%
+//         margin: -2vh auto
 
 .bio-link-small
     color: white
@@ -127,7 +85,7 @@ body
         margin-left: 0
         justify-content: center
         // width: calc(100vw / 3)
-        font-size: .75rem
+        font-size: 1rem
         display: auto
 
     a
@@ -143,19 +101,20 @@ body
             margin-right: 0rem
             margin-left: 0rem
 
-/* --------------------------------- biotext -------------------------------- */
+
+    /* --------------------------------- biotext -------------------------------- */
 
 .biotext
     color: white
-    width: 50%
-    margin-left: 45vw
+    width: 70%
+    margin-left: 25vw
     text-align: right
+    font-size: 1.2rem
 
     @media (max-width: 768px)
         width: 90%
         margin: 3em auto
         text-align: center
-        font-size: .75rem
 
     .bio-paragraph
         margin-top: 1em
@@ -169,17 +128,18 @@ body
             margin-bottom: 1em
 
     a
-        color: $accent
+        color: $highlight
         text-decoration: none
+        font-weight: bold
     b
         color: white
 
     .bpone
-        border-right: 2px solid $accent
+        border-right: 2px solid $highlight
         padding-right: 1em
         font-size: 1.2rem
         margin-bottom: 2rem
 
         @media (max-width: 768px)
             border-right: none
-            margin-bottom: .25rem
+        margin-bottom: .25rem
